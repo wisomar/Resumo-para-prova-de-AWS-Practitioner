@@ -11,3 +11,6 @@ TI com semanas ou meses de antecedência. Em vez disso, eles podem ativar instan
 centenas ou milhares de servidores em minutos e fornecer resultados mais rapidamente.
 Atualmente, AWS fornece uma plataforma de infraestrutura altamente confiável, escalável e de baixo
 custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao redor do mundo.</p>
+
+<p>Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
+computação em nuvem: [O que é? AWS | Amazon Web Services](https://www.youtube.com/embed/a9__D53WsUs)</p>
