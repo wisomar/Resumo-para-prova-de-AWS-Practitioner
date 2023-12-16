@@ -13,5 +13,5 @@ Atualmente, AWS fornece uma plataforma de infraestrutura altamente confiável, e
 custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao redor do mundo.</p>
 
 <p>Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
-computação em nuvem: O que é? AWS | Amazon Web Services<iframe> width="560" height="315" src="https://www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+computação em nuvem: O que é? AWS | Amazon Web Services www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU"</p>
 
