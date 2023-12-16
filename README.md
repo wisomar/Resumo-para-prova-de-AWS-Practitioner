@@ -79,9 +79,8 @@ controle, flexibilidade e gerenciamento.</p>
 
 <h2>Modelos de implantação de computação em nuvem</h2>
 <h3>Nuvem</h3>
-<p>Um aplicativo baseado em nuvem é totalmente implantado na nuvem e todas as partes do aplicativo
-são executadas na nuvem. Os aplicativos na nuvem foram criados na nuvem ou migrados de uma
-infraestrutura existente para aproveitar os [benefícios da computação em nuvem](https://aws.amazon.com/pt/what-is-cloud-computing/){:target="_blank"}.</p>
+<p></p>Um aplicativo baseado em nuvem é totalmente implantado na nuvem e todas as partes do aplicativo são executadas na nuvem. Os aplicativos na nuvem foram criados na nuvem ou migrados de uma infraestrutura existente para aproveitar os <a href="https://aws.amazon.com/pt/what-is-cloud-computing/" target="_blank">benefícios da computação em nuvem</a>.</p>
+
 <p>Os aplicativos baseados em nuvem podem ser criados em partes de infraestrutura de baixo nível ou podem usar
 serviços de nível superior que fornecem abstração dos requisitos de gerenciamento, arquitetura e
 escalabilidade da infraestrutura principal.</p>
