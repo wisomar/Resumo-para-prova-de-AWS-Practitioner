@@ -68,5 +68,22 @@ mundo com apenas alguns cliques. Isso significa que você pode fornecer menor la
 melhor experiência para seus clientes a um custo mínimo.
 </p>
 
+<h2>Tipos de computação em nuvem</h2>
+
+<p>A computação em nuvem fornece aos desenvolvedores e departamentos de TI a capacidade
+de se concentrar no que é mais importante e evitar trabalhos indiferenciados, como compras,
+manutenção e planejamento de capacidade. À medida que a popularidade da computação em
+nuvem cresceu, surgiram vários modelos e estratégias de implantação diferentes para ajudar a
+atender às necessidades específicas de diferentes usuários. Cada tipo oferece diferentes níveis de
+controle, flexibilidade e gerenciamento.</p>
+
+<h2>Modelos de implantação de computação em nuvem</h2>
+<h3>Nuvem</h3>
+<p>Um aplicativo baseado em nuvem é totalmente implantado na nuvem e todas as partes do aplicativo
+são executadas na nuvem. Os aplicativos na nuvem foram criados na nuvem ou migrados de uma
+infraestrutura existente para aproveitar os [benefícios da computação em nuvem](https://aws.amazon.com/pt/what-is-cloud-computing/){:target="_blank"}. Os aplicativos baseados em nuvem podem ser criados em partes de infraestrutura de baixo nível ou podem usar
+serviços de nível superior que fornecem abstração dos requisitos de gerenciamento, arquitetura e
+escalabilidade da infraestrutura principal.</p>
+
 
 
