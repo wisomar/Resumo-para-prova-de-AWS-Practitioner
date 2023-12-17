@@ -1,26 +1,26 @@
 # Resumo para prova de AWS Practitioner
 
 # Sumário
-- [Introdução](#Introdução)
-- [O que é computação em nuvem?](#Oqueécomputaçãoemnuvem?)
-    - [Seis vantagens da computação em nuvem](#Seisvantagensdacomputaçãoemnuvem)
-    - [Tipos de computação em nuvem](#Tiposdecomputaçãoemnuvem)
-      -  [Infraestrutura como serviço (IaaS)](#Infraestruturacomoserviço (IaaS))
-      -  [Plataforma como serviço (PaaS)](#Plataformacomserviço(PaaS))
-      -  [Software como serviço (SaaS)](#Softwarecomoserviço(SaaS))
-    -  [Modelos de implantação de computação em nuvem](#Modelosdeimplantaçãodecomputaçãoemnuvem)
-       - [Nuvem](#Nuvem)
-       - [Abordagem híbrida](#Abordagemhíbrida)
-       - [Infraestrutura](#Infraestrutura)
-- [Infraestrutura global](#Infraestruturaglobal)
-- [Segurança e conformidade](#Segurançaeconformidade)
-    -  [Segurança](#Segurança)
+- [Introdução](#Introdução) <br>
+- [O que é computação em nuvem?](#O-que-é-computação-em-nuvem?) <br>
+    - [Seis vantagens da computação em nuvem](#Seis-vantagens-da-computação-em-nuvem)<br>
+    - [Tipos de computação em nuvem](#Tipos-de-computação-em-nuvem) <br>
+      -  [Infraestrutura como serviço (IaaS)](#Infraestrutura-como-serviço-(IaaS)) <br>
+      -  [Plataforma como serviço (PaaS)](#Plataforma-como-serviço-(PaaS)) <br>
+      -  [Software como serviço (SaaS)](#Software-como-serviço-(SaaS)) <br>
+    -  [Modelos de implantação de computação em nuvem](#Modelos-de-implantação-de-computação-em-nuvem) <br>
+       - [Nuvem](#Nuvem) <br>
+       - [Abordagem híbrida](#Abordagem-híbrida) <br>
+       - [Infraestrutura](#Infraestrutura)  <br>
+- [Infraestrutura global](#Infraestrutura-global) <br>
+- [Segurança e conformidade](#Segurança-e-conformidade) <br>
+    -  [Segurança](#Segurança) <br>
 
 
 
  
 
-<a href="#Introdução">Introdução</a>
+# Introdução
 
 Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para
 empresas como serviços web — agora comumente conhecidos como computação em nuvem. Um
@@ -35,7 +35,7 @@ custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao r
 Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
 computação em nuvem: <a href="www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU" target="_blank">O que é? AWS | Amazon Web Services</a>
 
-<p><a href="#Oqueécomputaçãoemnuvem">O que é computação em nuvem?</a></p>
+# O que é computação em nuvem?
 
 <p>A computação em nuvem é a entrega sob demanda de poder computacional, banco de dados,
 armazenamento, aplicativos e outros recursos de TI por meio de uma plataforma de serviços
@@ -139,15 +139,13 @@ seus requisitos exclusivos de segurança na nuvem.</p>
 na nuvem é muito parecida com a segurança em seus data centers locais, mas sem os custos de manutenção de instalações e hardware. Na nuvem, você não precisa gerenciar servidores físicos ou
 dispositivos de armazenamento. Em vez disso, você usa ferramentas de segurança baseadas em software para monitorar e proteger o fluxo de informações que entram e saem dos seus recursos de
 nuvem.</p>
-<p>Uma vantagem disso Nuvem AWS é que ele permite que você escale e inove, mantendo um ambiente seguro e pagando somente pelos serviços que você usa. Isso significa que você pode ter a
-segurança de que precisa a um custo menor do que em um ambiente local.</p>
+<p>Uma vantagem disso Nuvem AWS é que ele permite que você escale e inove, mantendo um ambiente seguro e pagando somente pelos serviços que você usa. Isso significa que você pode ter a segurança de que precisa a um custo menor do que em um ambiente local.</p>
 <p>Como AWS cliente, você herda todas as melhores práticas de AWS políticas, arquitetura e processos operacionais criados para satisfazer os requisitos de nossos clientes mais sensíveis à segurança.
 Obtenha a flexibilidade e a agilidade de que você precisa nos controles de segurança.</p>
-<p>Nuvem AWS permite um modelo de responsabilidade compartilhada. Enquanto AWS gerencia a segurança da nuvem, você é responsável pela segurança na nuvem. Isso significa que você mantém
-o controle da segurança que escolhe implementar para proteger seu próprio conteúdo, plataforma, aplicativos, sistemas e redes da mesma forma que faria em um data center local.
+<p>Nuvem AWS permite um modelo de responsabilidade compartilhada. Enquanto AWS gerencia a segurança da nuvem, você é responsável pela segurança na nuvem. <a href="https://www.youtube.com/watch?v=_2HFqANE4gw&ab_channel=AmazonWebServices" target="_blank">Isso significa que você mantém o controle da segurança </a> que escolhe implementar para proteger seu próprio conteúdo, plataforma, aplicativos, sistemas e redes da mesma forma que faria em um data center local.
 AWS fornece orientação e experiência por meio de recursos on-line, pessoal e parceiros.</p>
 <p>AWS fornece recomendações sobre problemas atuais, além de você ter a oportunidade de trabalhar com eles AWS quando encontrar problemas de segurança.
-Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir seus objetivos de segurança. AWS fornece ferramentas e recursos específicos de segurança em segurança de rede,
-gerenciamento de configuração, controle de acesso e criptografia de dados.</p>
-<p>Por fim, os AWS ambientes são auditados continuamente, com certificações de órgãos de credenciamento em todas as regiões e setores. No AWS ambiente, você pode aproveitar as
-ferramentas automatizadas para inventário de ativos e relatórios de acesso privilegiado.</p>
+Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir seus objetivos de segurança. AWS fornece ferramentas e recursos específicos de segurança em segurança de rede, gerenciamento de configuração, controle de acesso e criptografia de dados.</p>
+<p>Por fim, os AWS ambientes são auditados continuamente, com certificações de órgãos de credenciamento em todas as regiões e setores. No AWS ambiente, você pode aproveitar as ferramentas automatizadas para inventário de ativos e relatórios de acesso privilegiado.</p>
+
+
