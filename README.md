@@ -1,8 +1,8 @@
 # Resumo-para-prova-de-AWS-Practitioner
 
- <h1>Introdução</h1>
+# Introdução
 
-<p>Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para
+Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para
 empresas como serviços web — agora comumente conhecidos como computação em nuvem. Um
 dos principais benefícios da computação em nuvem é a oportunidade de substituir as despesas
 iniciais de infraestrutura de capital por baixos custos variáveis que se adaptam à sua empresa. Com
@@ -10,12 +10,12 @@ a nuvem, as empresas não precisam mais planejar e adquirir servidores e outras 
 TI com semanas ou meses de antecedência. Em vez disso, eles podem ativar instantaneamente
 centenas ou milhares de servidores em minutos e fornecer resultados mais rapidamente.
 Atualmente, AWS fornece uma plataforma de infraestrutura altamente confiável, escalável e de baixo
-custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao redor do mundo.</p>
+custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao redor do mundo.
 
-<p>Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
-computação em nuvem: <a href="www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU" target="_blank">O que é? AWS | Amazon Web Services</a></p>
+Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
+computação em nuvem: <a href="www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU" target="_blank">O que é? AWS | Amazon Web Services</a>
 
-<h1>O que é computação em nuvem?</h1>
+# O que é computação em nuvem?
 
 <p>A computação em nuvem é a entrega sob demanda de poder computacional, banco de dados,
 armazenamento, aplicativos e outros recursos de TI por meio de uma plataforma de serviços
@@ -68,7 +68,7 @@ mundo com apenas alguns cliques. Isso significa que você pode fornecer menor la
 melhor experiência para seus clientes a um custo mínimo.
 </p>
 
-<h2>Tipos de computação em nuvem</h2>
+<h2 href="Tipos de computação em nuvem">Tipos de computação em nuvem</h2>
 
 <p>A computação em nuvem fornece aos desenvolvedores e departamentos de TI a capacidade
 de se concentrar no que é mais importante e evitar trabalhos indiferenciados, como compras,
