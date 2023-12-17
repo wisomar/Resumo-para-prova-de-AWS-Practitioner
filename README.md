@@ -1,5 +1,25 @@
 # Resumo para prova de AWS Practitioner
 
+# Sumário
+- [Introdução](#Introdução)
+- [O que é computação em nuvem?](#Oqueécomputaçãoemnuvem?)
+    - [Seis vantagens da computação em nuvem](#Seisvantagensdacomputaçãoemnuvem)
+    - [Tipos de computação em nuvem](#Tiposdecomputaçãoemnuvem)
+      -  [Infraestrutura como serviço (IaaS)](#Infraestruturacomoserviço (IaaS))
+      -  [Plataforma como serviço (PaaS)](#Plataformacomserviço(PaaS))
+      -  [Software como serviço (SaaS)](#Softwarecomoserviço(SaaS))
+    -  [Modelos de implantação de computação em nuvem](#Modelosdeimplantaçãodecomputaçãoemnuvem)
+       - [Nuvem](#Nuvem)
+       - [Abordagem híbrida](#Abordagemhíbrida)
+       - [Infraestrutura](#Infraestrutura)
+- [Infraestrutura global](#Infraestruturaglobal)
+- [Segurança e conformidade](#Segurançaeconformidade)
+    -  [Segurança](#Segurança)
+
+
+
+ 
+
 # Introdução
 
 Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para
@@ -77,7 +97,6 @@ nuvem cresceu, surgiram vários modelos e estratégias de implantação diferent
 atender às necessidades específicas de diferentes usuários. Cada tipo oferece diferentes níveis de
 controle, flexibilidade e gerenciamento.</p>
 
-### Tipos de computação em nuvem
 <p>Os três principais tipos de computação em nuvem são infraestrutura como serviço, plataforma como serviço e software como serviço. Cada tipo de computação em nuvem oferece diferentes níveis de controle, flexibilidade e gerenciamento para que você possa selecionar o conjunto certo de serviços para as suas necessidades.</p>
 
 ### Infraestrutura como serviço (IaaS)
@@ -112,3 +131,23 @@ A Região da AWS é um local físico no mundo em que temos várias zonas de disp
 energia, rede e conectividade redundantes, alojados em instalações separadas. Essas zonas de disponibilidade oferecem a capacidade de operar aplicativos e bancos de dados de produção
 que são mais altamente disponíveis, tolerantes a falhas e escaláveis do que seria possível em um único data center</p>
 
+# Segurança e conformidade
+## Segurança
+<p>A <a href="https://aws.amazon.com/pt/security/" target="_blank">segurança na nuvem</a> AWS é a maior prioridade. À medida que as organizações adotam a escalabilidade e a flexibilidade da nuvem, a AWS as ajuda a transformar segurança, identidade e conformidade em importantes facilitadores de negócios. A AWS incorpora a segurança no núcleo de nossa infraestrutura de nuvem e oferece serviços básicos para ajudar as organizações a atender aos
+seus requisitos exclusivos de segurança na nuvem.</p>
+<p>Como um cliente da AWS, você se beneficiará de um datacenter e uma arquitetura de rede criados para atender os requisitos da maioria das organizações com exigências de segurança. A segurança
+na nuvem é muito parecida com a segurança em seus data centers locais, mas sem os custos de manutenção de instalações e hardware. Na nuvem, você não precisa gerenciar servidores físicos ou
+dispositivos de armazenamento. Em vez disso, você usa ferramentas de segurança baseadas em software para monitorar e proteger o fluxo de informações que entram e saem dos seus recursos de
+nuvem.</p>
+<p>Uma vantagem disso Nuvem AWS é que ele permite que você escale e inove, mantendo um ambiente seguro e pagando somente pelos serviços que você usa. Isso significa que você pode ter a
+segurança de que precisa a um custo menor do que em um ambiente local.</p>
+<p>Como AWS cliente, você herda todas as melhores práticas de AWS políticas, arquitetura e processos operacionais criados para satisfazer os requisitos de nossos clientes mais sensíveis à segurança.
+Obtenha a flexibilidade e a agilidade de que você precisa nos controles de segurança.</p>
+<p>Nuvem AWS permite um modelo de responsabilidade compartilhada. Enquanto AWS gerencia a segurança da nuvem, você é responsável pela segurança na nuvem. Isso significa que você mantém
+o controle da segurança que escolhe implementar para proteger seu próprio conteúdo, plataforma, aplicativos, sistemas e redes da mesma forma que faria em um data center local.
+AWS fornece orientação e experiência por meio de recursos on-line, pessoal e parceiros.</p>
+<p>AWS fornece recomendações sobre problemas atuais, além de você ter a oportunidade de trabalhar com eles AWS quando encontrar problemas de segurança.
+Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir seus objetivos de segurança. AWS fornece ferramentas e recursos específicos de segurança em segurança de rede,
+gerenciamento de configuração, controle de acesso e criptografia de dados.</p>
+<p>Por fim, os AWS ambientes são auditados continuamente, com certificações de órgãos de credenciamento em todas as regiões e setores. No AWS ambiente, você pode aproveitar as
+ferramentas automatizadas para inventário de ativos e relatórios de acesso privilegiado.</p>
