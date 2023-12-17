@@ -1,4 +1,4 @@
-# Resumo-para-prova-de-AWS-Practitioner
+# Resumo para prova de AWS Practitioner
 
 # Introdução
 
@@ -34,7 +34,7 @@ serviços em nuvem, como a Amazon Web Services, possui e mantém o hardware cone
 necessário para esses serviços de aplicativos, enquanto você provisiona e usa o que precisa por
 meio de um aplicativo web.</p>
 
-<h2>Seis vantagens da computação em nuvem</h2>
+## Seis vantagens da computação em nuvem
 
 <p>• Troque despesas fixas por despesas variáveis — Em vez de ter que investir pesadamente em data
 centers e servidores antes de saber como usá-los, você pode pagar somente quando consumir
@@ -68,7 +68,7 @@ mundo com apenas alguns cliques. Isso significa que você pode fornecer menor la
 melhor experiência para seus clientes a um custo mínimo.
 </p>
 
-<h2 href="Tipos de computação em nuvem">Tipos de computação em nuvem</h2>
+## Tipos de computação em nuvem
 
 <p>A computação em nuvem fornece aos desenvolvedores e departamentos de TI a capacidade
 de se concentrar no que é mais importante e evitar trabalhos indiferenciados, como compras,
@@ -77,36 +77,36 @@ nuvem cresceu, surgiram vários modelos e estratégias de implantação diferent
 atender às necessidades específicas de diferentes usuários. Cada tipo oferece diferentes níveis de
 controle, flexibilidade e gerenciamento.</p>
 
-<h3>Tipos de computação em nuvem</h3>
+### Tipos de computação em nuvem
 <p>Os três principais tipos de computação em nuvem são infraestrutura como serviço, plataforma como serviço e software como serviço. Cada tipo de computação em nuvem oferece diferentes níveis de controle, flexibilidade e gerenciamento para que você possa selecionar o conjunto certo de serviços para as suas necessidades.</p>
 
-<h3>Infraestrutura como serviço (IaaS)</h3>
+### Infraestrutura como serviço (IaaS)
 <p>O IaaS contém os componentes básicos da IT na nuvem. Normalmente, o IaaS oferece acesso a recursos de rede, computadores (virtuais ou em hardware dedicado) e espaço de armazenamento de dados. O IaaS oferece o mais alto nível de flexibilidade e controle de gerenciamento sobre os recursos de TI. Ele é o tipo de computação mais semelhante aos recursos existentes de TI, já conhecidos por vários departamentos e desenvolvedores de TI.</p>
 
-<h3>Plataforma como serviço (PaaS)</h3>
+### Plataforma como serviço (PaaS)
 <p>Com o PaaS, você não precisa mais gerenciar a infraestrutura subjacente (geralmente, hardware e sistemas operacionais) e pode manter o foco na implantação e no gerenciamento de aplicativos. Dessa forma, você fica mais eficiente, pois não precisa se preocupar com aquisição de recursos, planejamento de capacidade, manutenção de software, correções ou qualquer outro tipo de trabalho genérico repetitivo necessário para a execução dos aplicativos.</p>
 
-<h3>Software como serviço (SaaS)</h3>
+### Software como serviço (SaaS)
 <p>O SaaS oferece um produto completo, executado e gerenciado pelo provedor de serviços. Na maioria dos casos, quando as pessoas mencionam SaaS, estão falando de aplicativos de usuários finais (como e-mail baseado na web). Com uma oferta de SaaS, você não precisa pensar sobre a manutenção do serviço ou o gerenciamento da infraestrutura subjacente. Você só precisa se preocupar sobre como utilizará esse software específico.</p>
 
-<h2>Modelos de implantação de computação em nuvem</h2>
-<h3>Nuvem</h3>
-<p></p>Um aplicativo baseado em nuvem é totalmente implantado na nuvem e todas as partes do aplicativo são executadas na nuvem. Os aplicativos na nuvem foram criados na nuvem ou migrados de uma infraestrutura existente para aproveitar os <a href="https://aws.amazon.com/pt/what-is-cloud-computing/" target="_blank">benefícios da computação em nuvem</a>.</p>
+## Modelos de implantação de computação em nuvem
+### Nuvem
+<p>Um aplicativo baseado em nuvem é totalmente implantado na nuvem e todas as partes do aplicativo são executadas na nuvem. Os aplicativos na nuvem foram criados na nuvem ou migrados de uma infraestrutura existente para aproveitar os <a href="https://aws.amazon.com/pt/what-is-cloud-computing/" target="_blank">benefícios da computação em nuvem</a>.</p>
 
 <p>Os aplicativos baseados em nuvem podem ser criados em partes de infraestrutura de baixo nível ou podem usar
 serviços de nível superior que fornecem abstração dos requisitos de gerenciamento, arquitetura e
 escalabilidade da infraestrutura principal.</p>
 
-<h3>Abordagem híbrida</h3>
+### Abordagem híbrida
 <p>Uma implantação <a href="https://aws.amazon.com/pt/hybrid/" target="_blank">híbrida</a> é uma maneira de conectar infraestrutura e aplicativos entre recursos
 na nuvem e recursos existentes que não se encontram na nuvem. O método mais comum de implantação híbrida é entre a nuvem e a infraestrutura local existente para estender e expandir a
 infraestrutura de uma organização na nuvem e, ao mesmo tempo, conectar os recursos da nuvem ao sistema interno.</p>
 
-<h3>Infraestrutura</h3>
+### Infraestrutura
 <p>A implantação de recursos no local, usando ferramentas de virtualização e gerenciamento de recursos, às vezes é chamada de nuvem privada. A implantação local não oferece muitos dos
 benefícios da computação em nuvem, mas às vezes é procurada por sua capacidade de fornecer recursos dedicados. Na maioria dos casos, esse modelo de implantação é o mesmo da <a href="https://aws.amazon.com/pt/hybrid/services/#Use_case.3A_Cloud_services_on-premises" target="_blank">infraestrutura</a> de TI legada, ao mesmo tempo em que usa tecnologias de gerenciamento e virtualização de aplicativos para tentar aumentar a utilização de recursos.</p>
 
-<h1>Infraestrutura global</h1>
+# Infraestrutura global
 <p>A Nuvem AWS <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank">infraestrutura</a> é construída em torno Regiões da AWS de zonas de disponibilidade.
 A Região da AWS é um local físico no mundo em que temos várias zonas de disponibilidade. As zonas de disponibilidade consistem em um ou mais data centers discretos, cada um com
 energia, rede e conectividade redundantes, alojados em instalações separadas. Essas zonas de disponibilidade oferecem a capacidade de operar aplicativos e bancos de dados de produção
