@@ -20,7 +20,7 @@
 
  
 
-# Introdução
+<a href="#Introdução">Introdução</a>
 
 Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para
 empresas como serviços web — agora comumente conhecidos como computação em nuvem. Um
@@ -35,7 +35,7 @@ custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao r
 Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
 computação em nuvem: <a href="www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU" target="_blank">O que é? AWS | Amazon Web Services</a>
 
-# O que é computação em nuvem?
+<p><a href="#Oqueécomputaçãoemnuvem">O que é computação em nuvem?</a></p>
 
 <p>A computação em nuvem é a entrega sob demanda de poder computacional, banco de dados,
 armazenamento, aplicativos e outros recursos de TI por meio de uma plataforma de serviços
