@@ -12,11 +12,19 @@
        - [Nuvem](#Nuvem) <br>
        - [Abordagem híbrida](#Abordagem-híbrida) <br>
        - [Infraestrutura](#Infraestrutura)  <br>
+    - [implantação da computação em nuvem](#Modelos-de-implantação-da-computação-em-nuvem)
+        - [Troque despesas iniciais por despesas Variáveis](#Troque-despesas-iniciais-por-despesas-Variáveis)
+        - [Pare de gastar dinheiro para executar data centers](#Pare-de-gastar-dinheiro-para-executar-data-centers)
+        - [Pare de tentar adivinhar a capacidade](#Pare-de-tentar-adivinhar-a-capacidade)
+        - [Beneficie-se de grandes economias de escala](#Beneficie-se-de-grandes-economias-de-escala)
+        - [Aumentar a velocidade e a agilidade](#Aumentar-a-velocidade-e-a-agilidade)
+        - [Ter alcance global em minutos](#Ter-alcance-global-em-minutos)
 - [Infraestrutura global](#Infraestrutura-global) <br>
 - [Segurança e conformidade](#Segurança-e-conformidade) <br>
     -  [Segurança](#Segurança) <br>
        - [Benefícios da AWS segurança](#Benefícios-da-AWS-segurança)
     - [Conformidade](#Conformidade)
+- [Computação](#Computação)
 
 
 
@@ -37,7 +45,7 @@ custo na nuvem que alimenta centenas de milhares de empresas em 190 países ao r
 Este vídeo explora como milhões de clientes usam AWS para tirar proveito da eficiência da
 computação em nuvem: <a href="www.youtube.com/embed/a9__D53WsUs?si=6rqLthy1FOVwZwIU" target="_blank">O que é? AWS | Amazon Web Services</a>
 
-# O que é computação em nuvem?
+# <a href="https://aws.amazon.com/pt/getting-started/cloud-essentials/" target="_blank">O que é computação em nuvem?</a>
 
 <p>A computação em nuvem é a entrega sob demanda de poder computacional, banco de dados,
 armazenamento, aplicativos e outros recursos de TI por meio de uma plataforma de serviços
@@ -114,18 +122,68 @@ controle, flexibilidade e gerenciamento.</p>
 ### Nuvem
 <p>Um aplicativo baseado em nuvem é totalmente implantado na nuvem e todas as partes do aplicativo são executadas na nuvem. Os aplicativos na nuvem foram criados na nuvem ou migrados de uma infraestrutura existente para aproveitar os <a href="https://aws.amazon.com/pt/what-is-cloud-computing/" target="_blank">benefícios da computação em nuvem</a>.</p>
 
-<p>Os aplicativos baseados em nuvem podem ser criados em partes de infraestrutura de baixo nível ou podem usar
-serviços de nível superior que fornecem abstração dos requisitos de gerenciamento, arquitetura e
-escalabilidade da infraestrutura principal.</p>
+<p>Os aplicativos baseados em nuvem podem ser criados em partes de infraestrutura de baixo nível ou podem usar serviços de nível superior que fornecem abstração dos requisitos de gerenciamento, arquitetura e escalabilidade da infraestrutura principal.</p>
+
+<p> Implantação baseada na nuvem</p>
+<ul>
+<li>Execute todas as partes da aplicação na nuvem</li>
+<li>Migre aplicações para a nuvem</li> 
+<li>Proteje e crie novas aplicações na nuvem</li>
+</ul>
+
+<p>Em um modelo de implantação baseada na nuvem, você pode migrar aplicações para a nuvem ou projetar e criar novas aplicações na nuvem. Você pode criar essas aplicações em uma infraestrutura de baixo nível que precise do gerenciamento de sua equipe de TI. Você também pode criá-los usando serviços de nível superior que reduzem os requisitos de gerenciamento, arquitetura e scaling da infraestrutura principal.</p>
+<p>Por exemplo, uma empresa poderia criar uma aplicação que consiste em servidores virtuais, bancos de dados e componentes de redes totalmente baseados na nuvem.</p>
 
 ### Abordagem híbrida
 <p>Uma implantação <a href="https://aws.amazon.com/pt/hybrid/" target="_blank">híbrida</a> é uma maneira de conectar infraestrutura e aplicativos entre recursos
 na nuvem e recursos existentes que não se encontram na nuvem. O método mais comum de implantação híbrida é entre a nuvem e a infraestrutura local existente para estender e expandir a
 infraestrutura de uma organização na nuvem e, ao mesmo tempo, conectar os recursos da nuvem ao sistema interno.</p>
 
+<ul><li>Conecte recursos baseados na nuvem à infraestrutura on-premises.</li>
+<li>Integre recursos baseados na nuvem com aplicações de TI legadas.</li></ul>
+
+<p>Em uma implantação híbrida, os recursos baseados na nuvem ficam conectados à infraestrutura on-premises. Você pode adotar essa abordagem em várias situações. Por exemplo, você tem aplicações legadas que são melhor mantidas on-premises ou as regulamentações governamentais exigem que sua empresa mantenha determinados registros on-premises.</p>
+
+<p>Suponha que uma empresa queira usar serviços de nuvem que podem automatizar o processamento e a análise de dados em batch. No entanto, a empresa tem vários aplicativos legados que são mais adequados no local e que não serão migrados para a nuvem. Com uma implantação híbrida, a empresa conseguiria manter os aplicativos legados no local enquanto se beneficiaria dos serviços de dados e análises executados na nuvem.</p>
+
+
 ### Infraestrutura
 <p>A implantação de recursos no local, usando ferramentas de virtualização e gerenciamento de recursos, às vezes é chamada de nuvem privada. A implantação local não oferece muitos dos
 benefícios da computação em nuvem, mas às vezes é procurada por sua capacidade de fornecer recursos dedicados. Na maioria dos casos, esse modelo de implantação é o mesmo da <a href="https://aws.amazon.com/pt/hybrid/services/#Use_case.3A_Cloud_services_on-premises" target="_blank">infraestrutura</a> de TI legada, ao mesmo tempo em que usa tecnologias de gerenciamento e virtualização de aplicativos para tentar aumentar a utilização de recursos.</p>
+
+<p>Implantação On-Promises </p>
+<li>Implante recursos usando ferramentas de virtualização e gerenciamento de recursos.</li>
+<li>Aumente a utilização de recursos usando tecnologias de virtualização e gerenciamento de aplicações.</li>
+
+## Beneficios da computação em nuvem
+
+<p>Considere por que uma empresa adota determinada abordagem de computação em nuvem para atender às necessidades de negócios.</p>
+
+### Troque despesas iniciais por despesas Variáveis
+
+<p>Ao adotar uma abordagem de computação em nuvem com o benefício de despesas variáveis, as empresas podem implementar soluções inovadoras enquanto economizam custos.</p>
+
+### Pare de gastar dinheiro para executar data centers
+
+<p>A computação em data centers costuma exigir que você gaste mais dinheiro e tempo gerenciando a infraestrutura e os servidores.</p> 
+<p>Um benefício da computação em nuvem é poder se concentrar menos nessas tarefas e mais nas aplicações e clientes.</p>
+
+### Pare de tentar adivinhar a capacidade
+
+<p>Com a computação em nuvem, você não precisa prever a capacidade de infraestrutura necessária antes de implantar uma aplicação.
+Por exemplo, você pode iniciar instâncias do Amazon EC2 quando necessário e pagar apenas pelo tempo de computação que usar. Em vez de pagar por recursos não usados ou ter que lidar com capacidade limitada, você pode acessar apenas a capacidade necessária. Você também pode aumentar ou reduzir a capacidade em resposta à demanda.</p>
+
+### Beneficie-se de grandes economias de escala
+
+<p>O uso da computação em nuvem permite obter um custo variável menor ao que você conseguiria por conta própria.</p>
+<p>Como o uso de centenas de milhares de clientes pode ser agregado na nuvem, provedores como a AWS podem alcançar enormes economias de escala. A economia de escala se transforma em pagamento conforme o uso com preços mais baixos. </p>
+
+### Aumentar a velocidade e a agilidade
+<p>A flexibilidade da computação em nuvem facilita o desenvolvimento e a implantação de aplicações.</p>
+<p>Essa flexibilidade permite mais tempo para experimentar e inovar. Ao fazer a computação em data centers, pode levar semanas para obter os novos recursos de que você precisa. Em comparação, a computação em nuvem permite que você acesse novos recursos em poucos minutos.</p>
+
+### Ter alcance global em minutos
+<p>A presença global da nuvem AWS permite que você implante aplicações para clientes em todo o mundo rapidamente, ao mesmo tempo que oferece baixa latência. Isso significa que, mesmo se você estiver em uma parte do mundo diferente de seus clientes, eles poderão acessar os seus aplicativos com atrasos mínimos.</p>
 
 # Infraestrutura global
 <p>A Nuvem AWS <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank">infraestrutura</a> é construída em torno Regiões da AWS de zonas de disponibilidade.
@@ -137,13 +195,9 @@ que são mais altamente disponíveis, tolerantes a falhas e escaláveis do que s
 ## Segurança
 <p>A <a href="https://aws.amazon.com/pt/security/" target="_blank">segurança na nuvem</a> AWS é a maior prioridade. À medida que as organizações adotam a escalabilidade e a flexibilidade da nuvem, a AWS as ajuda a transformar segurança, identidade e conformidade em importantes facilitadores de negócios. A AWS incorpora a segurança no núcleo de nossa infraestrutura de nuvem e oferece serviços básicos para ajudar as organizações a atender aos
 seus requisitos exclusivos de segurança na nuvem.</p>
-<p>Como um cliente da AWS, você se beneficiará de um datacenter e uma arquitetura de rede criados para atender os requisitos da maioria das organizações com exigências de segurança. A segurança
-na nuvem é muito parecida com a segurança em seus data centers locais, mas sem os custos de manutenção de instalações e hardware. Na nuvem, você não precisa gerenciar servidores físicos ou
-dispositivos de armazenamento. Em vez disso, você usa ferramentas de segurança baseadas em software para monitorar e proteger o fluxo de informações que entram e saem dos seus recursos de
-nuvem.</p>
+<p>Como um cliente da AWS, você se beneficiará de um datacenter e uma arquitetura de rede criados para atender os requisitos da maioria das organizações com exigências de segurança. A segurança na nuvem é muito parecida com a segurança em seus data centers locais, mas sem os custos de manutenção de instalações e hardware. Na nuvem, você não precisa gerenciar servidores físicos ou dispositivos de armazenamento. Em vez disso, você usa ferramentas de segurança baseadas em software para monitorar e proteger o fluxo de informações que entram e saem dos seus recursos de nuvem.</p>
 <p>Uma vantagem disso Nuvem AWS é que ele permite que você escale e inove, mantendo um ambiente seguro e pagando somente pelos serviços que você usa. Isso significa que você pode ter a segurança de que precisa a um custo menor do que em um ambiente local.</p>
-<p>Como AWS cliente, você herda todas as melhores práticas de AWS políticas, arquitetura e processos operacionais criados para satisfazer os requisitos de nossos clientes mais sensíveis à segurança.
-Obtenha a flexibilidade e a agilidade de que você precisa nos controles de segurança.</p>
+<p>Como AWS cliente, você herda todas as melhores práticas de AWS políticas, arquitetura e processos operacionais criados para satisfazer os requisitos de nossos clientes mais sensíveis à segurança. Obtenha a flexibilidade e a agilidade de que você precisa nos controles de segurança.</p>
 <p>Nuvem AWS permite um modelo de responsabilidade compartilhada. Enquanto AWS gerencia a segurança da nuvem, você é responsável pela segurança na nuvem. <a href="https://www.youtube.com/watch?v=_2HFqANE4gw&ab_channel=AmazonWebServices" target="_blank">Isso significa que você mantém o controle da segurança </a> que escolhe implementar para proteger seu próprio conteúdo, plataforma, aplicativos, sistemas e redes da mesma forma que faria em um data center local.
 AWS fornece orientação e experiência por meio de recursos on-line, pessoal e parceiros.</p>
 <p>AWS fornece recomendações sobre problemas atuais, além de você ter a oportunidade de trabalhar com eles AWS quando encontrar problemas de segurança.
@@ -158,6 +212,27 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 
 ## Conformidade
 <p>A <a href="https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-risk-and-compliance/welcome.html" target="_blank">conformidade com a nuvem da AWS </a>ajuda você a entender os controles robustos em vigor AWS para segurança e proteção de dados na nuvem. A conformidade é uma responsabilidade compartilhada entre o cliente AWS e você pode visitar o <a href="https://aws.amazon.com/pt/compliance/shared-responsibility-model/" target="_blank">Modelo de Responsabilidade Compartilhada</a> para saber mais. Os clientes podem se sentir confiantes em operar e desenvolver com base nos controles de segurança AWS usados em sua infraestrutura.</p>
+
+# Computação
+<p>O <a href="https://aws.amazon.com/pt/ec2/" target="_blank">Amazon Elastic Compute Cloud (Amazon EC2)</a> fornece capacidade computacional segura e redimensionável na nuvem como instâncias do Amazon EC2.</p>
+
+<p>Imagine que você é responsável pela arquitetura dos recursos de sua empresa e precisa dar suporte a novos sites. Com os recursos on-premises tradicionais, você precisa fazer o seguinte:</p>
+
+<ul>
+<li> Gastar dinheiro antecipadamente para comprar o hardware.</li>
+<li> Aguardar até que os servidores sejam entregues para você.</li>
+<li> Instalar os servidores em seu data center físico.</li>
+<li> Fazer todas as configurações necessárias.</li>
+</ul>
+  
+<p>Em comparação, com uma instância do Amazon EC2, você pode usar um servidor virtual para executar aplicações na nuvem AWS.</p>
+
+<ul>
+<li>Você pode provisionar e iniciar uma instância do Amazon EC2 em minutos.</li>
+<li>Você pode parar de usar a instância quando terminar de executar uma carga de trabalho.</li>
+<li>Você paga apenas pelo tempo de computação em que uma instância está em execução, não quando ela é interrompida ou terminada.</li>
+<li>Você pode economizar custos pagando apenas pela capacidade do servidor necessária ou desejada.</li>
+</ul>
 
 
 
