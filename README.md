@@ -38,6 +38,9 @@
         - [Savings Plans da instâncias do EC2](#Savings-Plans-da-instâncias-do-EC2)
         - [Instâncias spot](#Instâncias-spot)
         - [Hosts dedicados](#Hosts-dedicados)
+    - [Dimensionamento](#Dimensionamento)
+        - [Amazon EC2 Auto Scaling](#Amazon-EC2-Auto-Scaling)
+
 
 
 
@@ -386,7 +389,7 @@ Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser u
 <p>Os hosts dedicados são servidores físicos com capacidade de instância do Amazon EC2 totalmente dedicada ao uso do cliente</p>
 <p>Você pode usar suas licenças de software por soquete, por núcleo ou por VM para manter a conformidade da licença. Você pode adquirir hosts dedicados sob demanda e reservas de hosts dedicados. De todas as opções do Amazon EC2 que foram abordadas, os hosts dedicados são os mais caros.</p>
 
-###Teste de conhecimento
+### Teste de conhecimento
 
 <p>Qual opção de preço do Amazon EC2 oferece um desconto quando você especifica um número de instâncias do EC2 para executar um sistema operacional, família e tamanho de instância e tenancy específicos em uma Região?</p>
 
@@ -405,4 +408,27 @@ Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser u
     <li>Instâncias reservadas</li>
 </ul>
 
+## Dimensionamento
 
+<p>O dimensionamento significa começar apenas com os recursos necessários e projetar a arquitetura para responder automaticamente às alterações de demanda, fazendo aumentos ou reduções de quantidade. Como resultado, você paga apenas pelos recursos que usa. Você não precisa se preocupar com a falta de capacidade de computação para atender às necessidades dos clientes.</p>
+
+## Amazon EC2 Auto Scaling
+<p>Se você já tentou acessar um site que não carregava e atingiu o tempo limite algumas vezes, ele pode ter recebido mais solicitações do que conseguia atender. Essa situação é semelhante a esperar em uma longa fila em uma cafeteria quando há apenas um barista disponível para registrar os pedidos dos clientes. <br>
+O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda da aplicação. Ao fazer auto scaling das instâncias, aumentando ou reduzindo a quantidade conforme a necessidade, você tem maior percepção de disponibilidade de aplicações.</p>
+<p>No Amazon EC2 Auto Scaling, há duas abordagens disponíveis: scaling dinâmico e scaling preditivo.</p>
+
+<ul>
+    <li>O scaling dinâmico responde às alterações na demanda.</li>
+    <li>O scaling preditivo programa automaticamente o número correto de instâncias do Amazon EC2 com base na demanda prevista.</li>
+</ul>
+
+> [!NOTA]
+> Para dimensionar mais rapidamente, você pode combinar o scaling dinâmico e preditivo.
+
+### Exemplo: Amazon EC2 Auto Scaling
+<p>Já que na nuvem a capacidade computacional é um recurso programático, você pode adotar uma abordagem mais flexível para o problema de scaling. Ao adicionar o Amazon EC2 Auto Scaling a uma aplicação, você poderá adicionar novas instâncias à aplicação quando for necessário e terminá-las quando não for mais necessário. <br>
+Suponha que você esteja se preparando para iniciar uma aplicação em instâncias do Amazon EC2. Ao configurar o tamanho do seu grupo do Auto Scaling, você pode definir o número mínimo de instâncias do Amazon EC2 como sendo um. Isso significa que, em qualquer momento, precisa haver pelo menos uma instância do Amazon EC2 em execução.</p>
+
+<picture>
+(source srcset="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1702911600/ohN5DMbTigjSTqI61m3SGQ/tincan/938093_1698984874_o_1he9k000612o1s7k1td9nt7mebb_zip/assets/wnTEwLoRYpZb_4BJ_RwJfS7GUeUFgRe6x.png")
+</picture>
