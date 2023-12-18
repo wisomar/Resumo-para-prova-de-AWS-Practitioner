@@ -25,6 +25,19 @@
        - [Benefícios da AWS segurança](#Benefícios-da-AWS-segurança)
     - [Conformidade](#Conformidade)
 - [Computação](#Computação)
+    - [Amazon Elastic Compute Cloud (Amazon EC2)](#Amazon-Elastic-Compute-Cloud (Amazon EC2))
+        - [Tipos de instâncias do Amazon EC2](#Tipos-de-instâncias-do-Amazon-EC2)
+        - [Instâncias de uso geral](#Instacias-de-uso-geral)
+        - [Instâncias otimizadas para computação](#Instâncias-otimizadas-para-computação)
+        - [Instâncias otimizadas para memória](#Instâncias-otimizadas-para-memória)
+        - [Instâncias de computação acelerada](#Instâncias-de-computação-acelerada)
+        - [Instâncias otimizadas para armazenamento](#Instâncias-otimizadas-para-armazenamento)
+    - [Definição de preços do Amazon EC2](#Definição-de-preços-do-Amazon-EC2)
+        - [Sob demanda](#Sob-demanda)
+        - [Instâncias reservadas](#Instâncias-reservadas)
+        - [Savings Plans da instâncias do EC2](#Savings-Plans-da-instâncias-do-EC2)
+        - [Instâncias spot](#Instâncias-spot)
+        - [Hosts dedicados](#Hosts-dedicados)
 
 
 
@@ -214,6 +227,9 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 <p>A <a href="https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-risk-and-compliance/welcome.html" target="_blank">conformidade com a nuvem da AWS </a>ajuda você a entender os controles robustos em vigor AWS para segurança e proteção de dados na nuvem. A conformidade é uma responsabilidade compartilhada entre o cliente AWS e você pode visitar o <a href="https://aws.amazon.com/pt/compliance/shared-responsibility-model/" target="_blank">Modelo de Responsabilidade Compartilhada</a> para saber mais. Os clientes podem se sentir confiantes em operar e desenvolver com base nos controles de segurança AWS usados em sua infraestrutura.</p>
 
 # Computação
+
+## Amazon Elastic Compute Cloud (Amazon EC2)
+
 <p>O <a href="https://aws.amazon.com/pt/ec2/" target="_blank">Amazon Elastic Compute Cloud (Amazon EC2)</a> fornece capacidade computacional segura e redimensionável na nuvem como instâncias do Amazon EC2.</p>
 
 <p>Imagine que você é responsável pela arquitetura dos recursos de sua empresa e precisa dar suporte a novos sites. Com os recursos on-premises tradicionais, você precisa fazer o seguinte:</p>
@@ -234,7 +250,159 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 <li>Você pode economizar custos pagando apenas pela capacidade do servidor necessária ou desejada.</li>
 </ul>
 
+## Tipos de instâncias do Amazon EC2
 
+<a href="https://aws.amazon.com/pt/ec2/instance-types/" target="_blank">Os tipos de instâncias do Amazon EC2</a> são otimizados para tarefas diferentes. Ao selecionar um tipo de instância, considere as necessidades específicas de suas cargas de trabalho e suas aplicações. Isso pode incluir requisitos para recursos de computação, memória ou armazenamento.
 
+### Instancias de uso geral
+
+<p>As instâncias de uso geral equilibram os recursos de computação, memória e rede. Você pode usá-las para diversas cargas de trabalho, como:</p>
+
+<ul>
+   <li>servidores de aplicações</li>
+   <li>servidores de jogos</li>
+   <li>servidores de back-end para aplicações empresariais</li>
+   <li>bancos de dados pequenos e médios</li>
+</ul>
+<p>Suponha que uma aplicação precise de recursos de computação, de memória e de rede no mesmo nível. Você pode executar esse aplicativo em uma instância de uso geral porque ele não precisa de otimização em nenhuma área de recurso único.</p>
+
+### Instâncias otimizadas para computação 
+<p>As instâncias otimizadas para computação são ideais para aplicações de computação que usam processadores de alto desempenho. Assim como as instâncias de uso geral, você pode usar as instâncias otimizadas para computação para cargas de trabalho, como servidores da web, de aplicações e de jogos.</p>
+
+<p>No entanto, a diferença é que as aplicações otimizadas para computação são ideais para servidores web de alto desempenho, servidores de aplicações de computação intensiva e servidores de jogos dedicados. Você também pode usar instâncias otimizadas para computação para cargas de trabalho de processamento em lote, com o processamento de muitas transações em um único grupo.</p>
+
+### Instâncias otimizadas para memória
+<p>As instâncias otimizadas para memória têm desempenho rápido para cargas de trabalho que processam grandes conjuntos de dados na memória. Na computação, a memória é uma área de armazenamento temporário. Ela contém todos os dados e instruções de que uma unidade central de processamento (CPU) precisa para conseguir realizar ações. Antes que um programa de computador ou aplicativo possa ser executado, ele é carregado do armazenamento para a memória. Esse processo de pré-carregamento dá à CPU acesso direto ao programa de computador.</p>
+
+<p>Suponha que uma carga de trabalho exige o pré-carregamento de muitos dados antes de executar uma aplicação. Esse cenário pode ser de um banco de dados de alto desempenho ou uma carga de trabalho que envolva a execução de processamento em tempo real de uma grande quantidade de dados não estruturados. Nesses tipos de casos de uso, considere usar uma instância otimizada para memória. As instâncias otimizadas para memória permitem que você execute cargas de trabalho com altas necessidades de memória e tenha um ótimo desempenho.</p>
+
+### Instâncias de computação acelerada
+<P>As instâncias de computação acelerada usam aceleradoras de hardware, ou coprocessadores, para executar algumas funções de maneira mais eficiente do que é possível em um software executado em CPUs. Exemplos dessas funções são cálculos de números com vírgula flutuante, processamento de gráficos e correspondência de padrões de dados.</P>
+
+<p>Na computação, uma aceleradora de hardware é um componente que agiliza o processamento de dados. As instâncias de computação acelerada são ideais para cargas de trabalho, como aplicativos gráficos e streaming de jogos e de aplicativos.</p>
+
+### Instâncias otimizadas para armazenamento 
+<p>As instâncias otimizadas para armazenamento são projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local. Exemplos de cargas de trabalho adequadas para as instâncias otimizadas para armazenamento são sistemas de arquivos distribuídos, aplicações de data warehouse e sistemas de processamento de transação on-line (OLTP) de alta frequência.</p>
+
+<p>Na computação, o termo operações de entrada/saída por segundo (IOPS) é uma métrica que mensura o desempenho de um dispositivo de armazenamento. Ela indica quantas operações diferentes de entrada ou saída um dispositivo pode executar em um segundo. As instâncias otimizadas para armazenamento foram projetadas para fornecer dezenas de milhares de IOPS aleatórias e de baixa latência para aplicativos. </p>
+
+<p>Imagine as operações de entrada como dados colocados em um sistema, como registros inseridos em um banco de dados. Uma operação de saída são dados gerados por um servidor. Um exemplo de saída pode ser a análise realizada nos registros em um banco de dados. Se você tiver um aplicativo com alto requisito de IOPS, uma instância otimizada para armazenamento poderá fornecer melhor desempenho em relação a outros tipos de instâncias não otimizados para esse tipo de caso de uso.</p>
+
+#### Teste de conhecimento:
+
+<p>Qual tipo de instância do Amazon EC2 é adequado para aplicações de data warehousing?</p>
+
+<ul>
+    <li>Otimizada para memória</li>
+    <li>&check;Otimizada para armazenamento</li>
+    <li>Uso geral</li>
+    <li>Otimizada para computação</li>
+</ul>
+
+<p>Qual tipo de instância do Amazon EC2 equilibra os recursos de computação, memória e rede?</p>
+
+<ul>
+    <li>Otimizada para memória</li>
+    <li>Otimizada para armazenamento</li>
+    <li>&check;Uso geral</li>
+    <li>Otimizada para computação</li>
+</ul>
+
+<p>Qual tipo de instância do Amazon EC2 é ideal para bancos de dados de alto desempenho?</p>
+
+<ul>
+    <li>&check;Otimizada para memória</li>
+    <li>Otimizada para armazenamento</li>
+    <li>Uso geral</li>
+    <li>Otimizada para computação</li>
+</ul>
+
+<p>Qual tipo de instância do Amazon EC2 oferece processadores de alto desempenho?</p>
+
+ <ul>
+     <li>Otimizada para memória</li>
+     <li>Otimizada para armazenamento</li>
+     <li>Uso geral</li>
+     <li>&check;Otimizada para computação</li>
+ </ul>   
+
+## Definição de preços do Amazon EC2
+
+<p>Com o Amazon EC2, você paga apenas pelo tempo de computação que usar. O Amazon EC2 oferece diversas opções de preço para diferentes casos de uso. Por exemplo, se o seu caso de uso tolerar interrupções, você poderá economizar com as instâncias spot. Você também pode economizar assumindo um compromisso antecipadamente e bloqueando um nível mínimo de uso com instâncias reservadas.</p>
+
+### Sob demanda
+
+<p>Instâncias sob demanda são ideais para cargas de trabalho irregulares de curto prazo que não podem ser interrompidas. Custos antecipados ou contratos mínimos não se aplicam. As instâncias são executadas continuamente até que sejam interrompidas, e você paga apenas pelo tempo de computação usado.</p>
+<p>Exemplos de casos de uso para instâncias sob demanda são desenvolvimento e teste de aplicações e execução de aplicações com padrões de uso imprevisíveis. As instâncias sob demanda não são recomendadas para cargas de trabalho que duram um ano ou mais, porque essas cargas de trabalho podem ser mais econômicas usando instâncias reservadas.</p>
+
+### Instâncias reservadas
+
+<p>As instâncias reservadas são um desconto de cobrança aplicado ao uso de instâncias sob demanda na sua conta. Há dois tipos disponíveis de instância reservada:</p>
+
+<ul>
+    <li>Standard Reserved Instances</li>    
+    <li>Instâncias reservadas conversíveis</li> 
+</ul>
+
+<p>Você pode comprar Standard Reserved Instances e instâncias reservadas conversíveis por um período de vigência de 1 ou 3 anos. Você terá maior economia de custos com a opção de três anos.</p>
+
+<p>Standard Reserved Instances: essa opção será adequada se você souber o tipo e o tamanho da instância do EC2 de que precisa para suas aplicações com estado pronto e em qual Região da AWS planeja executá-las. As instâncias reservadas exigem que você declare as seguintes qualificações:</p>
+
+<ul>
+    <li>Tipo e tamanho da instância: Por exemplo, m5.xlarge</li>
+    <li>Descrição da plataforma (sistema operacional): Por exemplo, Microsoft Windows Server ou Red Hat Enterprise Linux</li>
+    <li>Tenancy: Tenancy-padrão ou dedicado</li>
+</ul>
+
+<p>Você tem a opção de especificar uma Zona de Disponibilidade para as instâncias reservadas do EC2. Se você usar essa especificação, vai obter a reserva de capacidade do EC2. Isso garante que a quantidade desejada de instâncias do EC2 estará disponível quando você precisar delas.</p>
+
+<p>Instâncias reservadas conversíveis: se você precisar executar suas instâncias do EC2 em diferentes Zonas de Disponibilidade ou diferentes tipos de instância, as instâncias reservadas conversíveis poderão ser adequadas para você. Observação: você negocia com um desconto maior quando precisa de flexibilidade para executar suas instâncias do EC2.</p>
+
+<p>No final de um período de vigência de instância reservada, você pode continuar usando a instância do Amazon EC2 sem interrupção. No entanto, são cobrados os preços de instâncias sob demanda até que um dos procedimentos a seguir seja feito:</p>
+
+<ul>
+    <li>Terminar a instância.</li>
+    <li>Adquirir uma nova instância reservada que corresponda aos atributos da instância (tamanho e família de instância, Região, plataforma e tenancy).</li>
+</ul>
+
+### Saving Plans da Instância do EC2
+
+<p>A AWS oferece Savings Plans para alguns serviços computacionais, incluindo o Amazon EC2. Os Savings Plans reduzem o custo da instância do EC2 quando você assume um compromisso de gasto por hora com uma família de instância e uma Região por um período de um ou três anos. Esse compromisso com o período de vigência resulta em uma economia de 72% em comparação com as taxas sob demanda. Qualquer uso até o compromisso é cobrado de acordo com o preço de Savings Plans com desconto (por exemplo, USD 10 por hora). Qualquer uso além do compromisso é cobrado de acordo com as taxas normais de instâncias sob demanda.</p>
+<p>Os Savings Plans de instância do EC2 serão uma boa opção se você precisar de flexibilidade no uso do Amazon EC2 durante o período de vigência do compromisso. Você tem o benefício de reduzir o custo de execução de qualquer instância do EC2 em uma família na Região escolhida (por exemplo, uso de M5 no Norte da Virgínia), independentemente da Zona de Disponibilidade, tamanho da instância, sistema operacional ou tenancy. A economia com os Savings Plans da instância do EC2 é semelhante à economia das Standard Reserved Instances.</p>
+<p>Ao contrário das instâncias reservadas, no entanto, você não precisa especificar antecipadamente qual tipo e tamanho da instância do EC2 (por exemplo, m5.xlarge), sistema operacional e tenancy para receber o desconto. Além disso, você não precisa se comprometer com um determinado número de instâncias do EC2 durante um período de vigência de um ou três anos. Além disso, os Savings Plans da instância do EC2 não incluem uma opção de reserva de capacidade do EC2.</p>
+<p>
+Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser usado para visualizar, entender e gerenciar seus custos e uso da AWS ao longo do tempo. Se você está considerando as opções dos Savings Plans, use o AWS Cost Explorer para analisar seu uso do Amazon EC2 nos últimos 7, 30 ou 60 dias. O AWS Cost Explorer também dá recomendações personalizadas para Savings Plans. Essas recomendações calculam o quanto você pode economizar mensalmente com o Amazon EC2, com base no uso anterior do Amazon EC2 e no valor do compromisso por hora em um Savings Plan de um ou três anos.</p>
+
+### Instãcias spot
+
+<p>As instâncias spot são ideais para cargas de trabalho com horários de início e término flexíveis ou que toleram interrupções. As instâncias spot usam a capacidade de computação não utilizada do Amazon EC2 e têm até 90% de desconto em relação aos preços das instâncias sob demanda.</p>
+
+<p>Suponha que você tenha um trabalho de processamento em segundo plano que pode ser iniciado e interrompido conforme for necessário (por exemplo, para uma pesquisa de cliente). Você deseja iniciar e interromper o trabalho de processamento sem afetar as operações gerais de seus negócios. Se você fizer uma solicitação spot e a capacidade do Amazon EC2 estiver disponível, a instância spot será iniciada. No entanto, se você fizer uma solicitação spot e a capacidade do Amazon EC2 estiver indisponível, a solicitação não terá sucesso até que a capacidade seja disponibilizada. A capacidade indisponível pode atrasar o início do trabalho de processamento em segundo plano.</p>
+
+<p>As instâncias spot que você iniciar poderão ser interrompidas se não houver mais capacidade disponível ou se a demanda por essas instâncias aumentar. Isso pode não representar problemas para o trabalho de processamento em segundo plano. No entanto, no exemplo anterior de desenvolvimento e teste de aplicativos, é provável que você queira evitar interrupções inesperadas. Portanto, escolha um tipo de instância do EC2 diferente que seja ideal para essas tarefas.</p>
+
+### Hosts Dedicados
+
+<p>Os hosts dedicados são servidores físicos com capacidade de instância do Amazon EC2 totalmente dedicada ao uso do cliente</p>
+<p>Você pode usar suas licenças de software por soquete, por núcleo ou por VM para manter a conformidade da licença. Você pode adquirir hosts dedicados sob demanda e reservas de hosts dedicados. De todas as opções do Amazon EC2 que foram abordadas, os hosts dedicados são os mais caros.</p>
+
+###Teste de conhecimento
+
+<p>Qual opção de preço do Amazon EC2 oferece um desconto quando você especifica um número de instâncias do EC2 para executar um sistema operacional, família e tamanho de instância e tenancy específicos em uma Região?</p>
+
+<ul>
+    <li>Instâncias reservadas conversíveis</li>
+    <li>Savings Plans da instância do EC2</li>
+    <li>Instâncias spot</li>
+    <li>&check;Standard Reserved Instances</li>
+</ul>
+
+<p>Qual opção de preço do Amazon EC2 oferece um desconto quando você assume um compromisso de gasto por hora com uma família de instância e uma Região por um período de vigência de um ou três anos?</p>
+<ul>
+    <li>Sob demanda</li>
+    <li>&check;Savings Plans da instância do EC2</li>
+    <li>Instâncias spot</li>
+    <li>Instâncias reservadas</li>
+</ul>
 
 
