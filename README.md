@@ -40,6 +40,12 @@
         - [Hosts dedicados](#Hosts-dedicados)
     - [Dimensionamento](#Dimensionamento)
         - [Amazon EC2 Auto Scaling](#Amazon-EC2-Auto-Scaling)
+    - [Direcionamento de tráfego com o Elastic Load Balancing (ELB)](#Direcionamento-de-tráfego-com-o-Elastic-Load-Balancing (ELB))
+- [Sistema de mensagens e enfileiramento](#Sistema-de-mensagens-e-enfileiramento)
+    - [Aplicações monolíticas e microsserviços](#Aplicações-monolíticas-e-microsserviços)
+        - [Amazon Simple Notification Service (Amazon SNS)](#Amazon-Simple-Notification-Service (Amazon SNS))
+        - [Amazon Simple Queue Service (Amazon SQS)](#Amazon-Simple-Queue-Service (Amazon SQS))
+- [Computação sem servidor](#Computação-sem-servidor)
 
 
 
@@ -430,5 +436,115 @@ O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente i
 Suponha que você esteja se preparando para iniciar uma aplicação em instâncias do Amazon EC2. Ao configurar o tamanho do seu grupo do Auto Scaling, você pode definir o número mínimo de instâncias do Amazon EC2 como sendo um. Isso significa que, em qualquer momento, precisa haver pelo menos uma instância do Amazon EC2 em execução.</p>
 
 <picture>
-(source srcset="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1702911600/ohN5DMbTigjSTqI61m3SGQ/tincan/938093_1698984874_o_1he9k000612o1s7k1td9nt7mebb_zip/assets/wnTEwLoRYpZb_4BJ_RwJfS7GUeUFgRe6x.png")
+    <source media="(min-width: 320px)" srcset="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1702911600/ohN5DMbTigjSTqI61m3SGQ/tincan/938093_1698984874_o_1he9k000612o1s7k1td9nt7mebb_zip/assets/wnTEwLoRYpZb_4BJ_RwJfS7GUeUFgRe6x.png">
 </picture>
+
+<p>Ao criar um grupo do Auto Scaling, você pode definir o número mínimo de instâncias do Amazon EC2. A capacidade mínima é o número de instâncias do Amazon EC2 que são iniciadas imediatamente após a criação do grupo do Auto Scaling. Neste exemplo, o grupo do Auto Scaling tem uma capacidade mínima de uma instância do Amazon EC2.</p>
+
+<p>Em seguida, você pode definir a capacidade desejada como duas instâncias do Amazon EC2, mesmo que a aplicação precise de um mínimo de uma única instância do Amazon EC2 para que seja executada.</p>
+
+> ![NOTA]
+> Se você não especificar o número desejado de instâncias do Amazon EC2 em um grupo do Auto Scaling, a capacidade desejada se tornará a capacidade mínima regular.
+
+<p>A terceira configuração que você pode definir em um grupo do Auto Scaling é a capacidade máxima. Por exemplo, você pode configurar o grupo do Auto Scaling para aumentar a quantidade em resposta à demanda elevada, mas apenas para um máximo de quatro instâncias do Amazon EC2. <br>
+Como o Amazon EC2 Auto Scaling usa instâncias do Amazon EC2, você vai pagar apenas pelas instâncias que usar, e somente quando elas forem usadas. Você agora tem uma arquitetura econômica que proporciona a melhor experiência do cliente e ao mesmo tempo reduz custos.</p>
+
+## Direcionamento de tráfego com o Elastic Load Balancing (ELB)
+
+<p>O Elastic Load Balancing é o serviço da AWS que distribui automaticamente o tráfego de entrada de aplicações entre vários recursos, como instâncias do Amazon EC2. <br>
+Um balanceador de carga atua como um ponto único de contato para todo o tráfego na web de entrada para o grupo do Auto Scaling. Isso significa que, à medida que você adiciona ou remove instâncias do Amazon EC2 em resposta à quantidade de tráfego de entrada, essas solicitações são direcionadas para o balanceador de carga primeiro. Em seguida, as solicitações se espalham por vários recursos que lidarão com elas. Por exemplo, se você tiver várias instâncias do Amazon EC2, o Elastic Load Balancing distribuirá a carga de trabalho entre elas para que nenhuma instância tenha que carregar a maior parte.</p>
+<p>Embora o Elastic Load Balancing e o Amazon EC2 Auto Scaling sejam serviços separados, eles trabalham juntos para que as aplicações executadas no Amazon EC2 tenham alto desempenho e disponibilidade.</p>
+
+<picture>
+    <source media="(min-width: 320px)" srcset="https://www.google.com/url?sa=i&url=https%3A%2F%2Faws.amazon.com%2Fko%2Fblogs%2Fkorea%2Fcategory%2Felastic-load-balancing%2F&psig=AOvVaw24j4ESUY7GASyerNi_dKd-&ust=1702992868485000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDDmoCNmYMDFQAAAAAdAAAAABAI">
+</picture>
+
+# Sistema de mensagens e enfileiramento
+
+## Aplicações monolíticas e microsserviços
+
+<p>As aplicações são formadas por vários componentes. Os componentes se comunicam entre si para transmitir dados, atender solicitações e manter o aplicativo em execução <br>
+Suponha que você tenha uma aplicação com componentes com acoplamento forte. Esses componentes podem ser bancos de dados, servidores, interface do usuário, lógica de negócios e assim por diante. Esse tipo de arquitetura pode ser considerado uma aplicação monolítica. <br>
+Nessa abordagem sobre a arquitetura da aplicação, se um único componente falhar, vai ocorrer falha de outros componentes e possivelmente de toda a aplicação.</p>
+
+>![NOTA] Para manter a disponibilidade da aplicação quando um único componente falha, você pode projetar essa aplicação com uma abordagem de microsserviços.
+
+<p>Em uma abordagem de microsserviços, os componentes da aplicação têm um acoplamento fraco. Neste caso, se um único componente falhar, os outros componentes continuarão funcionando porque estarão em comunicação uns com os outros. O acoplamento fraco evita a falha completa do aplicativo.</p>
+<p>Ao projetar aplicações na AWS, você pode adotar uma abordagem de microsserviços com serviços e componentes que cumprem funções diferentes. Dois serviços facilitam a integração de aplicativos: Amazon Simple Notification Service (Amazon SNS) e Amazon Simple Queue Service (Amazon SQS).</p>
+
+### Amazon Simple Notification Service (Amazon SNS)
+<p>O <a href="https://aws.amazon.com/pt/sns/" target="_blank">Amazon Simple Notification Service (Amazon SNS)</a> é um serviço de publicação/assinatura. Usando tópicos do Amazon SNS, um editor publica mensagens para assinantes. Isso é semelhante à cafeteria: o operador de caixa entrega os pedidos ao barista que, por sua vez, prepara as bebidas.<br>
+No Amazon SNS, os assinantes podem ser servidores da web, endereços de e-mail, funções do AWS Lambda ou várias outras opções.</p>
+
+>![Resumo]
+>Embora esses exemplos da cafeteria envolvam assinantes que são pessoas, no Amazon SNS, os assinantes podem ser servidores da web, endereços de e-mail, funções do AWS Lambda ou várias outras opções.
+
+
+### Amazon Simple Queue Service (Amazon SQS)
+<p>O Amazon Simple Queue Service (Amazon SQS) é um serviço de enfileiramento de mensagens. <br>
+Use o Amazon SQS para enviar, armazenar e receber mensagens entre componentes de software, sem perder mensagens nem precisar que outros serviços estejam disponíveis. No Amazon SQS, uma aplicação envia mensagens para uma fila. Um usuário ou serviço recupera uma mensagem da fila, processa-a e a apaga da fila.</p>
+
+>![Resumo]
+>Para aplicações e microsserviços desacoplados, o Amazon SQS permite enviar, armazenar e recuperar mensagens entre componentes.
+>Essa abordagem desacoplada permite que os componentes separados funcionem de modo mais eficiente e independente.
+
+#### Teste de conhecimento
+<p>Qual serviço da AWS é a melhor opção para publicar mensagens para assinantes?</p>
+<ul>
+    <li>Amazon Simple Queue Service (Amazon SQS)</li>
+    <li>Amazon EC2 Auto Scaling</li>
+    <li>&check;Amazon Simple Notification Service (Amazon SNS)</li>
+    <li>Elastic Load Balancing</li>
+</ul>
+
+# Computação sem servidor
+
+<p>No início , você conheceu o Amazon EC2, um serviço que permite executar servidores virtuais na nuvem. Para executar aplicações no Amazon EC2, faça o seguinte:</p>
+<ul>
+    <li>Provisione as instâncias (servidores virtuais).</li>
+    <li>Faça upload do código.</li>
+    <li>Continue gerenciando as instâncias enquanto a aplicação está em execução.</li>
+</ul>
+
+<p>O termo “sem servidor” significa que o código é executado em servidores, sem que você precise provisionar ou gerenciar esses servidores. Com a computação sem servidor, você pode se concentrar na inovação de novos produtos e recursos em vez de manter servidores.<br>
+Outro benefício da computação sem servidor é a flexibilidade de dimensionar aplicações sem servidor automaticamente. A computação sem servidor pode ajustar a capacidade de aplicativos modificando as unidades de consumo, como taxa de transferência e memória.</p>
+<p>Um serviço da AWS para computação sem servidor é o AWS Lambda.</p>
+
+## AWS Lambda
+<p>O <a href="https://aws.amazon.com/pt/lambda/" target="_blank">AWS Lambda</a> é um serviço que permite a execução de códigos sem a necessidade de provisionar ou gerenciar servidores. </p>
+
+<p>Ao usar o AWS Lambda, você paga apenas pelo tempo de computação consumido. As cobranças se aplicam ao tempo em que o código fica em execução. Você pode executar códigos para praticamente qualquer tipo de aplicativo ou serviço de back-end sem a necessidade de qualquer gerenciamento.</p>
+
+<p>Por exemplo, uma função simples do Lambda é o redimensionamento automático de imagens com o upload feito na nuvem AWS. Nesse caso, a função é acionada ao fazer upload de uma nova imagem.</p>
+
+#### Como o AWS Lambda funciona
+
+<ul>
+    <li>Você faz upload do código para o Lambda.</li>
+    <li>Você configura o código para ser acionado pelos eventos de uma origem como serviços da AWS, aplicações móveis ou endpoints HTTP.</li>
+    <li>O Lambda executa o código somente quando acionado.</li>
+    <li>Você paga apenas pelo tempo de computação que usar. No exemplo anterior de redimensionamento de imagens, você pagaria apenas pelo tempo de computação usado ao fazer upload de novas imagens. Fazer upload das imagens aciona o Lambda a executar o código da função de redimensionamento de imagem.</li>
+</ul>
+
+# Contêineres
+
+<p>Os contêineres são uma maneira comum de empacotar códigos, configurações e dependências da aplicação em um único objeto. Você também pode usar contêineres para processos e fluxos de trabalho nos quais há requisitos essenciais de segurança, confiabilidade e dimensionamento.</p>
+
+## Amazon Elastic Container Service (Amazon ECS)
+<p>O <a href="https://aws.amazon.com/pt/ecs/" target="_blank"> Amazon Elastic Container Service (Amazon ECS)</a> é um sistema de gerenciamento de contêineres altamente dimensionável e de alto desempenho que permite executar e dimensionar aplicações em contêineres na AWS. </p>
+<p>O Amazon ECS é compatível com os contêineres do Docker. O <a href="https://www.docker.com/" target="_blank"> Docker</a> é uma plataforma de software que permite criar, testar e implantar aplicações rapidamente. A AWS é compatível com c Docker Community Edition de código aberto e do Docker Enterprise Edition baseado em assinatura. Com o Amazon ECS, você pode usar chamadas de API para iniciar e interromper aplicativos ativados pelo Docker.</p>
+
+## Amazon Elastic Kubernetes Service (Amazon EKS)
+<p>O <a href="https://aws.amazon.com/pt/eks/" target="_blank">Amazon Elastic Kubernetes Service (Amazon EKS)</a> é um serviço totalmente gerenciado que você pode usar para executar o Kubernetes na AWS. </p>
+
+<p>O <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> é um software de código aberto que permite implantar e gerenciar aplicações em contêineres em grande escala. Uma grande comunidade de voluntários mantém o Kubernetes, e a AWS trabalha ativamente em conjunto com essa comunidade Kubernetes. Conforme novos recursos e funcionalidades são lançados para aplicativos Kubernetes, você pode facilmente aplicar essas atualizações aos aplicativos gerenciados pelo Amazon EKS.</p>
+
+## AWS Fargate
+<p>O <a href="https://aws.amazon.com/pt/fargate/" target="_blank">AWS Fargate</a> é um mecanismo de computação sem servidor para contêineres. Ele funciona com o Amazon ECS e o Amazon EKS. </p>
+
+<p>Com o AWS Fargate, você não precisa provisionar nem gerenciar servidores. O AWS Fargate gerencia sua infraestrutura de servidor para você. Você pode se concentrar em inovar e desenvolver seus aplicativos, pagando apenas pelos recursos necessários para executar os contêineres.</p>
+
+>[nota] Para saber mais sobre outros serviços e soluções, acesse <a href="https://aws.amazon.com/pt/products/compute/">Computação na AWS.</a>
+
+
+
