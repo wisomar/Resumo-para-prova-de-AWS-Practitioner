@@ -59,6 +59,12 @@
         - [Preços](#Preços)
     - [Zonas de disponibilidade](#Zonas-de-disponibilidade)
     - [Locais de borda](#Locais-de-borda)
+    - [Maneiras de interagir com os serviços da AWS](#Maneiras-de-interagir-com-os-serviços-da-AWS)
+        - [console de gerenciamento da AWS](#console-de-gerenciamento-da-AWS)
+        - [AWS Command Line Interface (AWS CLI)](#AWS-Command-Line-Interface-(AWS-CLI))
+        - [Kits de Desenvolvimento de Software (SDKs)](#Kits-de-Desenvolvimento-de-Software (SDKs))
+        - [AWS Elastic Beanstalk](#AWS-Elastic-Beanstalk)
+        - [AWS CloudFormation](#AWS-CloudFormation)
 
 
 
@@ -684,7 +690,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 <p>Um local de borda é um site que o Amazon CloudFront usa para armazenar cópias em cache do conteúdo mais próximo dos clientes para uma entrega mais rápida.</p>
 
 #### Origem
-<p>Suponha que os dados da sua empresa estejam armazenados no Brasil e que você tenha clientes que residem na china.Para entregar conteúdo e esses clientes, voc~e não precisa mover todo o conteúdo para uma das regiões chinesas</p>
+<p>Suponha que os dados da sua empresa estejam armazenados no Brasil e que você tenha clientes que residem na china.Para entregar conteúdo e esses clientes, você não precisa mover todo o conteúdo para uma das regiões chinesas</p>
 
 #### Local de borda
 
@@ -703,4 +709,16 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 #### Kits de Desenvolvimento de Software (SDKs)
 <p>Outra opção para acessar e gerenciar serviços da AWS são os Kits de Desenvolvimento de Software (SDKs). Os SDKs facilitam o uso dos serviços AWS por uma API projetada para sua linguagem de programação ou plataforma. Os SDKs permitem que você use serviços da AWS com suas aplicações ou crie aplicações totalmente novas que serão executados na AWS. <br> Para ajudar você a começar a usar SDKs, a AWS disponibiliza a documentação e um código de exemplo para cada linguagem de programação compatível. As linguagens de programação compatíveis são C++, Java, .NET e muito mais.</p>
 
+## AWS Elastic Beanstalk
+<P>Com o AWS Elastic Beanstalk, você envia definições de código e configuração, e o Elastic Beanstalk implanta os recursos necessários para executar as seguintes tarefas:</P>
+<ul>
+    <li>Ajustar capacidade</li>
+    <li>Balancear carga</li>
+    <li>Auto scaling</li>
+    <li>Monitorar o health da aplicação</li>
+</ul>
 
+## AWS CloudFormation
+
+<p>Com o AWS CloudFormation, você pode considerar sua infraestrutura como código. Isso significa que você pode criar um ambiente escrevendo linhas de código em vez de usar o console de gerenciamento da AWS para provisionar recursos individualmente.</p>
+<p>O AWS CloudFormation provisiona os recursos de maneira segura e repetível, permitindo que você crie frequentemente a infraestrutura e as aplicações sem precisar executar ações manuais. Ele determina quais são as operações mais adequadas para gerenciar sua pilha e reverte as alterações automaticamente se detecta erros.</p>
