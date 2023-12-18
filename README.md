@@ -46,6 +46,11 @@
         - [Amazon Simple Notification Service (Amazon SNS)](#Amazon-Simple-Notification-Service (Amazon SNS))
         - [Amazon Simple Queue Service (Amazon SQS)](#Amazon-Simple-Queue-Service (Amazon SQS))
 - [Computação sem servidor](#Computação-sem-servidor)
+    - [AWS Lambda](#AWS-Lambda)
+    - [Contêineres](#Contêineres)
+    - [Amazon Elastic Container Service (Amazon ECS)](#Amazon-Elastic-Container-Service (Amazon ECS))
+    - [Amazon Elastic Kubernetes Service (Amazon EKS)](#Amazon-Elastic-Kubernetes-Service (Amazon EKS))
+    - [AWS Fargate](#AWS-Fargate)
 
 
 
@@ -547,4 +552,69 @@ Outro benefício da computação sem servidor é a flexibilidade de dimensionar 
 >[nota] Para saber mais sobre outros serviços e soluções, acesse <a href="https://aws.amazon.com/pt/products/compute/">Computação na AWS.</a>
 
 
+##### Recursos adicionais
 
+<p>Para saber mais sobre os conceitos que foram explorados, consulte estes recursos.</p>
+<ul>
+    <li><a href="https://aws.amazon.com/pt/products/compute/>Computação na AWS">Computação na AWS </a></li>
+    <li><a href="https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/compute-services.html">Serviços computacionais da aws</a></li>
+    <li><a href="https://aws.amazon.com/pt/getting-started/decision-guides/serverless-or-kubernetes-on-aws-how-to-choose/">Dipe dive da categoria: sem servidor</a></li>
+    <li><a href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/ec2-reserved-instances.html">Instãncias reservadas do Amazon EC2</a></li>    
+    <li><a href="https://docs.aws.amazon.com/pt_br/savingsplans/latest/userguide/sp-applying.html">Como os Savings Plans se aplicam ao uso</a></li>    
+</ul>
+
+#### Teste seu conhecimento 
+
+<p>Você deseja usar uma instância do Amazon EC2 para uma carga de trabalho de processamento em lote. Qual seria o melhor tipo de instância do Amazon EC2 a ser usado?</p>
+
+<ul>
+    <li>Uso geral</li>
+    <li>Otimizada para memória</li>
+    <li>&check;Otimizada para computação</li>
+    <li>Otimizada para armazenamento</li>
+</ul>
+
+<p>Quais são as opções de duração do contrato para instâncias reservadas do Amazon EC2? (Selecione DUAS opções.)</p>
+
+<ul>
+    <li>&check;1 ano</li>
+    <li>2 anos</li>
+    <li>&check;3 anos</li>
+    <li>4 anos</li>
+    <li>5 anos</li>
+</ul>
+
+<p>Você tem uma carga de trabalho que será executada por um total de seis meses e consegue suportar interrupções. Qual seria a opção de compra mais econômica do Amazon EC2?</p>
+<ul>
+    <li>Instância reservada</li>
+    <li>&check;Instância spot</li>
+    <li>Instância dedicada</li>
+    <li>Instância sob demanda</li>
+</ul>
+
+<p>Qual processo é um exemplo do Elastic Load Balancing?</p>
+
+<ul>
+    <li>&check;Garantir que nenhuma instância única do Amazon EC2 tenha que suportar a carga de trabalho completa sozinha</li>
+    <li>Remover instâncias desnecessárias do Amazon EC2 quando a demanda está baixa</li>
+    <li>Adicionar uma segunda instância do Amazon EC2 durante a venda popular de uma loja on-line</li>
+    <li>Ajustar automaticamente o número de instâncias do Amazon EC2 para atender à demanda</li>
+</ul>
+
+>[nota] O Elastic Load Balancing é o serviço da AWS que distribui automaticamente o tráfego de entrada de aplicações entre vários recursos, como instâncias do Amazon EC2. Isso ajuda a garantir que nenhum recurso único seja usado em excesso.
+>As outras respostas são exemplos de Auto Scaling.
+
+<p>Você deseja implantar e gerenciar aplicativos em contêineres. Qual serviço você deve usar?</p>
+
+<ul>
+    <li>AWS Lambda</li>
+    <li>Amazon Simple Notification Service (Amazon SNS)</li>
+    <li>Amazon Simple Queue Service (Amazon SQS)</li>
+    <li>&check;Amazon Elastic Kubernetes Service (Amazon EKS)</li>
+</ul>
+
+>[nota] O Amazon EKS é um serviço totalmente gerenciado do Kubernetes. O Kubernetes é um software de código aberto que permite implantar e gerenciar aplicações em contêineres em grande escala.
+> <li>As outras respostas estão incorretas porque:</li>
+> <li>O AWS Lambda é um serviço que permite executar código sem provisionar nem gerenciar servidores.</li>
+> <li>O Amazon Simple Queue Service (Amazon SQS) é um serviço que permite enviar, armazenar e receber mensagens entre componentes de software por uma fila.</li>
+> <li>O Amazon Simple Notification Service (Amazon SNS) é um serviço de publicação/assinatura. Usando tópicos do Amazon SNS, um editor publica mensagens para assinantes.</li>
