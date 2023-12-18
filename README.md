@@ -51,6 +51,14 @@
     - [Amazon Elastic Container Service (Amazon ECS)](#Amazon-Elastic-Container-Service (Amazon ECS))
     - [Amazon Elastic Kubernetes Service (Amazon EKS)](#Amazon-Elastic-Kubernetes-Service (Amazon EKS))
     - [AWS Fargate](#AWS-Fargate)
+- [Infrestutura Global e Confiabilidade](#Infrestutura-Global-e-Confiabilidade)
+    - [Seleção de uma Região](#Seleção-de-uma-Região)
+        - [Conformidade com governança de dados e requistos legais](#Conformidade-com-governança-de-dados-e-requistos-legais)
+        - [Proximidade com os clientes](#Proximidade-com-os-clientes)
+        - [Serviços disponíveis em uma região](#Serviços-disponiveis-em-uma-região)
+        - [Preços](#Preços)
+    - [Zonas de disponibilidade](#Zonas-de-disponibilidade)
+    - [Locais de borda](#Locais-de-borda)
 
 
 
@@ -618,3 +626,81 @@ Outro benefício da computação sem servidor é a flexibilidade de dimensionar 
 > <li>O AWS Lambda é um serviço que permite executar código sem provisionar nem gerenciar servidores.</li>
 > <li>O Amazon Simple Queue Service (Amazon SQS) é um serviço que permite enviar, armazenar e receber mensagens entre componentes de software por uma fila.</li>
 > <li>O Amazon Simple Notification Service (Amazon SNS) é um serviço de publicação/assinatura. Usando tópicos do Amazon SNS, um editor publica mensagens para assinantes.</li>
+
+
+# Infrestutura Global e Confiabilidade
+## Objetivos de aprendizado
+
+<ul>
+    <li>Resumir os benefícios da infraestrutura global da AWS.</li>
+    <li>Descrever o conceito básico de Zonas de Disponibilidade.</li>
+    <li>Descrever os benefícios do Amazon CloudFront e dos locais de borda.</li>
+    <li>Comparar métodos diferentes de provisão de serviços da AWS.</li>
+</ul>
+
+
+## Seleção de uma Região
+
+<p>Ao determinar a Região certa para seus serviços, dados e aplicações, considere os quatro fatores de negócios a seguir.</p>
+
+### Conformidade com governança de dados e requisitos legais
+
+<p>Dependendo da sua empresa e localização, talvez seja necessário executar seus dados em áreas específicas. Por exemplo, se sua empresa exige que todos os dados residam dentro dos limites do Reino Unido, você deve escolher a Região Londres. <br>
+Nem todas as empresas têm regulamentações de dados relacionadas a determinados locais, portanto, você pode precisar se concentrar nos outros três fatores.</p>
+
+### Proximidade com os clientes
+<p>Ao selecionar uma Região próxima aos clientes, você entrega o conteúdo a eles com mais rapidez. Por exemplo, sua empresa está sediada em Washington, DC, e muitos de seus clientes residem em Singapura. Você pode considerar executar sua infraestrutura na Região Norte da Virgínia por estar perto da sede da empresa e executar os aplicativos a partir da Região Singapura.</p>
+
+### Serviçõs disponiveis em uma região
+<p>Às vezes, a Região mais próxima pode não ter todos os recursos que você deseja oferecer aos clientes. A AWS inova frequentemente ao criar novos serviços e expandir recursos em serviços existentes. No entanto, disponibilizar novos serviços em todo o mundo às vezes exige que a AWS desenvolva o hardware físico de cada Região por vez. <br>
+Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon Braket (plataforma de computação quântica da AWS). Neste curso, o Amazon Braket ainda não está disponível em todas as Regiões AWS em todo o mundo, por isso, os desenvolvedores precisariam executá-lo em uma das Regiões que já o oferece.</p>
+
+### Preços
+
+<p>Suponha que você pretenda executar aplicações nos Estados Unidos e no Brasil. Com a estrutura tributária do Brasil, pode custar 50% mais caro executar a mesma carga de trabalho na Região São Paulo em comparação com a Região Oregon. Você aprenderá com detalhes que vários fatores determinam o preço, mas, por enquanto, saiba que o custo dos serviços pode variar entre as regiões.</p>
+
+## Zonas de disponibilidade
+<p>Uma Zona de Disponibilidade é um único data center ou um grupo de data centers em uma Região. As Zonas de Disponibilidade estão localizadas a dezenas de quilômetros de distância umas das outras. A proximidade é suficiente para haver baixa latência (tempo entre o momento em que o conteúdo foi solicitado e recebido) entre as Zonas de Disponibilidade. No entanto, se ocorrer um desastre em uma parte da Região, eles estarão distantes o suficiente para reduzir a chance de várias Zonas de Disponibilidade serem afetadas.</p>
+
+#### Teste de conhecimento
+
+<p>Qual das afirmações a seguir melhor descreve as Zonas de Disponibilidade?</p>
+
+<ul>
+    <li>Uma área geográfica que contém recursos da AWS</li>
+    <li>&check;Um único data center ou grupo de data centers em uma Região</li>
+    <li>Um data center usado por um serviço AWS para executar operações específicas do serviço</li>
+    <li>Um serviço que você pode usar para executar a infraestrutura da AWS em seu próprio data center on-premises em uma abordagem híbrida.</li>
+</ul>
+
+#### Saiba mais:
+<ul>
+    <li><a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/">Infraestrutura global da AWS</a></li>
+    <li><a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/">Regiões e Zonas de Disponibilidade</a></li>
+</ul>
+
+## Locais de borda
+
+<p>Um local de borda é um site que o Amazon CloudFront usa para armazenar cópias em cache do conteúdo mais próximo dos clientes para uma entrega mais rápida.</p>
+
+#### Origem
+<p>Suponha que os dados da sua empresa estejam armazenados no Brasil e que você tenha clientes que residem na china.Para entregar conteúdo e esses clientes, voc~e não precisa mover todo o conteúdo para uma das regiões chinesas</p>
+
+#### Local de borda
+
+<p>Em vez de exigir que seus clientes obtenham os dados no brasil, você pode armazenar localmente em cache uma cópia em um local de borda próximo dos seus clientes na China</p>
+
+#### Cliente
+<p>Quando um cliente na china solicita um de seus arquivos, o Amazon CloudFront recupera o arquivo por meio do cache no local de borda e entrega o arquivo ao cliente.O arquivo é entregue ao cliente mais rapido porque em vez da fonte original no Brasil.</p>
+
+## Maneiras de interagir com os serviços da AWS
+#### Console de gerenciamento da AWS 
+<p>O console de gerenciamento da AWS é uma interface baseada na web para acessar e gerenciar os serviços da AWS. Você pode acessar rapidamente os serviços usados recentemente e pesquisar outros serviços por nome, palavra-chave ou acrônimo. O console inclui assistentes e fluxos de trabalho automatizados que podem simplificar o processo de conclusão de tarefas. <br> Você também pode usar o AWS Console Mobile Application para executar tarefas como monitoramento de recursos, visualização de alarmes e acesso a informações de cobrança. Várias identidades podem permanecer em sessão no AWS Console Mobile Application ao mesmo tempo.</p>
+
+#### AWS Command Line Interface (AWS CLI)
+<p>Para economizar tempo ao fazer solicitações de API, você pode usar o AWS Command Line Interface (AWS CLI). O AWS CLI permite que você controle vários serviços AWS diretamente a partir da linha de comando em uma ferramenta. O AWS CLI está disponível para usuários no Windows, macOS e Linux. <br> Usando a AWS CLI, você pode automatizar as ações que seus serviços e aplicações executam por meio de scripts. Por exemplo, você pode usar comandos para iniciar uma instância do Amazon EC2, conectar uma instância do Amazon EC2 a um grupo específico do Auto Scaling e muito mais. </p>
+
+#### Kits de Desenvolvimento de Software (SDKs)
+<p>Outra opção para acessar e gerenciar serviços da AWS são os Kits de Desenvolvimento de Software (SDKs). Os SDKs facilitam o uso dos serviços AWS por uma API projetada para sua linguagem de programação ou plataforma. Os SDKs permitem que você use serviços da AWS com suas aplicações ou crie aplicações totalmente novas que serão executados na AWS. <br> Para ajudar você a começar a usar SDKs, a AWS disponibiliza a documentação e um código de exemplo para cada linguagem de programação compatível. As linguagens de programação compatíveis são C++, Java, .NET e muito mais.</p>
+
+
