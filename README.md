@@ -762,6 +762,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
     <li>Um serviço que permite enviar e receber mensagens entre componentes de software por uma fila</li>
     <li>&check;Um serviço global de entrega de conteúdo</li>
 </ul>
+
 >[nota] O Amazon CloudFront é um serviço de entrega de conteúdo. Ele usa uma rede de locais de borda para armazenar conteúdo em cache e entregar conteúdo para clientes em todo o mundo. Quando o conteúdo é armazenado em cache, ele é mantido localmente como uma cópia. Esse conteúdo pode ser arquivos de vídeo, fotos, páginas da web e assim por diante.
 
 <p>Qual site o Amazon CloudFront usa para armazenar cópias de conteúdo em cache para entregá-los mais rapidamente aos usuários em qualquer local?</p>
