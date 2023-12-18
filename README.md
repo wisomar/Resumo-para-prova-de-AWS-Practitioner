@@ -65,6 +65,7 @@
         - [Kits de Desenvolvimento de Software (SDKs)](#Kits-de-Desenvolvimento-de-Software (SDKs))
         - [AWS Elastic Beanstalk](#AWS-Elastic-Beanstalk)
         - [AWS CloudFormation](#AWS-CloudFormation)
+        - [AWS Outposts](#AWS-Outposts)
 
 
 
@@ -722,3 +723,59 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>Com o AWS CloudFormation, você pode considerar sua infraestrutura como código. Isso significa que você pode criar um ambiente escrevendo linhas de código em vez de usar o console de gerenciamento da AWS para provisionar recursos individualmente.</p>
 <p>O AWS CloudFormation provisiona os recursos de maneira segura e repetível, permitindo que você crie frequentemente a infraestrutura e as aplicações sem precisar executar ações manuais. Ele determina quais são as operações mais adequadas para gerenciar sua pilha e reverte as alterações automaticamente se detecta erros.</p>
+
+## AWS Outposts
+<p>O <a href="https://aws.amazon.com/pt/outposts/" targert="_blank">AWS Outposts</a> é uma família de soluções totalmente gerenciadas que fornecem infraestrutura e serviços da AWS para praticamente qualquer local da borda ou on-premises para uma experiência híbrida verdadeiramente consistente. As soluções do Outposts permitem que os clientes estendam e executem serviços da AWS nativos on-premises e estão disponíveis em uma variedade de formatos, de servidores Outposts 1U e 2U a racks Outposts 42U e várias implantações de rack.</p>
+<p>Com o AWS Outposts, você pode executar alguns produtos da AWS localmente e se conectar a uma ampla gama de serviços disponíveis na região local da AWS. Execute aplicações e workloads on-premises usando serviços, ferramentas e APIs familiares da AWS. O Outposts é compatível com workloads e dispositivos que exigem acesso de baixa latência a sistemas on-premises, processamento de dados local, residência de dados e migração de aplicações com interdependências do sistema local. </p>
+
+#### Recursos adicionais
+
+<ul>
+    <li><a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/">Infraestrutura global</a></li>
+    <li><a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/">Mapa interativo da infraestrutura global da AWS</a></li>    
+    <li><a href="Regiões e zonas de disponibilidade">Regiões de Zonas de Disponibilidade</a></li>
+    <li><a href="https://aws.amazon.com/pt/developer/tools/">Ferramentas de criação na AWS </a></li>    
+</ul>
+
+### Questionario
+<p>Qual declaração é VERDADEIRA para a infraestrutura global da AWS?</p>
+<ul>
+    <li>Uma Região consiste em uma única Zona de Disponibilidade.</li>
+    <li>Uma Zona de Disponibilidade consiste em duas ou mais Regiões.</li>
+    <li>&check;Uma Região consiste em três ou mais Zonas de Disponibilidade.</li>
+    <li>Uma Zona de Disponibilidade consiste em uma única Região.</li>
+</ul>
+
+<p>Quais fatores devem ser considerados ao selecionar uma Região? (Selecione DUAS opções.)</p>
+<ul>
+    <li>&check;Conformidade com governança de dados e requisitos legais</li>
+    <li>&check;Proximidade com os clientes</li>
+    <li>Acesso a suporte técnico 24 horas por dia</li>
+    <li>Capacidade de atribuir permissões personalizadas a diferentes usuários</li>
+    <li>Acesso à AWS Command Line Interface (AWS CLI)</li>
+</ul>
+
+<p>Qual declaração descreve melhor o Amazon CloudFront?</p>
+<ul>
+    <li>Um serviço que permite executar a infraestrutura em uma abordagem de nuvem híbrida</li>
+    <li>Um mecanismo de computação sem servidor para contêineres</li>
+    <li>Um serviço que permite enviar e receber mensagens entre componentes de software por uma fila</li>
+    <li>&check;Um serviço global de entrega de conteúdo</li>
+</ul>
+>[nota] O Amazon CloudFront é um serviço de entrega de conteúdo. Ele usa uma rede de locais de borda para armazenar conteúdo em cache e entregar conteúdo para clientes em todo o mundo. Quando o conteúdo é armazenado em cache, ele é mantido localmente como uma cópia. Esse conteúdo pode ser arquivos de vídeo, fotos, páginas da web e assim por diante.
+
+<p>Qual site o Amazon CloudFront usa para armazenar cópias de conteúdo em cache para entregá-los mais rapidamente aos usuários em qualquer local?</p>
+<ul>
+    <li>Região</li>
+    <li>Zona de Disponibilidade</li>
+    <li>Origem</li>
+    <li>&check;Local de borda</li>
+</ul>
+
+<p>Qual ação você pode executar com o AWS Outposts?</p>
+<ul>
+    <li>Automatizar ações para serviços e aplicações da AWS por meio de scripts.</li>
+    <li>Acessar assistentes e fluxos de trabalho automatizados para executar tarefas nos serviços da AWS.</li>
+    <li>Desenvolver aplicações da AWS em linguagens de programação compatíveis.</li>
+    <li>&check;Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.</li>
+</ul>
