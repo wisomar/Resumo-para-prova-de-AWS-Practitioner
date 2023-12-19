@@ -136,13 +136,10 @@ benefícios da computação em nuvem, mas às vezes é procurada por sua capacid
 ### Conceito de flexibilidade e Disponibilidade
 
 
-  <p>Flexibilidade:<em> A flexibilidade refere-se à capacidade de se adaptar ou mudar rapidamente em resposta a diferentes necessidades, condições ou requisitos.</em></p>
+  <p>Flexibilidade:<em> flexibilidade pode se referir à capacidade de sistemas, software ou infraestrutura se ajustarem facilmente a mudanças nos requisitos de negócios, escalabilidade, integração com outras tecnologias, entre outros.</em></p>
 
   <p>Disponibilidade:<em> refere-se à capacidade de um sistema, serviço ou recurso estar acessível e operacional quando necessário, sem interrupções ou falhas.</em></p>
  
-
-
-
 # Infraestrutura global
 <p>A Nuvem AWS <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank">infraestrutura</a> é construída em torno Regiões da AWS de zonas de disponibilidade.
 A Região da AWS é um local físico no mundo em que temos várias zonas de disponibilidade. As zonas de disponibilidade consistem em um ou mais data centers discretos, cada um com
