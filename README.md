@@ -34,7 +34,7 @@ serviços em nuvem, como a Amazon Web Services, possui e mantém o hardware cone
 necessário para esses serviços de aplicativos, enquanto você provisiona e usa o que precisa por
 meio de um aplicativo web.</p>
 
-## Seis vantagens da computação em nuvem
+## <a href="https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html" target="_blank">Seis vantagens da computação em nuvem</a>
 
 <p>• Troque despesas fixas por despesas variáveis — Em vez de ter que investir pesadamente em data
 centers e servidores antes de saber como usá-los, você pode pagar somente quando consumir
