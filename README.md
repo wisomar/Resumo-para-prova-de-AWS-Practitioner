@@ -368,7 +368,7 @@ Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser u
 
 ## Amazon EC2 Auto Scaling
 <p>Se você já tentou acessar um site que não carregava e atingiu o tempo limite algumas vezes, ele pode ter recebido mais solicitações do que conseguia atender. Essa situação é semelhante a esperar em uma longa fila em uma cafeteria quando há apenas um barista disponível para registrar os pedidos dos clientes. <br>
-O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda da aplicação. Ao fazer auto scaling das instâncias, aumentando ou reduzindo a quantidade conforme a necessidade, você tem maior percepção de disponibilidade de aplicações.</p>
+O <a href="https://aws.amazon.com/pt/ec2/autoscaling/" target="_blank">Amazon EC2 Auto Scaling</a> permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda da aplicação. Ao fazer auto scaling das instâncias, aumentando ou reduzindo a quantidade conforme a necessidade, você tem maior percepção de disponibilidade de aplicações.</p>
 <p>No Amazon EC2 Auto Scaling, há duas abordagens disponíveis: scaling dinâmico e scaling preditivo.</p>
 
 <ul>
@@ -399,7 +399,7 @@ Como o Amazon EC2 Auto Scaling usa instâncias do Amazon EC2, você vai pagar ap
 
 ## Direcionamento de tráfego com o Elastic Load Balancing (ELB)
 
-<p>O Elastic Load Balancing é o serviço da AWS que distribui automaticamente o tráfego de entrada de aplicações entre vários recursos, como instâncias do Amazon EC2. <br>
+<p>O <a href="https://aws.amazon.com/pt/elasticloadbalancing/" target="_blank">Elastic Load Balancing</a> é o serviço da AWS que distribui automaticamente o tráfego de entrada de aplicações entre vários recursos, como instâncias do Amazon EC2. <br>
 Um balanceador de carga atua como um ponto único de contato para todo o tráfego na web de entrada para o grupo do Auto Scaling. Isso significa que, à medida que você adiciona ou remove instâncias do Amazon EC2 em resposta à quantidade de tráfego de entrada, essas solicitações são direcionadas para o balanceador de carga primeiro. Em seguida, as solicitações se espalham por vários recursos que lidarão com elas. Por exemplo, se você tiver várias instâncias do Amazon EC2, o Elastic Load Balancing distribuirá a carga de trabalho entre elas para que nenhuma instância tenha que carregar a maior parte.</p>
 <p>Embora o Elastic Load Balancing e o Amazon EC2 Auto Scaling sejam serviços separados, eles trabalham juntos para que as aplicações executadas no Amazon EC2 tenham alto desempenho e disponibilidade.</p>
 
@@ -616,7 +616,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 ## Locais de borda
 
-<p>Um local de borda é um site que o Amazon CloudFront usa para armazenar cópias em cache do conteúdo mais próximo dos clientes para uma entrega mais rápida.</p>
+<p>Um <a href="https://aws.amazon.com/pt/products/networking/edge-networking/" target="blank">local de borda</a>é um site que o Amazon CloudFront usa para armazenar cópias em cache do conteúdo mais próximo dos clientes para uma entrega mais rápida.</p>
 
 #### Origem
 <p>Suponha que os dados da sua empresa estejam armazenados no Brasil e que você tenha clientes que residem na china.Para entregar conteúdo e esses clientes, você não precisa mover todo o conteúdo para uma das regiões chinesas</p>
@@ -630,16 +630,16 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 ## Maneiras de interagir com os serviços da AWS
 #### Console de gerenciamento da AWS 
-<p>O console de gerenciamento da AWS é uma interface baseada na web para acessar e gerenciar os serviços da AWS. Você pode acessar rapidamente os serviços usados recentemente e pesquisar outros serviços por nome, palavra-chave ou acrônimo. O console inclui assistentes e fluxos de trabalho automatizados que podem simplificar o processo de conclusão de tarefas. <br> Você também pode usar o AWS Console Mobile Application para executar tarefas como monitoramento de recursos, visualização de alarmes e acesso a informações de cobrança. Várias identidades podem permanecer em sessão no AWS Console Mobile Application ao mesmo tempo.</p>
+<p>O <a href="https://aws.amazon.com/pt/console/" target="_blank">console de gerenciamento da AWS</a> é uma interface baseada na web para acessar e gerenciar os serviços da AWS. Você pode acessar rapidamente os serviços usados recentemente e pesquisar outros serviços por nome, palavra-chave ou acrônimo. O console inclui assistentes e fluxos de trabalho automatizados que podem simplificar o processo de conclusão de tarefas. <br> Você também pode usar o AWS Console Mobile Application para executar tarefas como monitoramento de recursos, visualização de alarmes e acesso a informações de cobrança. Várias identidades podem permanecer em sessão no AWS Console Mobile Application ao mesmo tempo.</p>
 
 #### AWS Command Line Interface (AWS CLI)
-<p>Para economizar tempo ao fazer solicitações de API, você pode usar o AWS Command Line Interface (AWS CLI). O AWS CLI permite que você controle vários serviços AWS diretamente a partir da linha de comando em uma ferramenta. O AWS CLI está disponível para usuários no Windows, macOS e Linux. <br> Usando a AWS CLI, você pode automatizar as ações que seus serviços e aplicações executam por meio de scripts. Por exemplo, você pode usar comandos para iniciar uma instância do Amazon EC2, conectar uma instância do Amazon EC2 a um grupo específico do Auto Scaling e muito mais. </p>
+<p>Para economizar tempo ao fazer solicitações de API, você pode usar o <a href="https://aws.amazon.com/pt/cli/" target="_blank">AWS Command Line Interface (AWS CLI)</a>. O AWS CLI permite que você controle vários serviços AWS diretamente a partir da linha de comando em uma ferramenta. O AWS CLI está disponível para usuários no Windows, macOS e Linux. <br> Usando a AWS CLI, você pode automatizar as ações que seus serviços e aplicações executam por meio de scripts. Por exemplo, você pode usar comandos para iniciar uma instância do Amazon EC2, conectar uma instância do Amazon EC2 a um grupo específico do Auto Scaling e muito mais. </p>
 
 #### Kits de Desenvolvimento de Software (SDKs)
-<p>Outra opção para acessar e gerenciar serviços da AWS são os Kits de Desenvolvimento de Software (SDKs). Os SDKs facilitam o uso dos serviços AWS por uma API projetada para sua linguagem de programação ou plataforma. Os SDKs permitem que você use serviços da AWS com suas aplicações ou crie aplicações totalmente novas que serão executados na AWS. <br> Para ajudar você a começar a usar SDKs, a AWS disponibiliza a documentação e um código de exemplo para cada linguagem de programação compatível. As linguagens de programação compatíveis são C++, Java, .NET e muito mais.</p>
+<p>Outra opção para acessar e gerenciar serviços da AWS são os <a href="https://aws.amazon.com/pt/developer/tools/" target="_blank">Kits de Desenvolvimento de Software (SDKs)</a>. Os SDKs facilitam o uso dos serviços AWS por uma API projetada para sua linguagem de programação ou plataforma. Os SDKs permitem que você use serviços da AWS com suas aplicações ou crie aplicações totalmente novas que serão executados na AWS. <br> Para ajudar você a começar a usar SDKs, a AWS disponibiliza a documentação e um código de exemplo para cada linguagem de programação compatível. As linguagens de programação compatíveis são C++, Java, .NET e muito mais.</p>
 
 ## AWS Elastic Beanstalk
-<P>Com o AWS Elastic Beanstalk, você envia definições de código e configuração, e o Elastic Beanstalk implanta os recursos necessários para executar as seguintes tarefas:</P>
+<P>Com o <a href="https://docs.aws.amazon.com/pt_br/elasticbeanstalk/latest/dg/Welcome.html" target="_blank">AWS Elastic Beanstalk</a>, você envia definições de código e configuração, e o Elastic Beanstalk implanta os recursos necessários para executar as seguintes tarefas:</P>
 <ul>
     <li>Ajustar capacidade</li>
     <li>Balancear carga</li>
