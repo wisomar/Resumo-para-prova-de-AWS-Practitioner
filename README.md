@@ -134,36 +134,6 @@ benefícios da computação em nuvem, mas às vezes é procurada por sua capacid
 ><p>Por exemplo, um software on-premises seria instalado e executado nos servidores da empresa, em vez de ser acessado e operado remotamente a partir de servidores em nuvem. Da mesma forma, hardware on-premises seria aquele que está fisicamente presente no local da organização, como servidores, roteadores, e outros dispositivos de rede.</p>
 ><p>A escolha entre soluções on-premises e soluções em nuvem depende das necessidades, recursos e preferências específicos de uma organização. Cada abordagem tem suas próprias vantagens e desvantagens em termos de custo, segurança, manutenção e escalabilidade.</em></p>
 
-## Beneficios da computação em nuvem
-
-<p>Considere por que uma empresa adota determinada abordagem de computação em nuvem para atender às necessidades de negócios.</p>
-
-### Troque despesas iniciais por despesas Variáveis
-
-<p>Ao adotar uma abordagem de computação em nuvem com o benefício de despesas variáveis, as empresas podem implementar soluções inovadoras enquanto economizam custos.</p>
-
-### Pare de gastar dinheiro para executar data centers
-
-<p>A computação em data centers costuma exigir que você gaste mais dinheiro e tempo gerenciando a infraestrutura e os servidores.</p> 
-<p>Um benefício da computação em nuvem é poder se concentrar menos nessas tarefas e mais nas aplicações e clientes.</p>
-
-### Pare de tentar adivinhar a capacidade
-
-<p>Com a computação em nuvem, você não precisa prever a capacidade de infraestrutura necessária antes de implantar uma aplicação.
-Por exemplo, você pode iniciar instâncias do Amazon EC2 quando necessário e pagar apenas pelo tempo de computação que usar. Em vez de pagar por recursos não usados ou ter que lidar com capacidade limitada, você pode acessar apenas a capacidade necessária. Você também pode aumentar ou reduzir a capacidade em resposta à demanda.</p>
-
-### Beneficie-se de grandes economias de escala
-
-<p>O uso da computação em nuvem permite obter um custo variável menor ao que você conseguiria por conta própria.</p>
-<p>Como o uso de centenas de milhares de clientes pode ser agregado na nuvem, provedores como a AWS podem alcançar enormes economias de escala. A economia de escala se transforma em pagamento conforme o uso com preços mais baixos. </p>
-
-### Aumentar a velocidade e a agilidade
-<p>A flexibilidade da computação em nuvem facilita o desenvolvimento e a implantação de aplicações.</p>
-<p>Essa flexibilidade permite mais tempo para experimentar e inovar. Ao fazer a computação em data centers, pode levar semanas para obter os novos recursos de que você precisa. Em comparação, a computação em nuvem permite que você acesse novos recursos em poucos minutos.</p>
-
-### Ter alcance global em minutos
-<p>A presença global da nuvem AWS permite que você implante aplicações para clientes em todo o mundo rapidamente, ao mesmo tempo que oferece baixa latência. Isso significa que, mesmo se você estiver em uma parte do mundo diferente de seus clientes, eles poderão acessar os seus aplicativos com atrasos mínimos.</p>
-
 # Infraestrutura global
 <p>A Nuvem AWS <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank">infraestrutura</a> é construída em torno Regiões da AWS de zonas de disponibilidade.
 A Região da AWS é um local físico no mundo em que temos várias zonas de disponibilidade. As zonas de disponibilidade consistem em um ou mais data centers discretos, cada um com
