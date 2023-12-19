@@ -649,7 +649,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 ## AWS CloudFormation
 
-<p>Com o AWS CloudFormation, você pode considerar sua infraestrutura como código. Isso significa que você pode criar um ambiente escrevendo linhas de código em vez de usar o console de gerenciamento da AWS para provisionar recursos individualmente.</p>
+<p>Com o <a href="https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/Welcome.html">AWS CloudFormation</a>, você pode considerar sua infraestrutura como código. Isso significa que você pode criar um ambiente escrevendo linhas de código em vez de usar o console de gerenciamento da AWS para provisionar recursos individualmente.</p>
 <p>O AWS CloudFormation provisiona os recursos de maneira segura e repetível, permitindo que você crie frequentemente a infraestrutura e as aplicações sem precisar executar ações manuais. Ele determina quais são as operações mais adequadas para gerenciar sua pilha e reverte as alterações automaticamente se detecta erros.</p>
 
 ## AWS Outposts
