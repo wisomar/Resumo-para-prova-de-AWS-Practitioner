@@ -118,7 +118,6 @@ infraestrutura de uma organização na nuvem e, ao mesmo tempo, conectar os recu
 
 >[nota]<em>O termo "TI legada" refere-se a sistemas, tecnologias ou aplicações de Tecnologia da Informação (TI) que foram desenvolvidos e implementados em uma organização em um momento anterior. Esses sistemas muitas vezes têm uma arquitetura mais antiga, foram projetados para atender a requisitos específicos da época e podem não ser tão flexíveis, interoperáveis ou fáceis de manter quanto soluções mais modernas.</em>
 
-
 ### Infraestrutura
 <p>A implantação de recursos no local, usando ferramentas de virtualização e gerenciamento de recursos, às vezes é chamada de nuvem privada. A implantação local não oferece muitos dos
 benefícios da computação em nuvem, mas às vezes é procurada por sua capacidade de fornecer recursos dedicados. Na maioria dos casos, esse modelo de implantação é o mesmo da <a href="https://aws.amazon.com/pt/hybrid/services/#Use_case.3A_Cloud_services_on-premises" target="_blank">infraestrutura</a> de TI legada, ao mesmo tempo em que usa tecnologias de gerenciamento e virtualização de aplicativos para tentar aumentar a utilização de recursos.</p>
@@ -133,6 +132,14 @@ benefícios da computação em nuvem, mas às vezes é procurada por sua capacid
 >[nota] <p><em>"On-premises" refere-se a software, hardware ou infraestrutura que está localizado fisicamente nas instalações da própria organização ou empresa, em oposição a estar hospedado em servidores remotos ou na nuvem. Quando algo é descrito como sendo "on-premises", significa que está localizado e operado dentro das instalações físicas da empresa ou organização.</p>
 ><p>Por exemplo, um software on-premises seria instalado e executado nos servidores da empresa, em vez de ser acessado e operado remotamente a partir de servidores em nuvem. Da mesma forma, hardware on-premises seria aquele que está fisicamente presente no local da organização, como servidores, roteadores, e outros dispositivos de rede.</p>
 ><p>A escolha entre soluções on-premises e soluções em nuvem depende das necessidades, recursos e preferências específicos de uma organização. Cada abordagem tem suas próprias vantagens e desvantagens em termos de custo, segurança, manutenção e escalabilidade.</em></p>
+
+### Conceito de flexibilidade e Disponibilidade
+
+<ul>
+  <p>Flexibilidade:</p>
+Definição: A flexibilidade refere-se à capacidade de se adaptar ou mudar rapidamente em resposta a diferentes necessidades, condições ou requisitos.
+</ul>
+
 
 # Infraestrutura global
 <p>A Nuvem AWS <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank">infraestrutura</a> é construída em torno Regiões da AWS de zonas de disponibilidade.
