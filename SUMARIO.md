@@ -11,6 +11,7 @@
     - [Nuvem](README.md#nuvem)
     - [Abordagem híbrida](README.md#abordagem-híbrida)
     - [Infraestrutura](README.md#infraestrutura)
+    - [Conceito de flexibilidade e Disponibilidade](README.md#Conceito-de-flexibilidade-e-Disponibilidade)
 - [Infraestrutura global](README.md#infraestrutura-global)
 - [Segurança e conformidade](README.md#segurança-e-conformidade)
   - [Segurança](README.md#segurança)
