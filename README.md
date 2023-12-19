@@ -285,7 +285,7 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 
 ## Definição de preços do Amazon EC2
 
-<p>Com o Amazon EC2, você paga apenas pelo tempo de computação que usar. O Amazon EC2 oferece diversas opções de preço para diferentes casos de uso. Por exemplo, se o seu caso de uso tolerar interrupções, você poderá economizar com as instâncias spot. Você também pode economizar assumindo um compromisso antecipadamente e bloqueando um nível mínimo de uso com instâncias reservadas.</p>
+<p>Com o Amazon EC2, você paga apenas pelo tempo de computação que usar. O <a href="https://aws.amazon.com/pt/ec2/pricing/" target="_blank">Amazon EC2 oferece diversas opções de preço</a> para diferentes casos de uso. Por exemplo, se o seu caso de uso tolerar interrupções, você poderá economizar com as instâncias spot. Você também pode economizar assumindo um compromisso antecipadamente e bloqueando um nível mínimo de uso com instâncias reservadas.</p>
 
 ### Sob demanda
 
