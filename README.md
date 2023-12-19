@@ -36,34 +36,34 @@ meio de um aplicativo web.</p>
 
 ## <a href="https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html">Seis vantagens da computação em nuvem</a>
 
-<p>• <a href="https://www.youtube.com/watch?v=Xsej_qwTD1k&ab_channel=GuilhermeTeles">Troque despesas fixas por despesas variáveis</a> — Em vez de ter que investir pesadamente em data
+<p>• <strong><a href="https://www.youtube.com/watch?v=Xsej_qwTD1k&ab_channel=GuilhermeTeles">Troque despesas fixas por despesas variáveis</a></strong> — Em vez de ter que investir pesadamente em data
 centers e servidores antes de saber como usá-los, você pode pagar somente quando consumir
 recursos de computação e pagar somente pelo quanto consumir.</p>
 
-<p>• Beneficie-se de enormes economias de escala — Ao usar a computação em nuvem, você pode
+<p>• <strong>Beneficie-se de enormes economias de escala </strong> — Ao usar a computação em nuvem, você pode
 obter um custo variável menor do que o obtido sozinho. Como o uso de centenas de milhares de
 clientes é agregado na nuvem, provedores como esse AWS podem obter maiores economias de
 escala, o que se traduz em preços de pagamento as-you-go mais baixos.</p>
 
-<p>• Pare de adivinhar a capacidade — elimine a adivinhação sobre suas necessidades de capacidade
+<p>• <strong>Pare de adivinhar a capacidade</strong> — elimine a adivinhação sobre suas necessidades de capacidade
 de infraestrutura. Quando você toma uma decisão de capacidade antes de implantar um aplicativo,
 geralmente acaba usando recursos ociosos caros ou lidando com capacidade limitada. Com a
 computação em nuvem, esses problemas desaparecem. Você pode acessar a capacidade que
 precisar e aumentar e reduzir a capacidade conforme necessário com apenas alguns minutos de
 antecedência.</p>
 
-<p>• Aumente a velocidade e a agilidade — Em um ambiente de computação em nuvem, os novos
+<p>• <strong>Aumente a velocidade e a agilidade</strong> — Em um ambiente de computação em nuvem, os novos
 recursos de TI estão a apenas um clique de distância, o que significa que você reduz o tempo de
 disponibilização desses recursos para seus desenvolvedores de semanas para apenas alguns
 minutos. Isso resulta em um aumento drástico na agilidade da organização, já que o custo e o
 tempo necessários para experimentar e desenvolver são significativamente menores.</p>
 
-<p>• Pare de gastar dinheiro administrando e mantendo data centers — concentre-se em projetos que
+<p>• <strong>Pare de gastar dinheiro administrando e mantendo data centers</strong> — concentre-se em projetos que
 diferenciam sua empresa, não na infraestrutura. A computação em nuvem permite que você se
 concentre em seus próprios clientes, e não no trabalho pesado de empilhar, empilhar e alimentar
 servidores.</p>
 
-<p>• Torne-se global em minutos — implante facilmente seu aplicativo em várias regiões ao redor do
+<p>• <strong>Torne-se global em minutos</strong> — implante facilmente seu aplicativo em várias regiões ao redor do
 mundo com apenas alguns cliques. Isso significa que você pode fornecer menor latência e uma
 melhor experiência para seus clientes a um custo mínimo.
 </p>
