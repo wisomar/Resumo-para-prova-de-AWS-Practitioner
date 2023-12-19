@@ -116,6 +116,8 @@ infraestrutura de uma organização na nuvem e, ao mesmo tempo, conectar os recu
 
 <p>Suponha que uma empresa queira usar serviços de nuvem que podem automatizar o processamento e a análise de dados em batch. No entanto, a empresa tem vários aplicativos legados que são mais adequados no local e que não serão migrados para a nuvem. Com uma implantação híbrida, a empresa conseguiria manter os aplicativos legados no local enquanto se beneficiaria dos serviços de dados e análises executados na nuvem.</p>
 
+>[nota]<em>O termo "TI legada" refere-se a sistemas, tecnologias ou aplicações de Tecnologia da Informação (TI) que foram desenvolvidos e implementados em uma organização em um momento anterior. Esses sistemas muitas vezes têm uma arquitetura mais antiga, foram projetados para atender a requisitos específicos da época e podem não ser tão flexíveis, interoperáveis ou fáceis de manter quanto soluções mais modernas.</em>
+
 
 ### Infraestrutura
 <p>A implantação de recursos no local, usando ferramentas de virtualização e gerenciamento de recursos, às vezes é chamada de nuvem privada. A implantação local não oferece muitos dos
