@@ -77,7 +77,7 @@ nuvem cresceu, surgiram vários modelos e estratégias de implantação diferent
 atender às necessidades específicas de diferentes usuários. Cada tipo oferece diferentes níveis de
 controle, flexibilidade e gerenciamento.</p>
 
-<p>Os três principais tipos de computação em nuvem são infraestrutura como serviço, plataforma como serviço e software como serviço. Cada tipo de computação em nuvem oferece diferentes níveis de controle, flexibilidade e gerenciamento para que você possa selecionar o conjunto certo de serviços para as suas necessidades.</p>
+<p>Os três principais tipos de computação em nuvem são <a href="https://aws.amazon.com/pt/types-of-cloud-computing/" target="_blank">infraestrutura como serviço, plataforma como serviço e software como serviço.</a> Cada tipo de computação em nuvem oferece diferentes níveis de controle, flexibilidade e gerenciamento para que você possa selecionar o conjunto certo de serviços para as suas necessidades.</p>
 
 ### Infraestrutura como serviço (IaaS)
 <p>O IaaS contém os componentes básicos da IT na nuvem. Normalmente, o IaaS oferece acesso a recursos de rede, computadores (virtuais ou em hardware dedicado) e espaço de armazenamento de dados. O IaaS oferece o mais alto nível de flexibilidade e controle de gerenciamento sobre os recursos de TI. Ele é o tipo de computação mais semelhante aos recursos existentes de TI, já conhecidos por vários departamentos e desenvolvedores de TI.</p>
