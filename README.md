@@ -135,10 +135,12 @@ benefícios da computação em nuvem, mas às vezes é procurada por sua capacid
 
 ### Conceito de flexibilidade e Disponibilidade
 
-<ul>
-  <p>Flexibilidade:</p>
-Definição: A flexibilidade refere-se à capacidade de se adaptar ou mudar rapidamente em resposta a diferentes necessidades, condições ou requisitos.
-</ul>
+
+  <p>Flexibilidade:<em> A flexibilidade refere-se à capacidade de se adaptar ou mudar rapidamente em resposta a diferentes necessidades, condições ou requisitos.</em></p>
+
+  <p>Disponibilidade:<em> refere-se à capacidade de um sistema, serviço ou recurso estar acessível e operacional quando necessário, sem interrupções ou falhas.</em></p>
+ 
+
 
 
 # Infraestrutura global
