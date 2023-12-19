@@ -128,9 +128,9 @@ benefícios da computação em nuvem, mas às vezes é procurada por sua capacid
 <li>Aumente a utilização de recursos usando tecnologias de virtualização e gerenciamento de aplicações.</li>
 </ul>
 
->[nota] "On-premises" refere-se a software, hardware ou infraestrutura que está localizado fisicamente nas instalações da própria organização ou empresa, em oposição a estar hospedado em servidores remotos ou na nuvem. Quando algo é descrito como sendo "on-premises", significa que está localizado e operado dentro das instalações físicas da empresa ou organização.
->Por exemplo, um software on-premises seria instalado e executado nos servidores da empresa, em vez de ser acessado e operado remotamente a partir de servidores em nuvem. Da mesma forma, hardware on-premises seria aquele que está fisicamente presente no local da organização, como servidores, roteadores, e outros dispositivos de rede.
->A escolha entre soluções on-premises e soluções em nuvem depende das necessidades, recursos e preferências específicos de uma organização. Cada abordagem tem suas próprias vantagens e desvantagens em termos de custo, segurança, manutenção e escalabilidade.
+>[nota] <p><em>"On-premises" refere-se a software, hardware ou infraestrutura que está localizado fisicamente nas instalações da própria organização ou empresa, em oposição a estar hospedado em servidores remotos ou na nuvem. Quando algo é descrito como sendo "on-premises", significa que está localizado e operado dentro das instalações físicas da empresa ou organização.</p>
+><p>Por exemplo, um software on-premises seria instalado e executado nos servidores da empresa, em vez de ser acessado e operado remotamente a partir de servidores em nuvem. Da mesma forma, hardware on-premises seria aquele que está fisicamente presente no local da organização, como servidores, roteadores, e outros dispositivos de rede.</p>
+><p>A escolha entre soluções on-premises e soluções em nuvem depende das necessidades, recursos e preferências específicos de uma organização. Cada abordagem tem suas próprias vantagens e desvantagens em termos de custo, segurança, manutenção e escalabilidade.</em></p>
 
 ## Beneficios da computação em nuvem
 
