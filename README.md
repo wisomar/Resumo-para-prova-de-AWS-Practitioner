@@ -81,12 +81,24 @@ controle, flexibilidade e gerenciamento.</p>
 
 ### Infraestrutura como serviço (IaaS)
 <p>O IaaS contém os componentes básicos da IT na nuvem. Normalmente, o IaaS oferece acesso a recursos de rede, computadores (virtuais ou em hardware dedicado) e espaço de armazenamento de dados. O IaaS oferece o mais alto nível de flexibilidade e controle de gerenciamento sobre os recursos de TI. Ele é o tipo de computação mais semelhante aos recursos existentes de TI, já conhecidos por vários departamentos e desenvolvedores de TI.</p>
+<p><strong>Definição:</strong> IaaS fornece aos usuários a infraestrutura básica de computação, como máquinas virtuais, servidores, armazenamento e redes.</p>
+<p><strong>Responsabilidades do Usuário:</strong> Os usuários são responsáveis por gerenciar o sistema operacional, aplicativos, dados e middleware. Eles têm controle total sobre a configuração e manutenção do ambiente.</p>
 
 ### Plataforma como serviço (PaaS)
 <p>Com o PaaS, você não precisa mais gerenciar a infraestrutura subjacente (geralmente, hardware e sistemas operacionais) e pode manter o foco na implantação e no gerenciamento de aplicativos. Dessa forma, você fica mais eficiente, pois não precisa se preocupar com aquisição de recursos, planejamento de capacidade, manutenção de software, correções ou qualquer outro tipo de trabalho genérico repetitivo necessário para a execução dos aplicativos.</p>
+<p><strong>Definição:</strong> PaaS oferece uma plataforma de desenvolvimento que inclui ferramentas e serviços para facilitar o desenvolvimento, teste e implementação de aplicativos.</p>
+<p><strong>Responsabilidades do Usuário:</strong> Os usuários gerenciam apenas os aplicativos e os dados. A infraestrutura, o sistema operacional e as atualizações de middleware são gerenciados pelo provedor de serviços em nuvem.</p>
 
 ### Software como serviço (SaaS)
 <p>O SaaS oferece um produto completo, executado e gerenciado pelo provedor de serviços. Na maioria dos casos, quando as pessoas mencionam SaaS, estão falando de aplicativos de usuários finais (como e-mail baseado na web). Com uma oferta de SaaS, você não precisa pensar sobre a manutenção do serviço ou o gerenciamento da infraestrutura subjacente. Você só precisa se preocupar sobre como utilizará esse software específico.</p>
+<p><strong>Definição:</strong> SaaS fornece aplicativos prontos para uso acessados através da internet. Os usuários não precisam se preocupar com a infraestrutura subjacente ou a manutenção do software.</p>
+<p><strong>Responsabilidades do Usuário:</strong> Os usuários gerenciam apenas seus dados e configurações específicas do aplicativo. Todas as outras preocupações, como atualizações de software e hardware, são tratadas pelo provedor.</p>
+
+### Resumo Comparativo:
+<p><strong>IaaS:</strong> Fornece infraestrutura básica, controle total do ambiente, responsabilidades de gerenciamento significativas para o usuário.</p>
+<p><strong>PaaS:</strong> Oferece uma plataforma de desenvolvimento, gerenciamento de aplicativos e dados, com menos preocupações em relação à infraestrutura.</p>
+<p><strong>SaaS:</strong> Fornece aplicativos prontos para uso, com o usuário responsável principalmente pelos dados e configurações específicas do aplicativo.</p>
+
 
 ## Modelos de implantação de computação em nuvem
 ### Nuvem
