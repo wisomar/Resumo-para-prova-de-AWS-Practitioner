@@ -1082,7 +1082,20 @@ O Amazon Route 53 é um serviço da web de DNS. Ele oferece aos desenvolvedores 
 Outro recurso do Route 53 é a capacidade de gerenciar os registros DNS para nomes de domínio. Você pode transferir registros DNS para nomes de domínio existentes gerenciados por outras empresas de registro de domínio. Você também pode registrar novos nomes de domínio diretamente no Route 53.
 
 
+# Armazenamento e Banco de Dados
 
+Objetivos de aprendizado
+
+<ul>
+  <li>Resumir o conceito básico de armazenamento e bancos de dados.</li>
+  <li>Descrever os benefícios do Amazon Elastic Block Store (Amazon EBS).</li>
+  <li>Descrever os benefícios do Amazon Simple Storage Service (Amazon S3).</li>
+  <li>Descrever os benefícios do Amazon Elastic File System (Amazon EFS).</li>
+  <li>Resumir várias soluções de armazenamento.</li>
+  <li>Descrever os benefícios do Amazon Relational Database Service (Amazon RDS).</li>
+  <li>Descrever os benefícios do Amazon DynamoDB.</li>
+  <li>Resumir vários serviços de banco de dados.</li>
+</ul>
 
 
 
