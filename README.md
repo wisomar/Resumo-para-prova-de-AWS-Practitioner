@@ -733,7 +733,8 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>Para permitir que o tráfego público da internet acesse sua VPC, é preciso anexar um <strong>gateway de internet</strong> à VPC.</p>
 
-<img src="https://drive.google.com/open?id=1oqKeqgbZVDz8crADuepWK05BCDVD3SBX&usp=drive_fs">
+<div align-"center">
+<img width="840" alt="U98VX8q8oGj1lgLY_cQWnrSlZAhp3-TiT" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/8caafb21-104b-43b0-88e6-29ce32967d5d">
 
 
 
