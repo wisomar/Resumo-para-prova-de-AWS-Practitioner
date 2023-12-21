@@ -733,8 +733,51 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>Para permitir que o tráfego público da internet acesse sua VPC, é preciso anexar um <strong>gateway de internet</strong> à VPC.</p>
 
-<div align-"center">
+<p>
+<figure>
 <img width="840" alt="U98VX8q8oGj1lgLY_cQWnrSlZAhp3-TiT" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/8caafb21-104b-43b0-88e6-29ce32967d5d">
+   <div style="text-align: left;">
+<figcaption><em>Ícone do gateway de internet anexado a uma VPC que contém três instâncias do EC2. Uma seta conecta o cliente ao gateway na internet<br><div style="text-align: center;"> indicando que a solicitação do cliente obteve acesso à VPC.</em></figcaption></div>
+   </div>
+</figure>
+</p>
+
+<p>Um gateway da internet é uma conexão entre uma VPC e a internet. Você pode pensar em um gateway da internet como sendo semelhante a uma porta que os clientes usam para entrar na cafeteria. Sem um gateway da internet, ninguém pode acessar os recursos em sua VPC.</p>
+
+<h3>E se você tiver uma VPC apenas com recursos privados?</h3>
+
+## Gateway privado virtual
+
+<p>ara acessar recursos privados em uma VPC, use um gateway privado virtual.</p>
+<p>Veja um exemplo de como um gateway privado virtual funciona. Você pode pensar na internet como o caminho entre sua casa e a cafeteria. Suponha que você está viajando com um guarda-costas para proteção. Você ainda usa o mesmo caminho que outros clientes, mas com uma camada extra de proteção.</p>
+
+<p>O guarda-costas é como uma conexão de rede privada virtual (VPN) que criptografa (ou protege) seu tráfego de internet de todas as outras solicitações ao redor.</p>
+<p>O gateway privado virtual é o componente que permite que o tráfego protegido da internet ingresse na VPC. Mesmo que sua conexão com a cafeteria tenha proteção extra, os engarrafamentos são possíveis porque você usa o mesmo caminho que outros clientes.</p>
+
+<p><figure>
+<img width="840" alt="GVVnz3UVA2zeRO_k_6XoEmx4Atan-vguA" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c18bcbf9-b47e-4d70-9b82-a36d8e05b1d9">
+</figure></p>
+
+<p>Um gateway privado virtual permite estabelecer uma conexão VPN (rede privada virtual) entre a VPC e uma rede privada, como um data center on-premises ou uma rede corporativa interna. Um gateway privado virtual permitirá o tráfego na VPC somente se ele for proveniente de uma rede aprovada.</p>
+
+## AWS Direct Connect
+
+<p>O <a href="https://aws.amazon.com/pt/directconnect/" target="_blank">AWS Direct Connect</a> é um serviço que permite estabelecer uma conexão privada dedicada entre seu data center e uma VPC.</p>
+
+<p>Suponha que haja um prédio com um corredor que o liga diretamente à cafeteria. Somente os moradores do prédio podem passar por esse corredor.</p>
+
+<p>Esse corredor privado estabelece o mesmo tipo de conexão dedicada que o AWS Direct Connect. Os moradores conseguem entrar na cafeteria sem precisar usar a estrada pública compartilhada com outros clientes. </p>
+
+<p><figure>
+  <img width="840" alt="dGcj_FD522Xi0IOA_Oe6TnlWoopXumQBZ" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fdc67ea4-1f8b-44c4-bef1-3cda2e67d796">
+  <em><figcapture>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</figcapture>
+</figure></em></p>
+
+<p>A conexão privada do AWS Direct Connect ajuda a reduzir os custos de rede e a aumentar a quantidade de largura de banda que pode trafegar pela rede.</p>
+
+
+## Sub-redes e listas de controle de acesso à rede
+
 
 
 
