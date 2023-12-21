@@ -77,5 +77,8 @@
         - [Sistema de nomes de domínio (DNS)](README.md#Sistema-de-nomes-de-domínio (DNS))
         - [Amazon Route 53](README.md#Amazon-Route-53)
         - [como o Amazon Route 53 e o Amazon CloudFront entregam conteúdo](README.md#como-o-Amazon-Route-53-e-o-Amazon-CloudFront-entregam-conteúdo)
-        - 
+-[Armazenamento e Banco de Dados](README.md#Armazenamento-e-Banco-de-Dados)
+    -[Armazenamento de instâncias](README.md#Armazenamento-de-instâncias)
+        -[Amazon Elastic Block Store (Amazon EBS)](README.md#Amazon-Elastic-Block-Store (Amazon EBS))
+
         
