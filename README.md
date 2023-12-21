@@ -705,3 +705,34 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
     <li>Desenvolver aplicações da AWS em linguagens de programação compatíveis.</li>
     <li>&check;Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.</li>
 </ul>
+
+# Redes
+
+### Introdução ao Módulo
+
+ <ul>
+        <li>Descrever os conceitos básicos de redes.</li>
+        <li>Descrever a diferença entre recursos de redes públicas e privadas.</li>
+        <li>Explicar como um gateway privado virtual funciona usando um cenário real.</li>
+        <li>Explicar como uma rede privada virtual (VPN) funciona usando um cenário real.</li>
+        <li>Descrever o benefício do AWS Direct Connect.</li>
+        <li>Descrever o benefício das implantações híbridas.</li>
+        <li>Descrever as camadas de segurança usadas em uma estratégia de TI.</li>
+        <li>Descrever os serviços que os clientes usam para interagir com a rede global da AWS.</li>
+</ul>
+
+## Amazon Virtual Private Cloud (Amazon VPC)
+
+<p>magine os milhões de clientes que usam os serviços AWS. Imagine também os milhões de recursos que esses clientes criaram, como as instâncias do Amazon EC2. Sem limites para todos esses recursos, o tráfego de rede fluiria entre eles sem restrições.</p>
+
+<p>Um serviço de rede que você pode usar para definir limites para seus recursos AWS é o <a href="https://aws.amazon.com/pt/vpc/" target="_blank"> Amazon Virtual Private Cloud (Amazon VPC)</a>.</p>
+
+<p>O Amazon VPC permite que você provisione uma seção isolada da nuvem AWS. Nessa seção isolada, você pode executar os recursos em uma rede virtual que definir. Em uma Virtual Private Cloud (VPC), você pode organizar seus recursos em sub-redes. Uma <strong>sub-rede</strong> é uma seção de uma VPC que pode conter recursos como instâncias do Amazon EC2.</p>
+
+## Gateway de internet
+
+<p>Para permitir que o tráfego público da internet acesse sua VPC, é preciso anexar um <strong>gateway de internet</strong> à VPC.</p>
+
+
+
+
