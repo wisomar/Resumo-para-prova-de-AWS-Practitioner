@@ -72,4 +72,10 @@
         - [Filtragem de pacotes stateless](README.md#Filtragem-de-pacotes-stateless)
         - [Grupos de segurança](README.md#Grupos-de-segurança)
         - [Filtragem de pacotes stateful](README.md#Filtragem-de-pacotes-stateful)
+        - [Recapitulação de componente da VPC](README.md#Recapitulação-de-componente-da-VPC)
+    - [Redes globais](README.md#Redes-globais)
+        - [Sistema de nomes de domínio (DNS)](README.md#Sistema-de-nomes-de-domínio (DNS))
+        - [Amazon Route 53](README.md#Amazon-Route-53)
+        - [como o Amazon Route 53 e o Amazon CloudFront entregam conteúdo](README.md#como-o-Amazon-Route-53-e-o-Amazon-CloudFront-entregam-conteúdo)
+        - 
         
