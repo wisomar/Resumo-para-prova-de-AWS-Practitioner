@@ -733,7 +733,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>Para permitir que o tráfego público da internet acesse sua VPC, é preciso anexar um <strong>gateway de internet</strong> à VPC.</p>
 
-![](https://drive.google.com/open?id=1oqKeqgbZVDz8crADuepWK05BCDVD3SBX&usp=drive_fs)
+<img src="https://drive.google.com/open?id=1oqKeqgbZVDz8crADuepWK05BCDVD3SBX&usp=drive_fs">
 
 
 
