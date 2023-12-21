@@ -914,4 +914,177 @@ Por padrão, a ACL de rede-padrão da conta permite todo o tráfego de entrada e
 
 ## Redes globais
 
+### Sistema de nomes de domínio (DNS)
+
+Suponha que a AnyCompany tenha um site hospedado na nuvem AWS. Os clientes digitam o endereço da web no navegador e podem acessar o site. Isso acontece devido à resolução do sistema de nomes de domínio (DNS). Na resolução de DNS, o resolvedor DNS do cliente se comunica com um servidor DNS.
+
+Pense no DNS como a lista telefônica da internet. A resolução de DNS é o processo de conversão de um nome de domínio para um endereço IP. 
+
+![Qqrcp-f22LyvBJQy_C9XUGu7bQqfnD46J](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/898313cb-2fa0-42d0-8177-b65da4546a1a)
+<small><em>Um cliente se conecta a um resolvedor de DNS procurando um domínio. O resolvedor encaminha a solicitação para o servidor DNS, que retorna o endereço IP para o resolvedor.</em></small>
+
+Por exemplo, suponha que você deseja acessar o site da AnyCompany. 
+
+<ol>
+  <li>
+    Quando você digita o nome de domínio no navegador, essa solicitação é enviada a um resolvedor de DNS do cliente.
+  </li>
+  <li>
+    O resolvedor de DNS do cliente solicita ao servidor DNS da empresa o endereço IP que corresponde ao site da AnyCompany.
+  </li>
+  <li>
+    O servidor DNS da empresa responde com o endereço IP para o site da AnyCompany, 192.0.2.0.
+  </li>
+</ol>
+
+### Amazon Route 53
+
+O <a href="https://aws.amazon.com/pt/route53/">Amazon Route 53</a> é um serviço da web de DNS. Oferece aos desenvolvedores e empresas uma maneira confiável de rotear os usuários finais para aplicativos da internet hospedados na AWS. 
+
+O Amazon Route 53 conecta solicitações de usuários à infraestrutura em execução na AWS (como instâncias do Amazon EC2 e balanceadores de carga). Ele pode direcionar os usuários para a infraestrutura fora da AWS.
+
+Outro recurso do Route 53 é a capacidade de gerenciar os registros DNS para nomes de domínio. Você pode registrar novos nomes de domínio diretamente no Route 53. Você também pode transferir registros DNS para nomes de domínio existentes gerenciados por outras empresas de registro de domínio. Isso permite que você gerencie todos os seus nomes de domínio em um único local.
+
+No módulo anterior, você conheceu o Amazon CloudFront, um serviço de entrega de conteúdo. O exemplo a seguir descreve como o Route 53 e o Amazon CloudFront trabalham juntos para entregar conteúdo aos clientes.
+
+### como o Amazon Route 53 e o Amazon CloudFront entregam conteúdo
+
+<img width="840" alt="84fDqozgQugxVdRS_alwFaBM8JjKKCXFD" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/57850c6a-d88f-490a-8fa6-7e5468b550a5">
+
+Suponha que a aplicação da AnyCompany esteja em execução em várias instâncias do Amazon EC2. Essas instâncias estão em um grupo do Auto Scaling que é anexado a um Application Load Balancer. 
+
+<ol>
+  <li>
+    Um cliente solicita dados da aplicação acessando o site da AnyCompany.
+  </li>
+  <li>
+    O Amazon Route 53 usa a resolução de DNS para identificar o endereço IP correspondente da AnyCompany.com, 192.0.2.0. Essas informações são enviadas de volta para o cliente.
+  </li>
+  <li>
+    A solicitação do cliente é enviada para o local de borda mais próximo por intermédio do Amazon CloudFront.
+  </li>
+  <li>
+    O Amazon CloudFront se conecta ao Application Load Balancer, que envia o pacote de entrada para uma instância do Amazon EC2.
+  </li>
+</ol>
+
+#### Teste de conhecimento 
+
+Qual declaração melhor descreve a resolução de DNS?
+
+<ol>
+  <li>
+    Iniciar recursos em uma rede virtual definida por você
+  </li>
+  <li>
+    Armazenar cópias locais de conteúdo em locais de borda em todo o mundo
+  </li>
+  <li>
+    Conectar uma VPC à Internet
+  </li>
+  <li>
+    &check;Converter um nome de domínio em um endereço IP
+  </li>
+</ol>
+
+A resposta correta é Converter um nome de domínio em um endereço IP.
+
+Por exemplo, para acessar o site da AnyCompany, digite o nome de domínio no seu PC e essa solicitação será enviada para um servidor DNS. Em seguida, o servidor DNS solicita ao servidor web o endereço IP que corresponde ao site da AnyCompany. O servidor da web responde com o endereço IP do site da AnyCompany, 192.0.2.0.
+
+
+### Recursos adicionais
+
+<ul>
+  <li><a href="https://aws.amazon.com/pt/products/networking/" target="_blank">Redes e entrega de conteúdo na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/vpc/" target="_blank">Amazon Virtual Private Cloud</a></li>
+  <li><a href="https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/what-is-amazon-vpc.html" target="_blank">O que é o Amazon VPC?</a></li>
+  <li><a href="https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/how-it-works.html" target="_blank">Como o Amazon VPC funciona</a></li>
+</ul>
+
+#### teste de conhecimento 2
+
+Sua empresa tem um aplicativo que usa instâncias do Amazon EC2 para executar o site voltado para o cliente e instâncias de banco de dados do Amazon RDS para armazenar informações pessoais dos clientes. Como o desenvolvedor deve configurar a VPC de acordo com as práticas recomendadas?
+
+<ul>
+  <li>Colocar as instâncias do Amazon EC2 em uma sub-rede privada e as instâncias de bancos de dados do Amazon RDS em uma sub-rede pública.</li>
+  <li>&check; Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.</li>
+  <li>Colocar as instâncias do Amazon EC2 e as instâncias de bancos de dados do Amazon RDS em uma sub-rede pública.</li>
+  <li>Colocar as instâncias do Amazon EC2 e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.</li>
+</ul>
+
+A resposta correta é Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.
+
+
+
+Uma sub-rede é uma seção de uma VPC na qual você pode agrupar recursos com base em necessidades operacionais ou de segurança. As sub-redes podem ser públicas ou privadas.
+
+
+
+As sub-redes públicas têm recursos que precisam ser acessíveis pelo público, como o site de uma loja on-line.
+
+
+
+As sub-redes privadas têm recursos que devem ser acessíveis apenas pela sua rede privada, como um banco de dados contendo informações pessoais dos clientes e históricos de pedidos.
+
+Qual componente pode ser usado para estabelecer uma conexão privada dedicada entre o data center da sua empresa e a AWS?
+
+<ul>
+  <li>Sub-rede privada</li>
+  <li>DNS</li>
+  <li>&check; AWS Direct Connect</li>
+  <li>Gateway privado virtual</li>
+</ul>
+
+Qual declaração descreve melhor os grupos de segurança?
+
+<ul>
+  <li>&check; Eles são stateful e negam todo o tráfego de entrada por padrão.</li>
+  <li>Eles são stateful e permitem todo o tráfego de entrada por padrão.</li>
+  <li>Eles são stateless e negam todo o tráfego de entrada por padrão.</li>
+  <li>Eles são stateless e permitem todo o tráfego de entrada por padrão.</li>
+</ul>
+
+A resposta correta é Grupos de segurança são stateful e negam todo o tráfego de entrada por padrão.
+
+
+
+Grupos de segurança são stateful. Isso significa que eles usam padrões e fluxos de tráfego anteriores ao avaliar novas solicitações para uma instância.
+
+
+
+Por padrão, os grupos de segurança negam todo o tráfego de entrada, mas você pode adicionar regras personalizadas para atender às suas necessidades operacionais e de segurança.
+
+Qual componente é usado para conectar uma VPC à internet?
+
+<ul>
+  <li>Sub-rede pública</li>
+  <li>Local de borda</li>
+  <li>Grupo de segurança</li>
+  <li>&check; Gateway de internet</li>
+</ul>
+
+Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio?
+
+<ul>
+  <li>Amazon Virtual Private Cloud</li>
+  <li>AWS Direct Connect</li>
+  <li>Amazon CloudFront</li>
+  <li>&check; Amazon Route 53</li>
+</ul>
+A resposta correta é Amazon Route 53.
+
+
+
+O Amazon Route 53 é um serviço da web de DNS. Ele oferece aos desenvolvedores e empresas uma maneira confiável de direcionar os usuários finais para aplicações da internet hospedados na AWS.
+
+
+
+Outro recurso do Route 53 é a capacidade de gerenciar os registros DNS para nomes de domínio. Você pode transferir registros DNS para nomes de domínio existentes gerenciados por outras empresas de registro de domínio. Você também pode registrar novos nomes de domínio diretamente no Route 53.
+
+
+
+
+
+
+
 
