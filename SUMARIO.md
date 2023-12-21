@@ -59,3 +59,8 @@
     - [AWS Elastic Beanstalk](README.md#aws-elastic-beanstalk)
     - [AWS CloudFormation](README.md#aws-cloudformation)
     - [AWS Outposts](README.md#aws-outposts)
+- [Redes](README.md#Redes)
+    - [Introdução ao modulo](README.md#Introdução-ao-modulo)
+        - [Amazon Virtual Private Cloud (Amazon VPC)](README.md#Amazon-Virtual-Private-Cloud (Amazon VPC))
+        - [Gateway de internet](README.md#Gateway-de-internet)
+        - [Gateway privado virtual](README.md#Gateway-privado-virtual)
