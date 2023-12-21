@@ -897,7 +897,19 @@ Qual declaração descreve melhor a lista de controle de acesso de rede-padrão 
   <li>Ela é stateful e nega todo o tráfego de entrada e saída.</li>
 </ul>
 
+A resposta correta é Ela é stateless e permite todo o tráfego de entrada e saída.
 
+
+
+As ACLs de rede (listas de controle de acesso de rede) fazem a filtragem de pacotes stateless. Elas não se lembram de nada e verificam os pacotes que atravessam a fronteira da sub-rede nos dois sentidos: entrada e saída.
+
+
+
+Cada conta AWS tem uma ACL de rede-padrão. Ao configurar a VPC, você pode usar a ACL de rede-padrão da conta ou criar ACLs de rede personalizadas.
+
+
+
+Por padrão, a ACL de rede-padrão da conta permite todo o tráfego de entrada e saída, mas você pode modificá-la adicionando suas regras. Para ACLs de rede personalizadas, todo o tráfego de entrada e saída é negado até que você adicione regras para especificar qual tráfego deve ser permitido. Além disso, todas as ACLs de rede têm uma regra de negação explícita. Essa regra garante que, se um pacote não corresponder a nenhuma das outras regras na lista, ele será negado.
 
 
 
