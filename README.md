@@ -1097,6 +1097,29 @@ Objetivos de aprendizado
   <li>Resumir vários serviços de banco de dados.</li>
 </ul>
 
+## Armazenamentos de instâncias
+
+Os volumes de armazenamento a nível de bloco se comportam como discos rígidos físicos.
+
+Um <a href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/InstanceStorage.html">armazenamento de instância</a> é um meio temporário de armazenamento a nível de bloco para uma instância do Amazon EC2. Um armazenamento de instância é o armazenamento em disco fisicamente anexo ao computador host para uma instância do EC2 e, portanto, tem a mesma vida útil da instância. Quando a instância for terminada, você perderá todos os dados no armazenamento de instância.
+
+Para ver um exemplo de como os armazenamentos de instância funciona, selecione os botões de seta para exibir cada etapa.
+
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/663b579b-5cd9-4295-a4c8-eb7e24373ee6" alt="passo1" width="25%" style="display: inline-block;">
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/1c697975-19c8-46ef-a78c-e6f3a2624c3e" alt="passo2" width="25%" style="display: inline-block;">
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/74b37318-b905-4ba2-b045-6babc7534f1b" alt="passo3" width="25%" style="display: inline-block;">
+
+
+
+
+
+
+
+
+
 
 
 
