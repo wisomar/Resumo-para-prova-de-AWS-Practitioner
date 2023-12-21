@@ -798,10 +798,10 @@ Suponha que alguns clientes tentem pular a fila do caixa e fazer os pedidos dire
 
 <p>Uma sub-rede é uma seção de uma VPC na qual você pode agrupar recursos com base em necessidades operacionais ou de segurança. As sub-redes podem ser públicas ou privadas</p>
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin-center: 20px;">
+<p align="center">
     <img width="300" alt="Hjj3x2_gHkWR2qfn_sChGBbygF3F2Ydkl" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/b1dffb96-e6df-45ad-bc59-0da6240883b5">
-  </figure>
+</p>
+
 
 <p>Sub-redes públicas contêm recursos que precisam ser acessíveis ao público, como o site de uma loja on-line.</p>
 <p>As sub-redes privadas contêm recursos que devem ser acessíveis apenas pela sua rede privada, como um banco de dados que contém informações pessoais dos clientes e históricos de pedidos.</p>
@@ -809,7 +809,21 @@ Suponha que alguns clientes tentem pular a fila do caixa e fazer os pedidos dire
 
 ## Trafego de rede em uma VPC
 
+<p>Quando um cliente solicita dados de um aplicativo hospedado na nuvem AWS, essa solicitação é enviada como um pacote. Um pacote é uma unidade de dados enviada pela internet ou por uma rede.</p>
 
+<p>Ele entra em uma VPC por um gateway de internet. Antes de um pacote poder entrar em uma sub-rede ou sair de uma sub-rede, ele verifica se há permissões. Essas permissões indicam quem enviou o pacote e como ele tenta se comunicar com os recursos em uma sub-rede.</p>
+
+<p>O componente da VPC que verifica as permissões de pacotes das sub-redes é uma <a href="https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/vpc-network-acls.html" target="_blank">lista de controle de acesso (ACL)</a> de rede.</p>
+
+## ACLs de rede
+
+<p>Uma ACL de rede é um firewall virtual que controla o tráfego de entrada e saída no nível de sub-rede.</p>
+
+<p>Por exemplo, saia da cafeteria e imagine que você está em um aeroporto. No aeroporto, os viajantes estão tentando entrar em outro país. Você pode pensar nos viajantes como pacotes e no oficial de controle de passaportes como uma ACL de rede. O oficial de controle de passaportes verifica as credenciais dos viajantes quando entram e saem do país. Se um viajante estiver em uma lista aprovada, ele poderá passar. No entanto, se ele não estiver na lista aprovada ou estiver explicitamente em uma lista de viajantes proibidos, ele não poderá entrar.</p>
+
+<p align="center">
+  <img width="320" alt="1GNhfNCCHhhKV1AH_2EJFiOIG7TfIZq2Y" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/08247029-dc81-4e16-b3a3-3d464d5da109">
+</p>
 
 
 
