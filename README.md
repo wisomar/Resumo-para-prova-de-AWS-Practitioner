@@ -735,7 +735,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>
 <figure>
-<img width="840" alt="U98VX8q8oGj1lgLY_cQWnrSlZAhp3-TiT" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/8caafb21-104b-43b0-88e6-29ce32967d5d">
+<img width="980" alt="U98VX8q8oGj1lgLY_cQWnrSlZAhp3-TiT" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/8caafb21-104b-43b0-88e6-29ce32967d5d">
 <div style="text-align: left;">
 <figcaption><em>Ícone do gateway de internet anexado a uma VPC que contém três instâncias do EC2. Uma seta conecta o cliente ao gateway na internet<br><div style="text-align: center;"> indicando que a solicitação do cliente obteve acesso à VPC.</em></figcaption></div>
  </figure></p>
@@ -754,7 +754,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 <p>O gateway privado virtual é o componente que permite que o tráfego protegido da internet ingresse na VPC. Mesmo que sua conexão com a cafeteria tenha proteção extra, os engarrafamentos são possíveis porque você usa o mesmo caminho que outros clientes.</p>
 
 <p><figure>
-<img width="840" alt="GVVnz3UVA2zeRO_k_6XoEmx4Atan-vguA" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c18bcbf9-b47e-4d70-9b82-a36d8e05b1d9">
+<img width="980" alt="GVVnz3UVA2zeRO_k_6XoEmx4Atan-vguA" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c18bcbf9-b47e-4d70-9b82-a36d8e05b1d9">
 </figure></p>
 
 <p>Um gateway privado virtual permite estabelecer uma conexão VPN (rede privada virtual) entre a VPC e uma rede privada, como um data center on-premises ou uma rede corporativa interna. Um gateway privado virtual permitirá o tráfego na VPC somente se ele for proveniente de uma rede aprovada.</p>
@@ -768,8 +768,8 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 <p>Esse corredor privado estabelece o mesmo tipo de conexão dedicada que o AWS Direct Connect. Os moradores conseguem entrar na cafeteria sem precisar usar a estrada pública compartilhada com outros clientes. </p>
 
 <figure>
-<img width="840" alt="dGcj_FD522Xi0IOA_Oe6TnlWoopXumQBZ" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fdc67ea4-1f8b-44c4-bef1-3cda2e67d796">
-<figcaption><em>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</em></figcaption>
+<img width="980" alt="dGcj_FD522Xi0IOA_Oe6TnlWoopXumQBZ" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fdc67ea4-1f8b-44c4-bef1-3cda2e67d796">
+<p><figcaption><em>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</em></figcaption></p>
 </figure>
 
 <p>A conexão privada do AWS Direct Connect ajuda a reduzir os custos de rede e a aumentar a quantidade de largura de banda que pode trafegar pela rede.</p>
@@ -783,11 +783,11 @@ Primeiro, os clientes fazem os pedidos ao operador de caixa. O operador de caixa
 
 Suponha que alguns clientes tentem pular a fila do caixa e fazer os pedidos diretamente ao barista. Isso interrompe o fluxo de tráfego e faz com que os clientes acessem uma parte da cafeteria que é restrita a eles.
 
-<img width="840" alt="0Nx_XXGFi6rkyf35_Itp7yAAZE80GMzEV" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/e80a5e6d-e392-44da-b882-83c3351eca4a">
+<img width="980" alt="0Nx_XXGFi6rkyf35_Itp7yAAZE80GMzEV" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/e80a5e6d-e392-44da-b882-83c3351eca4a">
 
 <p>Para corrigir isso, os proprietários da cafeteria dividem a área do balcão colocando o operador de caixa e o barista em estações de trabalho separadas. A estação de trabalho do operador de caixa é voltada para o público e projetada para receber clientes. A área do barista é privada. O barista ainda pode receber pedidos do operador de caixa, mas não diretamente dos clientes.</p>
 
-<img width="840" alt="0Nx_XXGFi6rkyf35_Itp7yAAZE80GMzEV" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/d2e122ff-8749-4fb9-b035-5127c21f8c2b">
+<img width="980" alt="0Nx_XXGFi6rkyf35_Itp7yAAZE80GMzEV" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/d2e122ff-8749-4fb9-b035-5127c21f8c2b">
 <p><em>Um caixa, um barista e três clientes na fila. O ícone do primeiro cliente da fila tem uma seta apontando para o caixa, mostrando que o cliente entrega o pedido ao caixa. Em seguida, o ícone do caixa tem uma seta apontando para o ícone do barista, mostrando que o caixa encaminha o pedido do cliente ao barista. O último cliente da fila tenta fazer o pedido diretamente ao barista, mas é impedido de fazê-lo.</em></p>
 
 <p>Isso é semelhante à forma como você pode usar os serviços de redes da AWS para isolar recursos e determinar exatamente como o tráfego de rede flui.</p>
@@ -795,6 +795,24 @@ Suponha que alguns clientes tentem pular a fila do caixa e fazer os pedidos dire
 <p>Na cafeteria, você pode pensar na área do balcão como uma VPC. A área do balcão divide-se em duas áreas separadas para a estação de trabalho do operador de caixa e para a estação de trabalho do barista. Em uma VPC, sub-redes são áreas separadas usadas para agrupar recursos</p>
 
 ## sub-redes
+
+<p>Uma sub-rede é uma seção de uma VPC na qual você pode agrupar recursos com base em necessidades operacionais ou de segurança. As sub-redes podem ser públicas ou privadas</p>
+
+<div style="text-align: center;">
+  <figure style="display: inline-block; margin-center: 20px;">
+    <img width="300" alt="Hjj3x2_gHkWR2qfn_sChGBbygF3F2Ydkl" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/b1dffb96-e6df-45ad-bc59-0da6240883b5">
+  </figure>
+
+<p>Sub-redes públicas contêm recursos que precisam ser acessíveis ao público, como o site de uma loja on-line.</p>
+<p>As sub-redes privadas contêm recursos que devem ser acessíveis apenas pela sua rede privada, como um banco de dados que contém informações pessoais dos clientes e históricos de pedidos.</p>
+<p>Em uma VPC, as sub-redes podem se comunicar entre si. Por exemplo, um aplicativo que envolve instâncias do Amazon EC2 em uma sub-rede pública que se comunicam com bancos de dados localizados em uma sub-rede privada.</p>
+
+## Trafego de rede em uma VPC
+
+
+
+
+
 
 
 
