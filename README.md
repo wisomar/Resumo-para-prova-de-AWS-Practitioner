@@ -736,11 +736,9 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 <p>
 <figure>
 <img width="840" alt="U98VX8q8oGj1lgLY_cQWnrSlZAhp3-TiT" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/8caafb21-104b-43b0-88e6-29ce32967d5d">
-  </p>
 <div style="text-align: left;">
 <figcaption><em>Ícone do gateway de internet anexado a uma VPC que contém três instâncias do EC2. Uma seta conecta o cliente ao gateway na internet<br><div style="text-align: center;"> indicando que a solicitação do cliente obteve acesso à VPC.</em></figcaption></div>
-   </div>
-</figure>
+ </figure></p>
 
 
 <p>Um gateway da internet é uma conexão entre uma VPC e a internet. Você pode pensar em um gateway da internet como sendo semelhante a uma porta que os clientes usam para entrar na cafeteria. Sem um gateway da internet, ninguém pode acessar os recursos em sua VPC.</p>
@@ -769,17 +767,34 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>Esse corredor privado estabelece o mesmo tipo de conexão dedicada que o AWS Direct Connect. Os moradores conseguem entrar na cafeteria sem precisar usar a estrada pública compartilhada com outros clientes. </p>
 
-<p><figure>
-  <img width="840" alt="dGcj_FD522Xi0IOA_Oe6TnlWoopXumQBZ" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fdc67ea4-1f8b-44c4-bef1-3cda2e67d796">
-  <div><em><figcapture>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</figcapture>
-</figure></em></div>
-</p>
+<figure>
+<img width="840" alt="dGcj_FD522Xi0IOA_Oe6TnlWoopXumQBZ" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fdc67ea4-1f8b-44c4-bef1-3cda2e67d796">
+<figcaption><em>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</em></figcaption>
+</figure>
 
 <p>A conexão privada do AWS Direct Connect ajuda a reduzir os custos de rede e a aumentar a quantidade de largura de banda que pode trafegar pela rede.</p>
 
 
 ## Sub-redes e listas de controle de acesso à rede
 
+Para saber mais sobre a função das sub-redes em uma VPC, veja o exemplo da cafeteria a seguir.
+
+Primeiro, os clientes fazem os pedidos ao operador de caixa. O operador de caixa, em seguida, passa os pedidos para o barista. Esse processo permite que a fila prossiga sem problemas à medida que mais clientes entram. 
+
+Suponha que alguns clientes tentem pular a fila do caixa e fazer os pedidos diretamente ao barista. Isso interrompe o fluxo de tráfego e faz com que os clientes acessem uma parte da cafeteria que é restrita a eles.
+
+<img width="840" alt="0Nx_XXGFi6rkyf35_Itp7yAAZE80GMzEV" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/e80a5e6d-e392-44da-b882-83c3351eca4a">
+
+Para corrigir isso, os proprietários da cafeteria dividem a área do balcão colocando o operador de caixa e o barista em estações de trabalho separadas. A estação de trabalho do operador de caixa é voltada para o público e projetada para receber clientes. A área do barista é privada. O barista ainda pode receber pedidos do operador de caixa, mas não diretamente dos clientes.
+
+<img width="840" alt="0Nx_XXGFi6rkyf35_Itp7yAAZE80GMzEV" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/d2e122ff-8749-4fb9-b035-5127c21f8c2b">
+<em>Um caixa, um barista e três clientes na fila. O ícone do primeiro cliente da fila tem uma seta apontando para o caixa, mostrando que o cliente entrega o pedido ao caixa. Em seguida, o ícone do caixa tem uma seta apontando para o ícone do barista, mostrando que o caixa encaminha o pedido do cliente ao barista. O último cliente da fila tenta fazer o pedido diretamente ao barista, mas é impedido de fazê-lo.</em>
+
+Isso é semelhante à forma como você pode usar os serviços de redes da AWS para isolar recursos e determinar exatamente como o tráfego de rede flui.
+
+Na cafeteria, você pode pensar na área do balcão como uma VPC. A área do balcão divide-se em duas áreas separadas para a estação de trabalho do operador de caixa e para a estação de trabalho do barista. Em uma VPC, sub-redes são áreas separadas usadas para agrupar recursos
+
+## sub-redes
 
 
 
