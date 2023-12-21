@@ -737,7 +737,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 <figure>
 <img width="980" alt="U98VX8q8oGj1lgLY_cQWnrSlZAhp3-TiT" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/8caafb21-104b-43b0-88e6-29ce32967d5d">
 <div style="text-align: left;">
-<figcaption><em>Ícone do gateway de internet anexado a uma VPC que contém três instâncias do EC2. Uma seta conecta o cliente ao gateway na internet<br><div style="text-align: center;"> indicando que a solicitação do cliente obteve acesso à VPC.</em></figcaption></div>
+<small><em>Ícone do gateway de internet anexado a uma VPC que contém três instâncias do EC2. Uma seta conecta o cliente ao gateway na internet<br><div style="text-align: center;"> indicando que a solicitação do cliente obteve acesso à VPC.</em></small></div>
  </figure></p>
 
 
@@ -769,7 +769,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <figure>
 <img width="980" alt="dGcj_FD522Xi0IOA_Oe6TnlWoopXumQBZ" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fdc67ea4-1f8b-44c4-bef1-3cda2e67d796">
-<p><figcaption><em>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</em></figcaption></p>
+<p><small><em>Um data center corporativo roteia tráfego de rede para uma localização do AWS Direct Connect. Em seguida, esse tráfego é roteado para uma VPC por meio de um gateway privado virtual. Todo o tráfego de rede entre o data center corporativo e a VPC passa por essa conexão privada dedicada.</em></small></p>
 </figure>
 
 <p>A conexão privada do AWS Direct Connect ajuda a reduzir os custos de rede e a aumentar a quantidade de largura de banda que pode trafegar pela rede.</p>
@@ -824,6 +824,78 @@ Suponha que alguns clientes tentem pular a fila do caixa e fazer os pedidos dire
 <p align="center">
   <img width="320" alt="1GNhfNCCHhhKV1AH_2EJFiOIG7TfIZq2Y" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/08247029-dc81-4e16-b3a3-3d464d5da109">
 </p>
+
+<p>Cada conta AWS tem uma ACL de rede-padrão. Ao configurar sua VPC, você pode usar a ACL de rede comum da sua conta ou criar ACLs de rede personalizadas.</p>
+
+<p>Por padrão, a ACL-padrão de rede da conta permite todo o tráfego de entrada e saída, mas você pode adicionar suas regras. Para ACLs de rede personalizadas, todo o tráfego de entrada e saída é negado até que você adicione regras para especificar qual tráfego permitir. Além disso, todas as ACLs de rede têm uma regra de negação explícita. Essa regra garante que, se um pacote não corresponder a nenhuma das outras regras na lista, ele será negado.</p>
+
+## Filtragem de pacotes stateless
+
+<p>As ACLs de rede executam a filtragem de pacotes stateless. Elas não se lembram de nada e verificam os pacotes que atravessam a fronteira da sub-rede em todos os sentidos: entrada e saída.</p>
+<p>Lembre-se do exemplo anterior de um viajante que quer entrar em outro país. Isso se parece com o envio de uma solicitação de uma instância do Amazon EC2 para a internet.</p>
+<p>Quando a resposta de pacote da solicitação volta para a sub-rede, a ACL de rede não se lembra da solicitação anterior. A ACL de rede verifica a resposta do pacote em relação à lista de regras para determinar se permite ou nega.</p>
+
+<p align="center">
+ <img width="840" alt="Bbzv_ITcdhxUAI0w_dOvIexppHYQObzwv" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/b1b0cbdf-26ea-40c5-a59d-08b53af9f368">
+</p>
+
+<p>Depois que um pacote entra em uma sub-rede, é necessário verificar as permissões dele nos recursos da sub-rede, como as instâncias do Amazon EC2.</p>
+
+<p>O componente de VPC que verifica as permissões de pacote para uma instância do Amazon EC2 é um <a href="https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/vpc-security-groups.html">grupo de segurança.</a></p>
+
+## Grupos de Segurança
+
+<p>Um grupo de segurança é um firewall virtual que controla o tráfego de entrada e saída de uma instância do Amazon EC2.</p>
+
+<p align="center">
+<img width="300" alt="L0WTTAvTJDOoV89e_6tYbYV-wpC1UbpRk" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/b2597e7a-be43-4ad4-95b7-608ebe925564">
+</p>
+
+<p>Por padrão, um grupo de segurança nega todo o tráfego de entrada e permite todo o tráfego de saída. Você pode adicionar regras personalizadas para configurar o tráfego que será permitido</p>
+
+<p>Neste exemplo, suponha que você esteja em um prédio com um porteiro que recebe as visitas no lobby. Você pode pensar nas visitas como pacotes e no porteiro como um grupo de segurança. À medida que as visitas chegam, o porteiro verifica uma lista para garantir que eles podem entrar no edifício. No entanto, o porteiro não verifica a lista novamente quando as visitas saem do edifício</p>
+
+<p>Se você tiver várias instâncias do Amazon EC2 na mesma VPC, poderá associá-las ao mesmo grupo de segurança ou usar grupos de segurança diferentes para cada instância.</p>
+
+## Filtragem de pacotes stateful
+
+<p>Os grupos de segurança fazem a filtragem de pacotes stateful. Eles se lembram de decisões anteriores tomadas para pacotes recebidos.</p>
+
+<p>Considere o mesmo exemplo de envio de uma solicitação de uma instância do Amazon EC2 para a internet. </p>
+
+<p>Quando a resposta de pacote da solicitação retorna para a instância, o grupo de segurança lembra-se da solicitação anterior. O grupo de segurança permite que a resposta prossiga, independentemente das regras do grupo de segurança de entrada.</p>
+
+<p align="center">
+<img width="840" alt="state" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/e28e8905-e912-416e-b55e-835f03e39623">
+</p>
+
+<p>Com as ACLs de rede e os grupos de segurança, você pode configurar regras personalizadas para o tráfego na sua VPC. Conforme você sabe mais sobre a segurança e a rede da AWS, entenda as diferenças entre ACLs de rede e grupos de segurança.</p>
+
+<p align="center">
+  <img width="840" alt="vNa6k_zqfuKfAn2__3urHJnnrLbfcZk4e" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/523c2ab4-672e-4c0e-bde0-0432c5705482">
+  <br>
+<em><small>Um pacote viaja pela internet de um cliente para o gateway de internet e para a VPC. Em seguida, o pacote passa pela lista de controle de acesso à rede e acessa a sub-rede pública, na qual estão localizadas duas instâncias do EC2.</small></em>
+</p>
+
+### Recapitulação de componente da VPC
+
+<ul>
+  <li><strong>Sub-rede privada:</strong> Isola bancos de dados contendo informações pessoais dos clientes.</li>
+  <li><strong>Gateway privado virtual:</strong> Cria uma conexão VPN entre a VPC e a rede corporativa interna.</li>
+  <li><strong>Sub-rede pública:</strong> É compatível com o site voltado para o cliente.</li>
+  <li><strong>AWS Direct Connect:</strong> Estabelece uma conexão dedicada entre o data center on-premises e a VPC.</li>
+</ul>
+
+### Teste de conhecimento
+
+Qual declaração descreve melhor a lista de controle de acesso de rede-padrão de uma conta AWS?
+
+<ul>
+  <li>Ela é stateless e nega todo o tráfego de entrada e saída.</li>
+  <li>Ela é stateful e permite todo o tráfego de entrada e saída.</li>
+  <li>&check;Ela é stateless e permite todo o tráfego de entrada e saída.</li>
+  <li>Ela é stateful e nega todo o tráfego de entrada e saída.</li>
+</ul>
 
 
 
