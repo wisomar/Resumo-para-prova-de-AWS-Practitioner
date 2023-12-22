@@ -1106,11 +1106,63 @@ Um <a href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/InstanceSt
 Para ver um exemplo de como os armazenamentos de instância funciona, selecione os botões de seta para exibir cada etapa.
 
 
-<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/663b579b-5cd9-4295-a4c8-eb7e24373ee6" alt="passo1" width="25%" style="display: inline-block;">
+<div>
+  <img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/663b579b-5cd9-4295-a4c8-eb7e24373ee6" alt="passo1" width="25%" style="float: left; margin-right: 10px;">
+  <p>Uma instância do Amazon EC2 com um armazenamento de instância anexo em execução.</p>
+</div>
 
-<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/1c697975-19c8-46ef-a78c-e6f3a2624c3e" alt="passo2" width="25%" style="display: inline-block;">
 
-<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/74b37318-b905-4ba2-b045-6babc7534f1b" alt="passo3" width="25%" style="display: inline-block;">
+<div>
+  <img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/1c697975-19c8-46ef-a78c-e6f3a2624c3e" alt="passo2" width="25%" style="float: left; margin-right: 10px;">
+  <p>A instância é interrompida ou encerrada.</p>
+</div>
+
+<div>
+  <img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/74b37318-b905-4ba2-b045-6babc7534f1b" alt="passo3" width="25%" style="float: left; margin-right: 10px;">
+  <p>Todos os dados no armazenamento de instância anexo são apagados.</p>
+</div>
+
+#### Resumo
+
+
+As instâncias do Amazon EC2 são servidores virtuais. Caso você execute uma instância a partir de um estado interrompido, ela poderá ser iniciada em outro host, em que o volume de armazenamento de instância usado anteriormente não existe. Portanto, a AWS recomenda armazenamentos de instâncias para casos de uso que envolvam dados temporários que você não precisa a longo prazo.
+
+
+O <a href="https://aws.amazon.com/pt/ebs/" target="_blank">Amazon Elastic Block Store (Amazon EBS)</a> é um serviço que fornece volumes de armazenamento a nível de bloco que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/7000f51e-a1fa-497e-bca2-3e0aa90be8ab" alt="passo3" width="25%" style="float: left; margin-right: 10px;">
+
+Para criar um volume do EBS, defina a configuração (como tamanho e tipo do volume) e a provisão. Depois de criado, o volume do EBS pode ser anexado a uma instância do Amazon EC2.
+
+Como os volumes do EBS são para dados que precisam perdurar, é importante fazer backup dos dados. Você pode fazer backups incrementais de volumes do EBS criando snapshots do Amazon EBS.
+
+### Snapshots do Amazon EBS
+
+<div>
+  <img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/0dae5a02-9b82-48c9-8be2-a2a306bc265a">
+ <p><small><em>Backups incrementais de volumes do EBS criando snapshots do Amazon EBS. No dia 1, dois volumes são salvos em backup. No dia 2, um novo volume é adicionado e salvo em backup. No dia 3, são adicionados mais dois volumes para um total de cinco volumes. Somente os dois novos volume são salvos em backup.</small></em></p>
+</div>
+
+<p>Um <a href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/EBSSnapshots.html" target="_blank">snapshot do EBS</a> é um backup incremental. Isso significa que o primeiro backup de um volume copia todos os dados. Nos backups subsequentes, somente os blocos de dados que foram alterados desde o snapshot mais recente são salvos. </p>
+
+Os backups incrementais são diferentes dos backups completos, nos quais todos os dados em um volume de armazenamento são copiados cada vez que ocorre um backup. O backup completo inclui dados que não foram alterados desde o backup mais recente.
+
+
+Teste de conhecimento
+
+Quais das seguintes opções são características do serviço Amazon EBS? (Selecione DUAS opções.)
+
+<ul>
+  <li>&check; Ideal para dados que precisam ser retidos</li>
+  <li> Ideal para dados temporários que não são mantidos a longo prazo</li>
+  <li>&check; Unidades separadas do computador host de uma instância do EC2</li>
+  <li> Conectado fisicamente ao computador host da instância do EC2</li>
+  <li> Os dados são apagados quando uma instância do EC2 é encerrada</li>
+</ul>
+
+
+
+
 
 
 
