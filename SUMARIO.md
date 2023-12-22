@@ -83,6 +83,22 @@
     - [Armazenamento de instâncias](README.md#Armazenamento-de-instâncias)
         - [Amazon Elastic Block Store (Amazon EBS)](README.md#Amazon-Elastic-Block-Store-(Amazon-EBS))
         - [Snapshots do Amazon EBS](README.md#Snapshots-do-Amazon-EBS)
+        - [Amazon Simple Storage Service (Amazon S3)](README.md#Amazon-Simple-Storage-Service (Amazon-S3))
+            - [Armazenamento de objetos](README.md#Armazenamento-de-objetos)
+        - [Amazon Simple Storage Service S3](README.md#Amazon-Simple-Storage-Service-S3)
+        - [Storage classes do Amazon S3](README.md#Storage-classes-do-Amazon-S3)
+        - [S3 Standard](README.md#S3-Standard)
+        - [S3 Standard – Infrequent Access (S3 Standard-IA)](README.md#S3-Standard–Infrequent-Access (S3 Standard-IA))
+        - [S3 One Zone-Infrequent Access (S3 One Zone – IA)](README.md#S3-One-Zone-Infrequent-Access-(S3-One-Zone–IA))
+        - [S3 Intelligent-Tiering](README.md#S3-Intelligent-Tiering)
+        - [S3 Glacier Instant Retrieval](README.md#S3-Glacier-Instant-Retrieval)
+        - [S3 Glacier Flexible Retrieval](README.md#S3-Glacier-Flexible-Retrieval)
+        - [S3 Glacier Deep Archive](README.md#S3-Glacier-Deep-Archive)
+        - [S3 Outposts](README.md#S3-Outposts)
+        - [Amazon Elastic File System (Amazon EFS)](README.md#Amazon-Elastic-File-System-(Amazon-EFS))
+             - [Comparação entre o Amazon EBS e o Amazon Elastic File System](README.md#Comparação-entre-o-Amazon-EBS-e-o-Amazon-Elastic-File-System)
+
+        
 
 
 
