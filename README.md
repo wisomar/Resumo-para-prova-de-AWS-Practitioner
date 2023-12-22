@@ -1073,7 +1073,7 @@ Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio
 </ul>
 A resposta correta é Amazon Route 53.
 
-
+# Amazon Route 53
 
 O Amazon Route 53 é um serviço da web de DNS. Ele oferece aos desenvolvedores e empresas uma maneira confiável de direcionar os usuários finais para aplicações da internet hospedados na AWS.
 
