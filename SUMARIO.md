@@ -79,6 +79,8 @@
         - [como o Amazon Route 53 e o Amazon CloudFront entregam conteúdo](README.md#como-o-Amazon-Route-53-e-o-Amazon-CloudFront-entregam-conteúdo)
 - [Armazenamento e Banco de Dados](README.md#Armazenamento-e-Banco-de-Dados)
     - [Armazenamento de instâncias](README.md##Armazenamento-de-instâncias)
-        - [Amazon Elastic Block Store (Amazon EBS)](#amazon-elastic-block-store)
+        - [Amazon Elastic Block Store (Amazon EBS)](READE.ME#amazon-elastic-block-store)
+        - [Snapshots do Amazon EBS](README.md#Snapshots-do-Amazon-EBS)
+          
 
         
