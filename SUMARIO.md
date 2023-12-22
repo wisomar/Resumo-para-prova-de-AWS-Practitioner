@@ -77,7 +77,7 @@
         - [Recapitulação de componente da VPC](README.md#recapitulação-de-componente-da-vpc)
     - [Redes globais](README.md#redes-globais)
         - [Sistema de nomes de domínio (DNS)](README.md#sistema-de-nomes-de-domínio-dns)
-        - [Amazon Route 53](README.md#amazon-route-53)
+        - [Amazon Route 53](README.md#Amazon-Route-53)
         - [Como o Amazon Route 53 e o Amazon CloudFront entregam conteúdo](README.md#como-o-amazon-route-53-e-o-amazon-cloudfront-entregam-conteúdo)
 - [Armazenamento e Banco de Dados](README.md#armazenamento-e-banco-de-dados)
     - [Armazenamento de instâncias](README.md#armazenamento-de-instâncias)
