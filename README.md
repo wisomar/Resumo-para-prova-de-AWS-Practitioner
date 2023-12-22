@@ -1128,7 +1128,7 @@ Para ver um exemplo de como os armazenamentos de instância funciona, selecione 
 As instâncias do Amazon EC2 são servidores virtuais. Caso você execute uma instância a partir de um estado interrompido, ela poderá ser iniciada em outro host, em que o volume de armazenamento de instância usado anteriormente não existe. Portanto, a AWS recomenda armazenamentos de instâncias para casos de uso que envolvam dados temporários que você não precisa a longo prazo.
 
 
-O <a href="https://aws.amazon.com/pt/ebs/" target="_blank">Amazon Elastic Block Store (Amazon EBS)</a> é um serviço que fornece volumes de armazenamento a nível de bloco que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
+O <a href="https://aws.amazon.com/pt/ebs/" target="_blank"> Amazon Elastic Block Store (Amazon EBS)</a> é um serviço que fornece volumes de armazenamento a nível de bloco que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
 
 <img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/7000f51e-a1fa-497e-bca2-3e0aa90be8ab" alt="passo3" width="25%" style="float: left; margin-right: 10px;">
 
