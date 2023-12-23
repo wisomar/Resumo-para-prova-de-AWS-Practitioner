@@ -1592,4 +1592,80 @@ O Amazon ElastiCache é um serviço que adiciona camadas de cache sobre os banco
 
 <a href="https://aws.amazon.com/pt/redshift/" target="_blank">Amazon Redshift</a>
 
+### AWS Database Migration Service (AWS DMS)
+
+O <a href="https://aws.amazon.com/pt/dms/">AWS Database Migration Service (AWS DMS)</a> permite migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados.
+
+Com o AWS DMS, você move dados entre bancos de dados de origem e de destino. Os <a href="https://aws.amazon.com/pt/dms/resources/">bancos de dados de origem e de destino</a>
+podem ser do mesmo tipo ou de tipos diferentes. Durante a migração, o banco de dados de origem permanece operacional, reduzindo o tempo de inatividade em qualquer aplicativo que dependa do banco de dados. 
+
+Por exemplo, suponha que você tenha um banco de dados MySQL armazenado on-premises em uma instância do Amazon EC2 ou no Amazon RDS. Pense no banco de dados MySQL como seu banco de dados de origem. Usando o AWS DMS, você pode migrar seus dados para um banco de dados de destino, por exemplo, um banco de dados do Amazon Aurora.
+
+### Outros casos de uso do AWS DMS
+
+#### Desenvolvimento e teste de migrações de banco de dados
+
+Os desenvolvedores conseguem testar as aplicações com os dados de produção sem afetar os usuários de produção
+
+### Consolidação de banco de dados
+
+Combinação de vários bancos de dados em um único banco de dados
+
+### Replicação contínua
+
+Envio de cópias contínuas dos dados para outras fontes de destino em vez de fazer uma migração única
+
+## Serviços de banco de dados adicionais
+
+### Amazon DocumentDB
+
+O <a href="https://aws.amazon.com/pt/documentdb/"> Amazon DocumentDB</a> é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB. (MongoDB é um programa de banco de dados de documentos.)
+
+### Amazon Neptune
+
+O <a href="https://aws.amazon.com/pt/neptune/">Amazon Neptune</a> é um serviço de banco de dados de grafo. 
+
+Você pode usar o Amazon Neptune para criar e executar aplicações que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraude e grafos de conhecimento.
+
+### Amazon Quantum Ledger Database (Amazon QLDB)
+
+O <a href="https://aws.amazon.com/pt/qldb/">Amazon QLDB</a> é um serviço de banco de dados ledger. 
+
+Você pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
+
+### Amazon Managed Blockchain
+
+O <a href="https://aws.amazon.com/pt/managed-blockchain/">Amazon Managed Blockchain</a> é um serviço para criar e gerenciar redes de blockchain com frameworks de código aberto. 
+
+O Blockchain é um sistema de registro distribuído que permite que várias partes executem transações e compartilhem dados sem uma autoridade central.
+
+### Amazon ElastiCache
+
+O <a href="https://aws.amazon.com/pt/elasticache/">Amazon ElastiCache</a> é um serviço que adiciona camadas de cache sobre bancos de dados para ajudar a melhorar os tempos de leitura de solicitações comuns. 
+
+Ele é compatível com dois tipos de armazenamentos de dados: Redis e Memcached.
+
+### Amazon DynamoDB Accelerator
+
+O <a href="https://aws.amazon.com/pt/dynamodb/dax/">Amazon DynamoDB Accelerator (DAX)</a> é um cache em memória do DynamoDB. 
+
+Ele ajuda a melhorar os tempos de resposta de milissegundos para microssegundos.
+
+#### Recursos adicionais
+
+<ol>
+  <li><a href="https://aws.amazon.com/pt/s3/">Armazenamento na nuvem na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/storage/">Blog de armazenamento na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/getting-started/hands-on/">Tutoriais práticos: armazenamento</a></li>
+  <li><a href="https://aws.amazon.com/pt/solutions/case-studies/">Histórias de clientes da AWS: armazenamento</a></li>
+  <li><a href="https://aws.amazon.com/pt/dms/">AWS Database Migration Service</a></li>
+  <li><a href="https://aws.amazon.com/pt/rds/">Bancos de dados na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/getting-started/hands-on/">Deep dive na categoria: bancos de dados</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/database/">Blog de bancos de dados da AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/solutions/case-studies/">Histórias de clientes da AWS: bancos de dados</a></li>
+</ol>
+
+
+
+
 
