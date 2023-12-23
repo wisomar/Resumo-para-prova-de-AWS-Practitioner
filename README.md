@@ -1769,6 +1769,9 @@ O Amazon DocumentDB é um serviço de banco de dados de documentos compatível c
 
 O Amazon ElastiCache é um serviço que adiciona camadas de cache sobre os bancos de dados para melhorar os tempos de leitura de solicitações comuns.
 
+# Segurança
+
+## O modelo de responsabilidade compartilhada da AWS
 
 
 
