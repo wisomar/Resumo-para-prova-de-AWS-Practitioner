@@ -1433,7 +1433,7 @@ Envio de cópias contínuas dos dados para outras fontes de destino em vez de fa
 
 ### Serviços de banco de dados adicionais
 
-#### O Amazon DocumentDB
+#### Amazon DocumentDB
 
 O <a href="https://aws.amazon.com/pt/documentdb/" target="_blank">Amazon DocumentDB</a> é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB. (MongoDB é um programa de banco de dados de documentos.)
 
@@ -1466,4 +1466,130 @@ Ele é compatível com dois tipos de armazenamentos de dados: Redis e Memcached.
 O <a href="https://aws.amazon.com/pt/dynamodb/dax/" target="_blank">Amazon DynamoDB Accelerator (DAX)</a> é um cache em memória do DynamoDB. 
 
 Ele ajuda a melhorar os tempos de resposta de milissegundos para microssegundos.
+
+#### Recursos adicionais
+
+<ul>
+  <li><a href="https://aws.amazon.com/pt/storage/">Armazenamento na nuvem na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/storage/">Blog de armazenamento na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/getting-started/hands-on/">Tutoriais práticos: armazenamento</a></li>
+  <li><a href="https://aws.amazon.com/pt/solutions/case-studies/storage/">Histórias de clientes da AWS: armazenamento</a></li>
+  <li><a href="https://aws.amazon.com/pt/dms/">AWS Database Migration Service</a></li>
+  <li><a href="https://aws.amazon.com/pt/products/databases/">Bancos de dados na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/database/">Blog de bancos de dados da AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/solutions/case-studies/databases/">Histórias de clientes da AWS: bancos de dados</a></li>
+</ul>
+
+Quais storage classes do Amazon S3 são otimizadas para dados de arquivamento? (Selecione DUAS opções.)
+
+<ul>
+  <li>Amazon S3 Standard</li>
+  <li>&check; Amazon S3 Glacier Flexible Retrieval</li>
+  <li>Amazon S3 Intelligent-Tiering</li>
+  <li>Amazon S3 Standard-IA</li>
+  <li>&check; Amazon S3 Glacier Deep Archive</li>
+</ul>
+
+As duas opções corretas são:
+
+Amazon S3 Glacier Flexible Retrieval
+Amazon S3 Glacier Deep Archive
+Objetos armazenados na storage class Amazon S3 Glacier Flexible Retrieval podem ser recuperados de poucos minutos a algumas horas. Em comparação, os objetos armazenados na storage class Amazon S3 Glacier Deep Archive podem ser recuperados em 12 horas.
+
+As outras respostas estão incorretas porque:
+
+O Amazon S3 Standard é a storage class ideal para dados acessados com frequência, não dados de arquivamento.
+O Amazon S3 Intelligent-Tiering monitora padrões de acesso de objetos e os move automaticamente entre as storage classes Amazon S3 Standard e Amazon S3 Standard-IA. Ele não foi projetado para dados de arquivamento.
+O Amazon S3 Standard-IA é ideal para dados acessados com pouca frequência, mas que precisam ter alta disponibilidade para quando necessário.
+
+<a href="https://aws.amazon.com/pt/s3/storage-classes/">Storage classes do Amazon S3/</a>
+
+Qual(ais) afirmação(ões) é(são) VERDADEIRA(S) sobre os volumes do Amazon EBS e sistemas de arquivos do Amazon Elastic File System?
+
+<ul>
+  <li>&check; Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade. Os sistemas de arquivos do Amazon EFS armazenam dados em várias Zonas de Disponibilidade.</li>
+  <li>Os volumes do EBS armazenam dados em várias Zonas de Disponibilidade. Os sistemas de arquivos do Amazon EFS armazenam dados em uma única Zona de Disponibilidade.</li>
+  <li>Os volumes do EBS e os sistemas de arquivos do Amazon EFS armazenam dados em uma única Zona de Disponibilidade.</li>
+  <li>Os volumes do EBS e os sistemas de arquivos do Amazon Elastic File System armazenam dados em várias Zonas de Disponibilidade.</li>
+</ul>
+
+A resposta correta é: Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade. Os sistemas de arquivos do Amazon Elastic File System armazenam dados em várias Zonas de Disponibilidade.
+
+Um volume do EBS precisa estar localizado na mesma Zona de Disponibilidade que a instância do Amazon EC2 à qual ele está associado.
+
+Os dados em um sistema de arquivos do Amazon Elastic File System podem ser acessados simultaneamente de todas as Zonas de Disponibilidade na Região em que o sistema de arquivos está localizado.
+
+<a href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/ebs-volumes.html" target="_blank">Volumes do Amazon EBS</a>
+<a href="https://docs.aws.amazon.com/pt_br/efs/latest/ug/how-it-works.html" target="_blank">Amazon Elastic File System: como funciona</a>
+
+
+Você quer armazenar dados em um serviço de armazenamento de objetos. Qual serviço da AWS é o melhor para esse tipo de armazenamento?
+
+<ul>
+  <li>Amazon Managed Blockchain</li>
+  <li>Amazon Elastic File System (Amazon EFS)</li>
+  <li>Amazon Elastic Block Store (Amazon EBS)</li>
+  <li>&check; Amazon Simple Storage Service (Amazon S3)</li>
+</ul>
+
+A resposta correta é Amazon Simple Storage Service (Amazon S3).
+
+As outras opções estão incorretas porque:
+
+o Amazon Managed Blockchain é um serviço que você pode usar para criar e gerenciar redes de blockchain com frameworks de código aberto. O Blockchain é um sistema de ledger distribuído que permite que várias partes executem transações e compartilhem dados sem uma autoridade central.
+
+O Amazon Elastic File System (Amazon EFS) é um sistema de arquivos dimensionável usado com os AWS Cloud Services e recursos on-premises. Ele não armazena dados como armazenamento de objetos.
+
+O Amazon Elastic Block Store (Amazon EBS) é um serviço que fornece volumes de armazenamento em nível de bloco que você pode usar com instâncias do Amazon EC2.
+
+<a href="https://aws.amazon.com/s3/" target="_blank">Amazon S3</a>
+
+<a href="https://aws.amazon.com/pt/what-is-cloud-object-storage/" target="_blank">O que é armazenamento de objetos na nuvem?</a>
+
+Qual afirmação melhor descreve o Amazon DynamoDB?
+
+<ul>
+  <li>Um serviço que permite executar bancos de dados relacionais na nuvem AWS</li>
+  <li>&check; Um serviço de banco de dados de chave-valor sem servidor</li>
+  <li>Um serviço que você pode usar para migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados</li>
+  <li>Banco de dados relacional de nível empresarial</li>
+</ul>
+
+A resposta correta é Um serviço de banco de dados de chave-valor sem servidor.
+
+O Amazon DynamoDB é um serviço de banco de dados de chave-valor. Ele é sem servidor, o que significa que você não precisa provisionar, aplicar patches ou gerenciar servidores.
+
+As outras respostas estão incorretas porque:
+
+um serviço que permite executar bancos de dados relacionais na nuvem AWS é a descrição do Amazon Relational Database Service (Amazon RDS).
+
+Um serviço que você pode usar para migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados é a descrição do AWS Database Migration Service (AWS DMS).
+
+Um banco de dados relacional de nível empresarial é a descrição do Amazon Aurora.
+
+<a href="https://aws.amazon.com/pt/dynamodb/" target="_blank">Amazon DynamoDB</a>
+
+Qual serviço é usado para consultar e analisar dados em um data warehouse?
+
+<ul>
+  <li>&check; Amazon Redshift</li>
+  <li>Amazon Neptune</li>
+  <li>Amazon DocumentDB</li>
+  <li>Amazon ElastiCache</li>
+</ul>
+
+A resposta correta é Amazon Redshift.
+
+O Amazon Redshift é um serviço de data warehouse que você pode usar para análise de Big Data. Use o Amazon Redshift para coletar dados de muitas origens e entender relações e tendências em todos os dados.
+
+As outras respostas estão incorretas porque:
+
+O Amazon Neptune é um serviço de banco de dados de grafo. Você pode usar o Amazon Neptune para criar e executar aplicações que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraude e grafos de conhecimento.
+
+O Amazon DocumentDB é um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB.
+
+O Amazon ElastiCache é um serviço que adiciona camadas de cache sobre os bancos de dados para melhorar os tempos de leitura de solicitações comuns.
+
+<a href="https://aws.amazon.com/pt/redshift/" target="_blank">Amazon Redshift</a>
+
 
