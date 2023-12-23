@@ -97,6 +97,20 @@
         - [S3 Outposts](README.md#S3-Outposts)
         - [Amazon Elastic File System (Amazon EFS)](README.md#Amazon-Elastic-File-System-(Amazon-EFS))
              - [Comparação entre o Amazon EBS e o Amazon Elastic File System](README.md#Comparação-entre-o-Amazon-EBS-e-o-Amazon-Elastic-File-System)
+     - [Bancos de dados relacionais](README.md#Bancos-de-dados-relacionais)
+        - [Amazon Relational Database Service](README.md#Amazon-Relational-Database-Service)
+        - [Amazon Aurora](README.md#Amazon-Aurora)
+    - [Bancos de dados não relacionais](README.md#Bancos-de-dados-não-relacionais)
+        - [Amazon DynamoDB](README.md#Amazon-DynamoDB)
+        - [Amazon Redshift](README.md#Amazon-Redshift)
+        - [AWS Database Migration Service (AWS DMS)](README.md#AWS-Database-Migration-Service-(AWS-DMS))
+    - [Serviços de banco de dados adicionais](README.md#Serviços-de-banco-de-dados-adicionais)
+        - [Amazon DocumentDB](README.md#Amazon-DocumentDB)
+        - [Amazon Neptune](README.md#Amazon-Neptune)
+        - [Amazon Quantum Ledger Database (Amazon QLDB)](README.md#Amazon-Quantum-Ledger-Database-(Amazon-QLDB))
+        - [Amazon Managed Blockchain](README.md#Amazon-Managed-Blockchain)
+        - [Amazon ElastiCache](README.md#Amazon-ElastiCache)
+        - [Amazon DynamoDB Accelerator](README.md#Amazon-DynamoDB-Accelerator)
 
         
 
