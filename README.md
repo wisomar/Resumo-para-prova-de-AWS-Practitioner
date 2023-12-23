@@ -1773,5 +1773,113 @@ O Amazon ElastiCache é um serviço que adiciona camadas de cache sobre os banco
 
 ## O modelo de responsabilidade compartilhada da AWS
 
+![modelo](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/bb91b050-9074-4e5d-b98c-5682eeaead0e)
 
+Ao longo deste curso, você aprendeu sobre diversos recursos que podem ser criados na nuvem AWS. Esses recursos são as instâncias do Amazon EC2, os buckets do Amazon S3 e os bancos de dados do Amazon RDS. Quem é responsável por manter esses recursos seguros: você (o cliente) ou AWS?
 
+A resposta é ambos. Isso é porque você não trata seu ambiente AWS como um único objeto. Em vez disso, você trata o ambiente como uma coleção de partes que se combinam. A AWS é responsável por algumas partes do seu ambiente e você (o cliente) é responsável por outras. Esse conceito é conhecido como modelo de <a href="https://aws.amazon.com/pt/compliance/shared-responsibility-model/">Modelo de responsabilidade compartilhada da AWS</a>
+
+O modelo de responsabilidade compartilhada divide-se em responsabilidades do cliente (chamadas de “segurança na nuvem”) e responsabilidades da AWS (chamadas de “segurança da nuvem”).
+
+![modelo1](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/ddfb2789-d092-4129-8910-e80f4be788bc)
+
+Você pode pensar nesse modelo como sendo parecido com a divisão de responsabilidades entre um proprietário e uma construtora. A construtora (AWS) é responsável por edificar sua casa e garantir que ela seja construída com solidez. Como proprietário (o cliente), é sua responsabilidade proteger tudo na casa, garantindo que as portas estejam fechadas e trancadas. 
+
+#### Para saber mais sobre o modelo de responsabilidade compartilhada
+
+### Clientes: Segurança na nuvem
+
+Os clientes são responsáveis pela segurança de tudo o que criam e colocam na nuvem AWS.
+
+Ao usar os serviços da AWS, você, o cliente, mantém controle total sobre seu conteúdo. Você é responsável por gerenciar os requisitos de segurança para seu conteúdo, incluindo qual conteúdo você escolhe armazenar na AWS, quais serviços AWS você usa e quem tem acesso a esse conteúdo. Você também controla como os direitos de acesso são concedidos, gerenciados e revogados.
+
+As etapas de segurança que você executar dependem de fatores como os serviços que usa, a complexidade de seus sistemas e as necessidades operacionais e de segurança específicas de sua empresa. As etapas são seleção, configuração e aplicação de patches nos sistemas operacionais que serão executados nas instâncias do Amazon EC2, configuração de grupos de segurança e gerenciamento de contas de usuário. 
+
+### AWS: Segurança da nuvem
+
+A AWS é responsável pela segurança da nuvem.
+
+A AWS opera, gerencia e controla os componentes em todas as camadas da infraestrutura. Isso inclui áreas como o sistema operacional do host, a camada de virtualização e até mesmo a segurança física do data center no qual o serviço opera. 
+
+A AWS é responsável pela proteção da infraestrutura global que executa todos os serviços oferecidos na nuvem AWS. A infraestrutura inclui Regiões AWS, Zonas de Disponibilidade e locais de borda.
+
+A AWS gerencia a segurança da nuvem, especificamente a infraestrutura física que hospeda seus recursos, que incluem:
+
+<ul>
+  <li>Segurança física dos data centers</li>
+  <li>Infraestrutura de hardware e software</li>
+  <li>Infraestrutura de rede</li>
+  <li>Infraestrutura de virtualização</li>
+</ul>
+
+Embora você não possa visitar os data centers da AWS para ver essa proteção pessoalmente, a AWS oferece vários relatórios de auditores terceirizados. Esses auditores verificaram a conformidade com diversas normas e regulamentações de segurança da computação.
+
+#### Teste de conhecimento
+
+Quais tarefas são responsabilidades dos clientes? (Selecione DUAS opções.)
+
+<ul>
+  <li>Manutenção da infraestrutura de rede</li>
+  <li>&#10003; Aplicação de patches em software em instâncias do Amazon EC2</li>
+  <li>Implementação de controles de segurança física no data center</li>
+  <li>&#10003; Definição de permissões para objetos do Amazon S3</li>
+  <li>Manutenção de servidores que executam instâncias do Amazon EC2</li>
+</ul>
+
+<a href="https://aws.amazon.com/pt/compliance/shared-responsibility-model/">Modelo de responsabilidade compartilhada da AWS</a>
+
+## Permissões de usuário e acesso
+
+### AWS Identity and Access Management (IAM)
+
+O <a href="https://aws.amazon.com/pt/iam/">AWS Identity and Access Management (IAM)</a> permite que você gerencie o acesso aos serviços e recursos da AWS com segurança.   
+
+O IAM oferece a flexibilidade de configurar o acesso com base nas necessidades operacionais e de segurança específicas da sua empresa. Você pode fazer isso usando uma combinação dos recursos do IAM, que vamos conhecer melhor nesta lição:
+
+<ul>
+  <li>Usuários, grupos e perfis do IAM</li>
+  <li>Políticas do IAM</li>
+  <li>Autenticação multifator</li>
+</ul>
+
+Você também conhecerá as práticas recomendadas para cada um desses recursos.
+
+Ao criar uma conta AWS pela primeira vez, você começa com uma identidade conhecida como <a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_root-user.html">usuário-raiz</a>
+
+O usuário-raiz é acessado ao entrar com o endereço de e-mail e a senha usados para criar a conta AWS. Pense no usuário-raiz como sendo parecido com o proprietário da cafeteria: Ele tem acesso completo a todos os serviços e recursos AWS na conta.
+
+![iam](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c29a03a3-7988-4b62-bb7b-bac508b9d361)
+
+> <strong>Prática recomendada:</strong>
+
+> não use o usuário-raiz para tarefas cotidianas. 
+
+> Em vez disso, use o usuário-raiz para criar seu primeiro usuário do IAM e atribua a ele permissões para criar outros usuários.
+
+>  Em seguida, continue a criar outros usuários do IAM e acesse essas identidades para executar tarefas comuns em toda a AWS. Use o usuário-raiz somente quando precisar executar um número limitado de tarefas disponíveis somente para o usuário-raiz. Exemplos dessas tarefas são a alteração do endereço de e-mail do usuário-raiz e a alteração do plano do AWS Support. Para obter mais informações, consulte “Tasks that require root user credentials” (Tarefas que exigem credenciais de usuário-raiz) no <a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/root-user-tasks.html">AWS Account Management Reference Guide</a> (Guia de referência de gerenciamento da conta AWS).
+
+### Usuários do IAM
+
+Um usuário do IAM é uma identidade que você cria na AWS. Ele representa a pessoa ou o aplicativo que interage com os serviços e recursos AWS. Consiste em um nome e credenciais.
+
+Por padrão, ao criar um novo usuário do IAM na AWS, não há permissões associadas a ele. Para permitir que o usuário do IAM execute ações específicas na AWS, como iniciar uma instância do Amazon EC2 ou criar um bucket do Amazon S3, você deve conceder ao usuário do IAM as permissões necessárias.
+
+> <strong>Prática recomendada:</strong>
+
+> recomendamos que crie usuários individuais do IAM para cada pessoa que precisa acessar a AWS.  
+
+> Mesmo que você tenha vários funcionários que precisem do mesmo nível de acesso, você deve criar usuários individuais do IAM para cada um deles. Isso fornece segurança adicional, permitindo que cada usuário do IAM tenha um conjunto exclusivo de credenciais de segurança.
+
+### Políticas do IAM
+
+Uma política do IAM é um documento que concede ou nega permissões para serviços e recursos AWS.  
+
+As políticas do IAM permitem que você personalize os níveis de acesso dos usuários aos recursos. Por exemplo, você pode permitir que os usuários acessem todos os buckets do Amazon S3 em sua conta AWS ou apenas um bucket específico.
+
+> <strong>Prática recomendada:</strong>
+
+> siga o princípio de segurança de menor privilégio ao conceder permissões. 
+
+> Seguindo esse princípio, você ajuda a impedir que usuários ou perfis tenham mais permissões do que o necessário para executar as tarefas. 
+
+> Por exemplo, se um funcionário precisar acessar apenas um bucket específico, especifique o bucket na política do IAM. Faça isso em vez de conceder ao funcionário acesso a todos os buckets em sua conta AWS.
