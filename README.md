@@ -1883,3 +1883,63 @@ As políticas do IAM permitem que você personalize os níveis de acesso dos usu
 > Seguindo esse princípio, você ajuda a impedir que usuários ou perfis tenham mais permissões do que o necessário para executar as tarefas. 
 
 > Por exemplo, se um funcionário precisar acessar apenas um bucket específico, especifique o bucket na política do IAM. Faça isso em vez de conceder ao funcionário acesso a todos os buckets em sua conta AWS.
+
+### Exemplo: política do IAM
+
+Veja um exemplo de como as políticas do IAM funcionam. Suponha que o proprietário da cafeteria tenha criado um usuário do IAM para um operador de caixa recém-contratado. Esse funcionário precisa acessar os recibos mantidos em um bucket do Amazon S3 com o ID: AWSDOC-EXAMPLE-BUCKET.
+
+<img width="400" alt="LbdeJm2B_ER5hQiy_vKf8uGbqJDqmoCNE" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c50b1615-0ea5-448e-a2a5-4165c52b12e3">
+
+Nesse exemplo, a política do IAM permite uma ação específica no Amazon S3: ListObject. A política também menciona o ID de bucket específico: AWSDOC-EXAMPLE-BUCKET. Quando o proprietário associa essa política ao usuário do IAM do operador de caixa, ele permitirá que ele visualize todos os objetos no bucket AWSDOC-EXAMPLE-BUCKET. 
+
+Se o proprietário quiser que o operador de caixa possa acessar outros serviços e executar outras ações na AWS, o proprietário precisará anexar políticas adicionais para especificar esses serviços e essas ações.
+
+Agora, suponha que a cafeteria tenha contratado mais alguns operadores de caixa. Em vez de atribuir permissões a cada usuário individual do IAM, o proprietário coloca os usuários em um <a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_groups.html">grupo do IAM.</a>
+
+### Grupos do IAM
+
+Um grupo do IAM é um conjunto de usuários do IAM. Quando você atribui uma política do IAM a um grupo, todos os usuários do grupo recebem permissões especificadas pela política.
+
+Veja um exemplo de como isso pode funcionar na cafeteria. Em vez de atribuir permissões aos operadores um de cada vez, o proprietário pode criar o grupo “operadores de caixa” do IAM. O proprietário pode, em seguida, adicionar usuários do IAM ao grupo e anexar permissões no nível do grupo. 
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/04f4f4c6-372a-4674-82c4-74f1d56e4ece" alt="db\srn\" width="50%" style="float: left; margin-right: 10px;">
+
+A atribuição de políticas do IAM no nível de grupo também facilita o ajuste de permissões quando um funcionário é transferido para um trabalho diferente. Por exemplo, se um operador de caixa se tornar um especialista em inventário, o proprietário da cafeteria o removerá do grupo “operadores de caixa” do IAM e o adicionará ao grupo “especialistas em inventário”. Isso garante que os funcionários tenham apenas as permissões necessárias para a função atual.
+
+E se um funcionário da cafeteria não tiver trocado de função permanentemente, mas, em vez disso, revezar em diferentes estações de trabalho ao longo do dia? Esse funcionário pode ter o acesso de que precisa pelos <a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_roles.html">Perfis do IAM</a>
+
+### Perfis do IAM
+
+Na cafeteria, um funcionário se reveza em diferentes estações de trabalho ao longo do dia. Dependendo do tamanho da equipe da cafeteria, esse funcionário pode desempenhar várias tarefas: trabalhar na caixa registradora, atualizar o sistema de inventário, processar pedidos on-line e assim por diante. 
+
+Quando o funcionário precisa alternar para uma tarefa diferente, ele abre mão do acesso a uma estação de trabalho e ganha acesso à próxima estação. O funcionário pode alternar facilmente entre estações de trabalho, mas, a qualquer momento, ele pode ter acesso a uma única estação de trabalho. Esse mesmo conceito existe na AWS com os perfis do IAM.
+
+Um perfil do IAM é uma identidade que você pode assumir para obter acesso temporário a permissões.  
+
+Antes que um usuário, aplicação ou serviço do IAM possa assumir um perfil do IAM, ele precisa receber permissões para alternar para o perfil. Quando alguém assume uma função do IAM, ele abandona todas as permissões anteriores que tinha em uma função anterior e assume as permissões da nova função. 
+
+> <strong>Prática recomendada:</strong>
+
+> os perfis do IAM são ideais para situações em que o acesso a serviços ou recursos precisa ser concedido temporariamente, em vez de por longo prazo. 
+
+### Autenticação com multifator
+
+Você já entrou em um site que exigia várias informações para verificar sua identidade? Talvez tenha sido necessário digitar sua senha e, em seguida, uma segunda forma de autenticação, como um código aleatório enviado para o telefone. Este é um exemplo de <a href="https://aws.amazon.com/pt/iam/features/mfa/">autenticação multifator (MFA) do IAM</a>
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/96cdb7a1-9590-423e-8b3b-3a189577e164" alt="db\srn\" width="50%" style="float: left; margin-right: 10px;">
+
+Primeiro, um usuário insere a senha e o ID do usuário do IAM para entrar em um site da AWS.
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/7010c4e5-1de1-41b4-afbc-32a276b68619" alt="db\srn\" width="40%" style="float: left; margin-right: 10px;">
+
+Em seguida, é solicitado ao usuário que informe a resposta de autenticação de seu dispositivo MFA da AWS. Esse dispositivo pode ser uma chave de segurança de hardware, um dispositivo de hardware ou uma aplicação de MFA em um dispositivo, como um smartphone.
+
+#### Conclusão
+
+Quando o usuário tiver sido autenticado com êxito, ele poderá acessar os serviços ou recursos AWS solicitados.
+
+Você pode ativar o MFA para o usuário-raiz e os usuários do IAM. Como prática recomendada, habilite o MFA para o usuário-raiz e todos os usuários do IAM em sua conta. Ao fazer isso, você pode manter sua conta AWS protegida contra um acesso não autorizado.
+
+
+
+
