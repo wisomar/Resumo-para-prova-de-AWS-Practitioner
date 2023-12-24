@@ -111,6 +111,10 @@
         - [Amazon Managed Blockchain](README.md#Amazon-Managed-Blockchain)
         - [Amazon ElastiCache](README.md#Amazon-ElastiCache)
         - [Amazon DynamoDB Accelerator](README.md#Amazon-DynamoDB-Accelerator)
+- [Segurança](README.md#Segurança)
+    - [Modelo de responsabilidade compartilhada da AWS](README.md@Modelo-de-responsabilidade-compartilhada-da-AWS)
+    - [Permissões de usuário e acesso](README.md#Permissões-de-usuário-e-acesso)
+  
 
         
 
