@@ -114,6 +114,23 @@
 - [Segurança](README.md#Segurança)
     - [Modelo de responsabilidade compartilhada da AWS](README.md@Modelo-de-responsabilidade-compartilhada-da-AWS)
     - [Permissões de usuário e acesso](README.md#Permissões-de-usuário-e-acesso)
+    - [AWS Organizations](README.md#AWS-Organizations)
+        - [AWS Artifact](README.md#AWS-Artifact)
+        - [Centro de conformidade para o cliente](README.md#Centro-de-conformidade-para-o-cliente)
+        - [Ataques de negação de serviço](README.md#Ataques-de-negação-de-serviço)
+        - [Ataques distribuídos de negação de serviço](README.md#Ataques-distribuídos-de-negação-de-serviço)
+          - [AWS Shield](README.md#AWS-Shield)
+          - [AWS Shield Standard](README.md#AWS-Shield-Standard)
+          - [AWS Shield Advanced](README.md#AWS-Shield-Advanced)
+        - [Serviços de segurança adicionais](README.md#Serviços-de-segurança-adicionais)
+- [Monitormento e Análise](README.md#Monitormento-e-Análise)
+     - [Amazon CloudWatch](README.md#Amazon-CloudWatch)
+     - [AWS CloudTrail](README.md#AWS-CloudTrail)
+     - [AWS Trusted Advisor](README.md#AWS-Trusted-Advisor)
+       
+           
+              
+          
   
 
         
