@@ -2260,3 +2260,27 @@ Você pode atribuir permissões a usuários e grupos no AWS Identity and Access 
 
 <a href="https://aws.amazon.com/pt/kms/">AWS Key Management Service</a>
 
+# Monitoramento e Análise
+
+## Amazon CloudWatch
+
+O <a href="https://aws.amazon.com/pt/cloudwatch/">Amazon CloudWatch</a> é um serviço da web que permite monitorar e gerenciar várias métricas e configurar ações de alarme de acordo com os dados dessas métricas.
+
+O CloudWatch usa<a href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/working_with_metrics.html">métricas</a> para representar os pontos de dados para seus recursos. Os serviços AWS enviam as métricas ao CloudWatch. Em seguida, o CloudWatch usa essas métricas para criar automaticamente gráficos que mostram como o desempenho mudou ao longo do tempo. 
+
+### Alarmes do CloudWatch
+
+Com o CloudWatch, você pode criar <a href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html">alarmes</a> que vão executar ações automaticamente se o valor da métrica ultrapassar ou for inferior a um limite predefinido. 
+
+Por exemplo, suponha que os desenvolvedores da sua empresa usem instâncias do Amazon EC2 para fins de desenvolvimento ou teste de aplicações. Se os desenvolvedores ocasionalmente se esquecerem de interromper as instâncias, as instâncias continuarão a ser executadas e incorrerão em cobranças. 
+
+Nesse cenário, você pode criar um alarme do CloudWatch que interrompe automaticamente uma instância do Amazon EC2 quando a porcentagem de utilização da CPU permanecer abaixo de um determinado limite por um período específico. Ao configurar o alarme, você pode especificar se deseja receber uma notificação sempre que esse alarme for acionado.
+
+
+
+
+
+
+
+
+
