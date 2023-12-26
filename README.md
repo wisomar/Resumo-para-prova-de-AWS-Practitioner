@@ -2051,3 +2051,212 @@ Criar usuários para permitir que pessoas e aplicações interajam com serviços
 
 Definir permissões para contas configurando políticas de controle de serviço (SCPs). Essa tarefa pode ser concluída no AWS Organizations.
 
+### Ataques de negação de serviço
+
+Os clientes podem telefonar para a cafeteria para fazer os pedidos. Depois de atender cada chamada, um operador de caixa anota o pedido e o entrega ao barista. 
+
+No entanto, suponha que uma pessoa telefone várias vezes para fazer pedidos, mas nunca retire as bebidas. Isso faz com que o operador de caixa fique indisponível para atender chamadas de outros clientes. A cafeteria pode tentar parar os pedidos falsos bloqueando o número de telefone que a pessoa está usando. 
+
+Nesse cenário, as ações da pessoa passando o trote são semelhantes a um ataque de negação de serviço.
+
+Um ataque de negação de serviço (DoS) é uma tentativa deliberada de tornar um site ou aplicação indisponível para os usuários.
+
+![Sem título](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/fa5a11c0-dc13-44e5-ad6e-a56fba61bd30)
+
+### Ataques distribuídos de negação de serviço
+
+Agora, suponha que a pessoa passando o trote tenha recrutado a ajuda de amigos. 
+
+Essa pessoa e os amigos dela telefonam repetidamente para a cafeteria para fazer pedidos, mesmo que não pretendam retirá-los. Esses pedidos são provenientes de números de telefone diferentes e é impossível que a cafeteria bloqueie todos eles. Além disso, o influxo de chamadas dificultou cada vez mais o atendimento aos clientes. Isso se parece com um ataque distribuído de negação de serviço.
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/93985d03-4411-4d1a-9e4a-eb10e0ba1e41" alt="raiz" width="60%" style="float: left; margin-right: 10px;">
+
+Em um ataque distribuído de negação de serviço (DDoS), várias origens são usadas para iniciar um ataque que visa tornar um site ou aplicação indisponível. O ataque pode ser feito por um grupo de invasores, ou até mesmo um único invasor. O único invasor pode usar vários computadores infectados (também conhecidos como “bots”) para enviar tráfego excessivo a um site ou aplicação.
+
+Para ajudar a minimizar o efeito de ataques DoS e DDoS em suas aplicações, você pode usar o <a href="https://aws.amazon.com/pt/shield/">AWS Shield</a>
+
+### AWS Shield
+
+O AWS Shield é um serviço que protege aplicações contra ataques DDoS. O AWS Shield oferece dois níveis de proteção: Standard e Advanced.
+
+### AWS Shield Standard
+
+O AWS Shield Standard protege automaticamente todos os clientes AWS sem nenhum custo. Ele protege seus recursos AWS contra os tipos de ataques DDoS mais comuns e frequentes. 
+
+À medida que o tráfego de rede ingressa nas suas aplicações, o AWS Shield Standard usa diversas técnicas de análise para detectar tráfego mal-intencionado em tempo real e mitigá-lo automaticamente. 
+
+### AWS Shield Advanced
+
+O AWS Shield Advanced é um serviço pago que fornece diagnósticos detalhados de ataques e a capacidade de detectar e mitigar ataques elaborados de DDoS. 
+
+Ele também se integra a outros serviços, como o Amazon CloudFront, o Amazon Route 53 e o Elastic Load Balancing. Além disso, você pode integrar o AWS Shield ao AWS WAF escrevendo regras personalizadas para mitigar ataques complexos de DDoS.
+
+## Serviços de segurança adicionais
+
+### AWS Key Management Service (AWS KMS)
+
+A cafeteria tem muitos itens, como máquinas de café, confeitaria, dinheiro nas caixas registradoras e assim por diante. Você pode pensar nesses itens como dados. Os proprietários da cafeteria querem garantir que todos esses itens estejam protegidos, independentemente de estarem dispostos na sala de armazenamento ou em transporte. 
+
+Da mesma forma, você deve garantir que os dados das suas aplicações estejam protegidos durante o armazenamento (criptografia em repouso) e durante a transmissão (criptografia em trânsito).
+
+O <a href="https://aws.amazon.com/pt/kms/">AWS Key Management Service</a> permite que você execute operações de criptografia usando chaves de criptografia. Uma chave de criptografia é uma cadeia aleatória de dígitos usada para bloquear (criptografar) e desbloquear (descriptografar) dados. Você pode usar o AWS KMS para criar, gerenciar e usar chaves de criptografia. Você também pode controlar o uso de chaves em uma ampla gama de serviços e em suas aplicações.
+
+Com o AWS KMS, você pode escolher os níveis específicos de controle de acesso necessários para suas chaves. Por exemplo, você pode especificar quais usuários e funções do IAM podem gerenciar chaves. Do mesmo modo, você pode desativar temporariamente as chaves para que não sejam mais usadas. Suas chaves nunca saem do AWS KMS e você está sempre no controle delas.
+
+### AWS WAF
+
+O <a href="https://aws.amazon.com/pt/waf/">AWS WAF</a> é um firewall de aplicação web que permite monitorar solicitações de rede que entram em aplicações web. 
+
+O AWS WAF trabalha em conjunto com o Amazon CloudFront e um Application Load Balancer. Lembre-se das listas de controle de acesso de rede que você aprendeu em um módulo anterior. O AWS WAF funciona de forma semelhante para bloquear ou permitir o tráfego. No entanto, ele faz isso usando uma <a href="https://docs.aws.amazon.com/pt_br/waf/latest/developerguide/web-acl.html">lista de controle de acesso (ACL)</a>
+da web para proteger seus recursos da AWS. 
+
+Veja um exemplo de como você pode usar o AWS WAF para permitir e bloquear solicitações específicas.
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/f77ea60c-1b34-4a77-9d58-304c1af1d548" alt="raiz" width="50%" style="float: left; margin-right: 10px;">
+
+Suponha que a aplicação tenha recebido solicitações de rede mal-intencionadas de vários endereços IP. Você quer impedir que essas solicitações continuem a acessar seu aplicativo, mas também deseja garantir que usuários legítimos ainda possam acessá-lo. Você configura a ACL da web para permitir todas as solicitações, exceto aquelas dos endereços IP que você especificou.
+
+Quando uma solicitação entra no AWS WAF, ele confere a lista de regras configurada na ACL da web. Se uma solicitação não for proveniente de um dos endereços IP bloqueados, ele permitirá o acesso à aplicação.
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/84b3f50c-5ccf-45d0-a2ab-743c6613f125" alt="raiz" width="50%" style="float: left; margin-right: 10px;">
+
+No entanto, se uma solicitação for proveniente de um dos endereços IP bloqueados que você especificou na ACL da web, o AWS WAF vai negar o acesso.
+
+### Amazon Inspector
+
+Suponha que os desenvolvedores da cafeteria estão desenvolvendo e testando um novo aplicativo para pedidos. Eles querem se certificar de que estão projetando o aplicativo de acordo com as práticas recomendadas de segurança. Contudo, eles têm vários outros aplicativos para desenvolver, por isso, não podem passar tempo demais fazendo avaliações manuais. Para fazer avaliações de segurança automatizadas, eles decidem usar o <a href="https://aws.amazon.com/pt/inspector/">AWS Inspector</a>
+
+O Amazon Inspector ajuda a melhorar a segurança e a conformidade das aplicações executando avaliações de segurança automatizadas. Ele verifica os aplicativos quanto a vulnerabilidades de segurança e desvios das práticas recomendadas de segurança, como acesso aberto a instâncias do Amazon EC2 e instalações de versões de software vulneráveis. 
+
+Depois que o Amazon Inspector faz uma avaliação, ele apresenta uma lista de descobertas de segurança. A lista prioriza por nível de gravidade, com uma descrição detalhada de cada problema de segurança e uma recomendação sobre como corrigi-lo. Contudo, a AWS não garante que seguir as recomendações feitas resolverá todos os possíveis problemas de segurança. Sob o modelo de responsabilidade compartilhada, os clientes são responsáveis pela segurança de ferramentas, aplicativos e processos executados nos serviços AWS.
+
+### Amazon GuardDuty
+
+O <a href="https://aws.amazon.com/pt/guardduty/">Amazon GuardDuty</a> é um serviço que realiza detecção inteligente de ameaças para sua infraestrutura e seus recursos AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no seu ambiente AWS.
+
+<img width="840" alt="Txxw3jHbZVvj_mYb_vNMMzBy1e2a2jsnI" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/53865cc2-3681-4d6e-83b6-cdd9a429d94c">
+
+Depois de habilitar o GuardDuty para sua conta AWS, ele começa a monitorar sua atividade de rede e conta. Você não precisa implantar ou gerenciar nenhum outro software de segurança. O GuardDuty analisa continuamente dados de várias fontes da AWS, incluindo logs de fluxo de VPC e logs de DNS. 
+
+Se o GuardDuty detectar ameaças, você poderá analisar as descobertas detalhadas no console de gerenciamento da AWS. As descobertas incluem etapas recomendadas para a correção. Você também pode configurar as funções do AWS Lambda para executar as etapas de correção automaticamente em resposta às descobertas de segurança do GuardDuty.
+
+#### Recursos adicionais
+
+<a href="https://aws.amazon.com/pt/guardduty/" target="_blank">Segurança, identidade e conformidade na AWS</a><br>
+
+<a href="https://d1.awsstatic.com/whitepapers/Security/Introduction_to_AWS_Security_Portuguese.pdf" target="_blank">Introdução à segurança da AWS</a><br>
+
+<a href="https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Overview_Portuguese.pdf" target="_blank">Amazon Web Services: Visão geral de processos de segurança</a><br>
+
+<a href="https://aws.amazon.com/pt/blogs/security/" target="_blank">Blog de segurança da AWS</a><br>
+
+<a href="https://aws.amazon.com/pt/compliance/" target="_blank">Conformidade da AWS</a><br>
+
+<a href="https://aws.amazon.com/pt/compliance/aws-compliance-stories/" target="_blank">Histórias de conformidade da AWS: segurança, identidade e conformidade</a><br>
+
+<a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/best-practices.html" target="_blank">Práticas recomendadas de segurança no IAM</a>
+
+#### Teste de conhecimento 
+
+Qual afirmativa descreve melhor uma política do IAM?
+
+<ul>
+    <li>Um processo de autenticação que adiciona uma camada de proteção para sua conta AWS</li>
+    <li>&check; Um documento que concede ou nega permissões para serviços e recursos AWS</li>
+    <li>Uma identidade que você pode assumir para obter acesso temporário a permissões</li>
+    <li>A identidade que é estabelecida quando você cria pela primeira vez uma conta AWS</li>
+</ul>
+
+A resposta correta é: Um documento que concede ou nega permissões para serviços e recursos AWS.
+
+As políticas do IAM oferecem a flexibilidade de personalizar os níveis de acesso dos usuários aos recursos. Por exemplo, você pode permitir que os usuários acessem todos os buckets do Amazon S3 na conta AWS ou apenas um bucket específico.
+
+As outras respostas estão incorretas porque:
+
+A autenticação multifator (MFA) é um processo de autenticação que adiciona uma camada de proteção para sua conta AWS.
+
+Um perfil do IAM é uma identidade que você pode assumir para obter acesso temporário às permissões.
+
+A identidade do usuário-raiz é a identidade estabelecida quando você cria uma conta AWS pela primeira vez.
+
+<a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/access_policies.html" target="_blank">Políticas e permissões no IAM</a>
+
+Um funcionário precisa de acesso temporário para criar vários buckets do Amazon S3. Qual opção seria a melhor escolha para essa tarefa?
+
+<ul>
+    <li>Usuário-raiz da conta AWS</li>
+    <li>Grupo do IAM</li>
+    <li>&check; Função do IAM</li>
+    <li>Política de controle de serviço (SCP)</li>
+</ul>
+
+A resposta correta é Perfil do IAM.
+
+Um perfil do IAM é uma identidade que você pode assumir para obter acesso temporário a permissões. Quando alguém assume uma função do IAM, ele abandona todas as permissões que tinha em uma função anterior e assume as permissões da nova função. Os perfis do IAM são ideais para situações em que o acesso a serviços ou recursos precisa ser concedido temporariamente em vez de por longo prazo.
+
+As outras respostas estão incorretas porque:
+
+O usuário-raiz da conta AWS é estabelecido quando se cria uma conta AWS pela primeira vez. Como prática recomendada, não use o usuário-raiz para tarefas cotidianas.
+
+Embora você possa associar políticas do IAM a um grupo do IAM, essa não seria a melhor opção para esse cenário porque o funcionário só precisa receber permissões temporárias.
+
+As políticas de controle de serviço (SCPs) permitem que você controle de maneira centralizada as permissões para as contas em sua organização. Uma SCP não é a melhor opção para conceder permissões temporárias a um funcionário individual.
+
+<a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_roles.html">Perfis do IAM</a>
+
+Qual afirmativa melhor descreve o princípio de menor privilégio?
+
+<ul>
+    <li>Adicionar um usuário do IAM em pelo menos um grupo do IAM</li>
+    <li>Verificar as permissões de um pacote em relação a uma lista de controle de acesso</li>
+    <li>&check; Conceder apenas as permissões necessárias para executar tarefas específicas</li>
+    <li>Executar um ataque de negação de serviço originado de pelo menos um dispositivo</li>
+</ul>
+
+Ao conceder permissões seguindo o princípio de menor privilégio, você impede que usuários ou perfis tenham mais permissões do que o necessário para executar tarefas específicas de trabalho. Por exemplo, os operadores de caixa da cafeteria devem ter acesso a elas. Como prática recomendada, conceda aos usuários e perfis do IAM um conjunto mínimo de permissões, depois conceda outras permissões se necessário.
+
+<a href="https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/best-practices.html">Guia do usuário do IAM: Práticas recomendadas de segurança</a>
+
+Qual serviço ajuda a proteger suas aplicações contra ataques distribuídos de negação de serviço (DDoS)?
+
+<ul>
+    <li>Amazon GuardDuty</li>
+    <li>Amazon Inspector</li>
+    <li>AWS Artifact</li>
+    <li>&check; AWS Shield</li>
+</ul>
+
+À medida que o tráfego de rede ingressa em aplicações, o AWS Shield usa diversas técnicas de análise para detectar ataques DDoS potenciais em tempo real e mitigá-los automaticamente.
+
+
+As outras respostas estão incorretas porque:
+
+O Amazon GuardDuty é um serviço que realiza detecção inteligente de ameaças para sua infraestrutura e seus recursos da AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no ambiente AWS.
+
+O Amazon Inspector verifica se as aplicações têm vulnerabilidades ou discrepâncias das práticas recomendadas de segurança, como acesso aberto a instâncias do Amazon EC2 e instalações de versões de software vulneráveis.
+
+O AWS Artifact é um serviço que concede acesso sob demanda a relatórios de segurança e conformidade da AWS e contratos on-line selecionados.
+
+<a href="https://aws.amazon.com/pt/shield/">AWS Shield</a>
+
+Qual tarefa o AWS Key Management Service (AWS KMS) pode executar?
+
+<ul>
+    <li>Configurar uma autenticação multifator (MFA).</li>
+    <li>Atualizar a senha do usuário-raiz da conta AWS.</li>
+    <li>&check; Criar chaves de criptografia.</li>
+    <li>Atribuir permissões a usuários e grupos.</li>
+</ul>
+
+O AWS Key Management Service (AWS KMS) permite que você execute operações de criptografia pelo uso de chaves de criptografia. Uma chave de criptografia é uma cadeia aleatória de dígitos usada para bloquear (criptografar) e desbloquear (descriptografar) dados. Você pode usar o AWS KMS para criar, gerenciar e usar chaves de criptografia. Você também pode controlar o uso de chaves em uma ampla gama de serviços e em suas aplicações.
+
+As outras respostas estão incorretas porque:
+
+Você pode configurar a autenticação multifator (MFA) no AWS Identity and Access Management (IAM).
+
+Você pode atualizar a senha do usuário-raiz da conta AWS no Console de gerenciamento da AWS.
+
+Você pode atribuir permissões a usuários e grupos no AWS Identity and Access Management (IAM).
+
+<a href="https://aws.amazon.com/pt/kms/">AWS Key Management Service</a>
+
