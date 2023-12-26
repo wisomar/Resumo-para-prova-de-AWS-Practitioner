@@ -1940,6 +1940,114 @@ Quando o usuário tiver sido autenticado com êxito, ele poderá acessar os serv
 
 Você pode ativar o MFA para o usuário-raiz e os usuários do IAM. Como prática recomendada, habilite o MFA para o usuário-raiz e todos os usuários do IAM em sua conta. Ao fazer isso, você pode manter sua conta AWS protegida contra um acesso não autorizado.
 
+## AWS Organizations
 
+Suponha que sua empresa tenha múltiplas contas AWS. Você pode usar o <a href="https://aws.amazon.com/pt/organizations/">AWS Organizations</a> para consolidar e gerenciar múltiplas contas AWS em um local central.
 
+Quando você cria uma organização, o AWS Organizations cria automaticamente uma raiz, que é o contêiner primário para todas as contas da organização. 
+
+No AWS Organizations, você pode controlar de maneira centralizada as permissões para as contas em sua organização usando as <a href="https://docs.aws.amazon.com/pt_br/organizations/latest/userguide/orgs_manage_policies_scps.html">Políticas de controle de serviço (SCPs) - AWS Organizations</a>
+. As SCPs permitem que você coloque restrições nos serviços AWS, recursos e ações individuais de API que os usuários e funções em cada conta podem acessar.
+
+>{nota] A cobrança consolidada é outro recurso do AWS Organizations. Você conhecerá melhor a cobrança consolidada em um módulo posterior.
+
+### Unidades organizacionais
+
+No AWS Organizations, você pode agrupar contas em unidades organizacionais (UO) para facilitar o gerenciamento de contas com requisitos de negócios ou segurança semelhantes. Ao aplicar uma política a uma UO, todas as contas na UO herdam automaticamente as permissões especificadas na política.  
+
+Ao organizar contas separadas em UO, você pode isolar mais facilmente cargas de trabalho ou aplicações com requisitos de segurança específicos. Por exemplo, se sua empresa tiver contas que podem acessar apenas os serviços da AWS que atendam a determinados requisitos normativos, você poderá colocar essas contas em uma UO. Em seguida, você pode anexar uma política à UO que bloqueia o acesso a todos os outros serviços da AWS que não atendam aos requisitos normativos.
+
+Para ver um exemplo de como uma empresa pode usar o AWS Organizations, escolha os botões de seta para exibir cada etapa.
+
+<img src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c3a7c78a-c7f2-4865-9694-9fcf4348c603" alt="raiz" width="90%" style="float: left; margin-right: 10px;">
+
+Imagine que sua empresa tenha contas AWS separadas para os departamentos financeiro, de tecnologia da informação (TI), de recursos humanos (RH) e jurídico. Você decide consolidar essas contas em uma única organização para que possa administrá-las a partir de um local central. Ao criar a organização, isso estabelece a raiz.
+
+Ao projetar essa organização, você considera as necessidades normativas, de negócios e de segurança de cada departamento. Você usa essas informações para decidir quais departamentos podem ser agrupados em UOs
+
+![raiz](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/5ac9d1af-22d2-466f-998d-a5a3cf0288e4)
+
+![raizrr](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/91f73958-7e8f-4819-ab71-ed55499bc337)
+
+### Conclusão
+
+Mesmo que tenha colocado essas contas em UOs, você pode continuar concedendo acesso a usuários, grupos e perfis por meio do IAM.
+
+Ao agrupar suas contas em UOs, você pode conceder acesso facilmente aos serviços e recursos de que eles precisam. Você também impede o acesso a qualquer serviço ou recurso desnecessário.
+
+#### Teste de conhecimento
+
+Você está configurando políticas de controle de serviço (SCPs) no AWS Organizations. A quais identidades e recursos as SCPs podem ser aplicadas? (Selecione DUAS opções.)
+
+<ul>
+  <li>Usuários do IAM</li>
+  <li>Grupos do IAM</li>
+  <li>&check; Uma conta de membro individual</li>
+  <li>Funções do IAM</li>
+  <li>&check; Uma unidade organizacional (UO)</li>
+</ul>
+
+Com o AWS Organizations, você pode aplicar políticas de controle de serviço (SCPs) para a raiz da organização, uma conta de membro individual ou uma UO. Uma SCP afeta todos os usuários, grupos e perfis do IAM em uma conta, incluindo o usuário-raiz da conta AWS.
+
+Você pode aplicar políticas do IAM a usuários, grupos ou perfis do IAM. Você não pode aplicar uma política do IAM ao usuário-raiz da conta AWS.
+
+<a href="https://aws.amazon.com/pt/organizations/" target="_blank">AWS Organizations</a>
+<a href="https://docs.aws.amazon.com/pt_br/organizations/latest/userguide/orgs_manage_policies_scps.html" target="_blank">Políticas de controle de serviço (SCPs) - AWS Organizations</a>
+<a href="https://docs.aws.amazon.com/pt_br/organizations/latest/userguide/orgs_manage_policies_scps_attach.html" target="_blank">Anexar SCPs</a>
+
+### AWS Artifact
+
+Dependendo do setor de sua empresa, talvez seja necessário manter padrões específicos. Uma auditoria ou inspeção assegurará que a empresa cumpriu esses padrões.
+
+O <a href="https://aws.amazon.com/pt/artifact/">AWS Artifact</a> é um serviço que concede acesso sob demanda a relatórios de segurança e conformidade da AWS e a contratos on-line selecionados. O AWS Artifact consiste em duas seções principais: AWS Artifact Agreements e o AWS Artifact Reports.
+
+### AWS Artifact Agreements
+
+Suponha que sua empresa precise assinar um contrato com a AWS em relação ao uso de determinados tipos de informações em todos os serviços da AWS. Você pode fazer isso pelo AWS Artifact Agreements. 
+
+No AWS Artifact Agreements, você pode ver, aceitar e gerenciar contratos para uma conta individual e para todas as suas contas no AWS Organizations. Diferentes tipos de acordos são oferecidos para atender às necessidades dos clientes sujeitos a regulamentações específicas, como a Lei de Portabilidade e Responsabilidade dos Provedores de Saúde dos EUA (HIPAA).
+ 
+### AWS Artifact Reports
+
+Suponha que um membro da equipe de desenvolvimento da sua empresa esteja criando uma aplicação e precise de mais informações sobre a responsabilidade em cumprir determinados padrões regulatórios. Você pode recomendar o acesso a essas informações em AWS Artifact Reports.
+
+O AWS Artifact Reports oferece relatórios de conformidade por auditores terceirizados. Esses auditores testaram e verificaram se a AWS está em conformidade com diversas normas e regulamentações de segurança globais, regionais e específicas do setor. O AWS Artifact Reports se mantém atualizado com os relatórios publicados mais recentes. Você pode fornecer os artefatos de auditoria da AWS aos auditores ou reguladores como evidência dos controles de segurança da AWS. 
+
+O AWS Artifact concede acesso a documentos de segurança e conformidade da AWS, como relatórios de certificações ISO da AWS, relatórios do Payment Card Industry (PCI) e Service Organization Control (SOC).  Para saber mais sobre os relatórios de conformidade disponíveis, visite Programas de conformidade da AWS.
+
+### Centro de conformidade para o cliente
+
+O centro de conformidade para o cliente contém recursos que ajudam você a saber mais sobre a conformidade da AWS. 
+
+No <a href="https://aws.amazon.com/pt/compliance/customer-center/">Centro de conformidade para clientes</a>, você pode ler histórias de conformidade dos clientes para descobrir como as empresas de setores regulamentados resolveram vários desafios de conformidade, governança e auditoria.
+
+Você também pode acessar whitepapers e documentação de conformidade sobre tópicos como:
+
+<ul>
+  <li>Respostas da AWS aos principais problemas de conformidade</li>
+  <li>Uma visão geral do risco e da conformidade da AWS</li>
+  <li>Uma lista de verificação da segurança de auditoria</li>
+</ul>
+
+Além disso, o centro de conformidade para o cliente inclui um plano de aprendizagem para auditores. Esse plano de aprendizagem foi elaborado para indivíduos em funções jurídicas, de auditoria e de conformidade que desejam saber mais sobre como suas operações internas podem demonstrar conformidade usando a nuvem AWS.
+
+#### Teste de conhecimento 
+
+Quais tarefas você pode concluir no AWS Artifact? (Selecione DUAS opções.)
+
+<ul>
+  <li>&check; Acessar relatórios de conformidade da AWS sob demanda.</li>
+  <li>Consolidar e gerenciar múltiplas contas AWS em um local central.</li>
+  <li>Criar usuários para permitir que pessoas e aplicativos interajam com serviços e recursos AWS.</li>
+  <li>Definir permissões para contas configurando as políticas de controle de serviço (SCPs).</li>
+  <li>&check; Analisar, aceitar e gerenciar seus contratos com a AWS.</li>
+</ul>
+
+As outras respostas estão incorretas porque:
+
+Consolidar e gerenciar múltiplas contas AWS em um local central. Essa tarefa pode ser concluída no AWS Organizations.
+
+Criar usuários para permitir que pessoas e aplicações interajam com serviços e recursos da AWS. Essa tarefa pode ser concluída no AWS Identity and Access Management (IAM).
+
+Definir permissões para contas configurando políticas de controle de serviço (SCPs). Essa tarefa pode ser concluída no AWS Organizations.
 
