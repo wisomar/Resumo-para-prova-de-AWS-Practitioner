@@ -248,7 +248,7 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 
 <ul>
     <li>Otimizada para memória</li>
-    <li>&check;Otimizada para armazenamento</li>
+    <li>&#10004;;Otimizada para armazenamento</li>
     <li>Uso geral</li>
     <li>Otimizada para computação</li>
 </ul>
@@ -258,14 +258,14 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 <ul>
     <li>Otimizada para memória</li>
     <li>Otimizada para armazenamento</li>
-    <li>&check;Uso geral</li>
+    <li>&#10004;Uso geral</li>
     <li>Otimizada para computação</li>
 </ul>
 
 <p>Qual tipo de instância do Amazon EC2 é ideal para bancos de dados de alto desempenho?</p>
 
 <ul>
-    <li>&check;Otimizada para memória</li>
+    <li>&#10004;Otimizada para memória</li>
     <li>Otimizada para armazenamento</li>
     <li>Uso geral</li>
     <li>Otimizada para computação</li>
@@ -277,7 +277,7 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
      <li>Otimizada para memória</li>
      <li>Otimizada para armazenamento</li>
      <li>Uso geral</li>
-     <li>&check;Otimizada para computação</li>
+     <li>&#10004;Otimizada para computação</li>
  </ul>   
 
 ## Definição de preços do Amazon EC2
@@ -348,13 +348,13 @@ Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser u
     <li>Instâncias reservadas conversíveis</li>
     <li>Savings Plans da instância do EC2</li>
     <li>Instâncias spot</li>
-    <li>&check;Standard Reserved Instances</li>
+    <li>&#10004;Standard Reserved Instances</li>
 </ul>
 
 <p>Qual opção de preço do Amazon EC2 oferece um desconto quando você assume um compromisso de gasto por hora com uma família de instância e uma Região por um período de vigência de um ou três anos?</p>
 <ul>
     <li>Sob demanda</li>
-    <li>&check;Savings Plans da instância do EC2</li>
+    <li>&#10004;Savings Plans da instância do EC2</li>
     <li>Instâncias spot</li>
     <li>Instâncias reservadas</li>
 </ul>
@@ -438,7 +438,7 @@ Use o Amazon SQS para enviar, armazenar e receber mensagens entre componentes de
 <ul>
     <li>Amazon Simple Queue Service (Amazon SQS)</li>
     <li>Amazon EC2 Auto Scaling</li>
-    <li>&check;Amazon Simple Notification Service (Amazon SNS)</li>
+    <li>&#10004;Amazon Simple Notification Service (Amazon SNS)</li>
     <li>Elastic Load Balancing</li>
 </ul>
 
@@ -510,16 +510,16 @@ Outro benefício da computação sem servidor é a flexibilidade de dimensionar 
 <ul>
     <li>Uso geral</li>
     <li>Otimizada para memória</li>
-    <li>&check;Otimizada para computação</li>
+    <li>&#10004;Otimizada para computação</li>
     <li>Otimizada para armazenamento</li>
 </ul>
 
 <p>Quais são as opções de duração do contrato para instâncias reservadas do Amazon EC2? (Selecione DUAS opções.)</p>
 
 <ul>
-    <li>&check;1 ano</li>
+    <li>&#10004;1 ano</li>
     <li>2 anos</li>
-    <li>&check;3 anos</li>
+    <li>&#10004;3 anos</li>
     <li>4 anos</li>
     <li>5 anos</li>
 </ul>
@@ -527,7 +527,7 @@ Outro benefício da computação sem servidor é a flexibilidade de dimensionar 
 <p>Você tem uma carga de trabalho que será executada por um total de seis meses e consegue suportar interrupções. Qual seria a opção de compra mais econômica do Amazon EC2?</p>
 <ul>
     <li>Instância reservada</li>
-    <li>&check;Instância spot</li>
+    <li>&#10004;Instância spot</li>
     <li>Instância dedicada</li>
     <li>Instância sob demanda</li>
 </ul>
@@ -535,7 +535,7 @@ Outro benefício da computação sem servidor é a flexibilidade de dimensionar 
 <p>Qual processo é um exemplo do Elastic Load Balancing?</p>
 
 <ul>
-    <li>&check;Garantir que nenhuma instância única do Amazon EC2 tenha que suportar a carga de trabalho completa sozinha</li>
+    <li>&#10004;Garantir que nenhuma instância única do Amazon EC2 tenha que suportar a carga de trabalho completa sozinha</li>
     <li>Remover instâncias desnecessárias do Amazon EC2 quando a demanda está baixa</li>
     <li>Adicionar uma segunda instância do Amazon EC2 durante a venda popular de uma loja on-line</li>
     <li>Ajustar automaticamente o número de instâncias do Amazon EC2 para atender à demanda</li>
@@ -550,7 +550,7 @@ Outro benefício da computação sem servidor é a flexibilidade de dimensionar 
     <li>AWS Lambda</li>
     <li>Amazon Simple Notification Service (Amazon SNS)</li>
     <li>Amazon Simple Queue Service (Amazon SQS)</li>
-    <li>&check;Amazon Elastic Kubernetes Service (Amazon EKS)</li>
+    <li>&#10004;Amazon Elastic Kubernetes Service (Amazon EKS)</li>
 </ul>
 
 >[nota] O Amazon EKS é um serviço totalmente gerenciado do Kubernetes. O Kubernetes é um software de código aberto que permite implantar e gerenciar aplicações em contêineres em grande escala.
@@ -600,7 +600,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <ul>
     <li>Uma área geográfica que contém recursos da AWS</li>
-    <li>&check;Um único data center ou grupo de data centers em uma Região</li>
+    <li>&#10004;Um único data center ou grupo de data centers em uma Região</li>
     <li>Um data center usado por um serviço AWS para executar operações específicas do serviço</li>
     <li>Um serviço que você pode usar para executar a infraestrutura da AWS em seu próprio data center on-premises em uma abordagem híbrida.</li>
 </ul>
@@ -667,14 +667,14 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 <ul>
     <li>Uma Região consiste em uma única Zona de Disponibilidade.</li>
     <li>Uma Zona de Disponibilidade consiste em duas ou mais Regiões.</li>
-    <li>&check;Uma Região consiste em três ou mais Zonas de Disponibilidade.</li>
+    <li>&#10004;Uma Região consiste em três ou mais Zonas de Disponibilidade.</li>
     <li>Uma Zona de Disponibilidade consiste em uma única Região.</li>
 </ul>
 
 <p>Quais fatores devem ser considerados ao selecionar uma Região? (Selecione DUAS opções.)</p>
 <ul>
-    <li>&check;Conformidade com governança de dados e requisitos legais</li>
-    <li>&check;Proximidade com os clientes</li>
+    <li>&#10004;Conformidade com governança de dados e requisitos legais</li>
+    <li>&#10004;Proximidade com os clientes</li>
     <li>Acesso a suporte técnico 24 horas por dia</li>
     <li>Capacidade de atribuir permissões personalizadas a diferentes usuários</li>
     <li>Acesso à AWS Command Line Interface (AWS CLI)</li>
@@ -685,7 +685,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
     <li>Um serviço que permite executar a infraestrutura em uma abordagem de nuvem híbrida</li>
     <li>Um mecanismo de computação sem servidor para contêineres</li>
     <li>Um serviço que permite enviar e receber mensagens entre componentes de software por uma fila</li>
-    <li>&check;Um serviço global de entrega de conteúdo</li>
+    <li>&#10004;Um serviço global de entrega de conteúdo</li>
 </ul>
 
 >[nota] O Amazon CloudFront é um serviço de entrega de conteúdo. Ele usa uma rede de locais de borda para armazenar conteúdo em cache e entregar conteúdo para clientes em todo o mundo. Quando o conteúdo é armazenado em cache, ele é mantido localmente como uma cópia. Esse conteúdo pode ser arquivos de vídeo, fotos, páginas da web e assim por diante.
@@ -695,7 +695,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
     <li>Região</li>
     <li>Zona de Disponibilidade</li>
     <li>Origem</li>
-    <li>&check;Local de borda</li>
+    <li>&#10004;Local de borda</li>
 </ul>
 
 <p>Qual ação você pode executar com o AWS Outposts?</p>
@@ -703,7 +703,7 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
     <li>Automatizar ações para serviços e aplicações da AWS por meio de scripts.</li>
     <li>Acessar assistentes e fluxos de trabalho automatizados para executar tarefas nos serviços da AWS.</li>
     <li>Desenvolver aplicações da AWS em linguagens de programação compatíveis.</li>
-    <li>&check;Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.</li>
+    <li>&#10004;Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.</li>
 </ul>
 
 # Redes
@@ -893,7 +893,7 @@ Qual declaração descreve melhor a lista de controle de acesso de rede-padrão 
 <ul>
   <li>Ela é stateless e nega todo o tráfego de entrada e saída.</li>
   <li>Ela é stateful e permite todo o tráfego de entrada e saída.</li>
-  <li>&check;Ela é stateless e permite todo o tráfego de entrada e saída.</li>
+  <li>&#10004;Ela é stateless e permite todo o tráfego de entrada e saída.</li>
   <li>Ela é stateful e nega todo o tráfego de entrada e saída.</li>
 </ul>
 
@@ -983,7 +983,7 @@ Qual declaração melhor descreve a resolução de DNS?
     Conectar uma VPC à Internet
   </li>
   <li>
-    &check;Converter um nome de domínio em um endereço IP
+    &#10004;Converter um nome de domínio em um endereço IP
   </li>
 </ol>
 
@@ -1007,7 +1007,7 @@ Sua empresa tem um aplicativo que usa instâncias do Amazon EC2 para executar o 
 
 <ul>
   <li>Colocar as instâncias do Amazon EC2 em uma sub-rede privada e as instâncias de bancos de dados do Amazon RDS em uma sub-rede pública.</li>
-  <li>&check; Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.</li>
+  <li>&#10004; Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.</li>
   <li>Colocar as instâncias do Amazon EC2 e as instâncias de bancos de dados do Amazon RDS em uma sub-rede pública.</li>
   <li>Colocar as instâncias do Amazon EC2 e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.</li>
 </ul>
@@ -1031,14 +1031,14 @@ Qual componente pode ser usado para estabelecer uma conexão privada dedicada en
 <ul>
   <li>Sub-rede privada</li>
   <li>DNS</li>
-  <li>&check; AWS Direct Connect</li>
+  <li>&#10004; AWS Direct Connect</li>
   <li>Gateway privado virtual</li>
 </ul>
 
 Qual declaração descreve melhor os grupos de segurança?
 
 <ul>
-  <li>&check; Eles são stateful e negam todo o tráfego de entrada por padrão.</li>
+  <li>&#10004; Eles são stateful e negam todo o tráfego de entrada por padrão.</li>
   <li>Eles são stateful e permitem todo o tráfego de entrada por padrão.</li>
   <li>Eles são stateless e negam todo o tráfego de entrada por padrão.</li>
   <li>Eles são stateless e permitem todo o tráfego de entrada por padrão.</li>
@@ -1060,7 +1060,7 @@ Qual componente é usado para conectar uma VPC à internet?
   <li>Sub-rede pública</li>
   <li>Local de borda</li>
   <li>Grupo de segurança</li>
-  <li>&check; Gateway de internet</li>
+  <li>&#10004; Gateway de internet</li>
 </ul>
 
 Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio?
@@ -1069,7 +1069,7 @@ Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio
   <li>Amazon Virtual Private Cloud</li>
   <li>AWS Direct Connect</li>
   <li>Amazon CloudFront</li>
-  <li>&check; Amazon Route 53</li>
+  <li>&#10004; Amazon Route 53</li>
 </ul>
 A resposta correta é Amazon Route 53.
 
@@ -1156,9 +1156,9 @@ Teste de conhecimento
 Quais das seguintes opções são características do serviço Amazon EBS? (Selecione DUAS opções.)
 
 <ul>
-  <li>&check; Ideal para dados que precisam ser retidos</li>
+  <li>&#10004; Ideal para dados que precisam ser retidos</li>
   <li> Ideal para dados temporários que não são mantidos a longo prazo</li>
-  <li>&check; Unidades separadas do computador host de uma instância do EC2</li>
+  <li>&#10004; Unidades separadas do computador host de uma instância do EC2</li>
   <li> Conectado fisicamente ao computador host da instância do EC2</li>
   <li> Os dados são apagados quando uma instância do EC2 é encerrada</li>
 </ul>
@@ -1283,7 +1283,7 @@ Você quer armazenar dados que são acessados com pouca frequência, mas devem e
 <ul>
   <li>S3 Intelligent-Tiering</li>
   <li>S3 Glacier Deep Archive</li>
-  <li>&check; S3 Standard-IA</li>
+  <li>&#10004; S3 Standard-IA</li>
   <li>S3 Glacier Flexible Retrieval</li>
 </ul>
 
@@ -1399,10 +1399,10 @@ Quais são os cenários em que você deve usar o Amazon Relational Database Serv
 
 <ul>
   <li>Ao executar um banco de dados sem servidor</li>
-  <li>&check; Ao usar SQL para organizar dados</li>
+  <li>&#10004; Ao usar SQL para organizar dados</li>
   <li>Ao armazenar dados em um banco de dados de chave-valor</li>
   <li>Ao dimensionar para 10 trilhões de solicitações por dia</li>
-  <li>&check; Ao armazenar dados em um banco de dados do Amazon Aurora</li>
+  <li>&#10004; Ao armazenar dados em um banco de dados do Amazon Aurora</li>
 </ul>
 
 As outras três respostas são cenários nos quais você deve usar o Amazon DynamoDB.
@@ -1484,10 +1484,10 @@ Quais storage classes do Amazon S3 são otimizadas para dados de arquivamento? (
 
 <ul>
   <li>Amazon S3 Standard</li>
-  <li>&check; Amazon S3 Glacier Flexible Retrieval</li>
+  <li>&#10004; Amazon S3 Glacier Flexible Retrieval</li>
   <li>Amazon S3 Intelligent-Tiering</li>
   <li>Amazon S3 Standard-IA</li>
-  <li>&check; Amazon S3 Glacier Deep Archive</li>
+  <li>&#10004; Amazon S3 Glacier Deep Archive</li>
 </ul>
 
 As duas opções corretas são:
@@ -1507,7 +1507,7 @@ O Amazon S3 Standard-IA é ideal para dados acessados com pouca frequência, mas
 Qual(ais) afirmação(ões) é(são) VERDADEIRA(S) sobre os volumes do Amazon EBS e sistemas de arquivos do Amazon Elastic File System?
 
 <ul>
-  <li>&check; Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade. Os sistemas de arquivos do Amazon EFS armazenam dados em várias Zonas de Disponibilidade.</li>
+  <li>&#10004; Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade. Os sistemas de arquivos do Amazon EFS armazenam dados em várias Zonas de Disponibilidade.</li>
   <li>Os volumes do EBS armazenam dados em várias Zonas de Disponibilidade. Os sistemas de arquivos do Amazon EFS armazenam dados em uma única Zona de Disponibilidade.</li>
   <li>Os volumes do EBS e os sistemas de arquivos do Amazon EFS armazenam dados em uma única Zona de Disponibilidade.</li>
   <li>Os volumes do EBS e os sistemas de arquivos do Amazon Elastic File System armazenam dados em várias Zonas de Disponibilidade.</li>
@@ -1529,7 +1529,7 @@ Você quer armazenar dados em um serviço de armazenamento de objetos. Qual serv
   <li>Amazon Managed Blockchain</li>
   <li>Amazon Elastic File System (Amazon EFS)</li>
   <li>Amazon Elastic Block Store (Amazon EBS)</li>
-  <li>&check; Amazon Simple Storage Service (Amazon S3)</li>
+  <li>&#10004; Amazon Simple Storage Service (Amazon S3)</li>
 </ul>
 
 A resposta correta é Amazon Simple Storage Service (Amazon S3).
@@ -1550,7 +1550,7 @@ Qual afirmação melhor descreve o Amazon DynamoDB?
 
 <ul>
   <li>Um serviço que permite executar bancos de dados relacionais na nuvem AWS</li>
-  <li>&check; Um serviço de banco de dados de chave-valor sem servidor</li>
+  <li>&#10004; Um serviço de banco de dados de chave-valor sem servidor</li>
   <li>Um serviço que você pode usar para migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados</li>
   <li>Banco de dados relacional de nível empresarial</li>
 </ul>
@@ -1572,7 +1572,7 @@ Um banco de dados relacional de nível empresarial é a descrição do Amazon Au
 Qual serviço é usado para consultar e analisar dados em um data warehouse?
 
 <ul>
-  <li>&check; Amazon Redshift</li>
+  <li>&#10004; Amazon Redshift</li>
   <li>Amazon Neptune</li>
   <li>Amazon DocumentDB</li>
   <li>Amazon ElastiCache</li>
@@ -1671,10 +1671,10 @@ Quais storage classes do Amazon S3 são otimizadas para dados de arquivamento? (
 
 <ul>
   <li>Amazon S3 Standard</li>
-  <li>&#10003; Amazon S3 Glacier Flexible Retrieval</li>
+  <li>&#10004; Amazon S3 Glacier Flexible Retrieval</li>
   <li>Amazon S3 Intelligent-Tiering</li>
   <li>Amazon S3 Standard-IA</li>
-  <li>&#10003; Amazon S3 Glacier Deep Archive</li>
+  <li>&#10004;; Amazon S3 Glacier Deep Archive</li>
 </ul>
 
 Objetos armazenados na storage class Amazon S3 Glacier Flexible Retrieval podem ser recuperados de poucos minutos a algumas horas. Em comparação, os objetos armazenados na storage class Amazon S3 Glacier Deep Archive podem ser recuperados em 12 horas.
@@ -1692,7 +1692,7 @@ O Amazon S3 Standard-IA é ideal para dados acessados com pouca frequência, mas
 Qual(ais) afirmação(ões) é(são) VERDADEIRA(S) sobre os volumes do Amazon EBS e sistemas de arquivos do Amazon Elastic File System?
 
 <ul>
-  <li>&#10003; Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade.</li>
+  <li>&#10004; Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade.</li>
   <li>Os sistemas de arquivos do Amazon EFS armazenam dados em várias Zonas de Disponibilidade.</li>
   <li>Os volumes do EBS e os sistemas de arquivos do Amazon EFS armazenam dados em uma única Zona de Disponibilidade.</li>
   <li>Os volumes do EBS e os sistemas de arquivos do Amazon Elastic File System armazenam dados em várias Zonas de Disponibilidade.</li>
@@ -1712,7 +1712,7 @@ Você quer armazenar dados em um serviço de armazenamento de objetos. Qual serv
   <li>Amazon Managed Blockchain</li>
   <li>Amazon Elastic File System (Amazon EFS)</li>
   <li>Amazon Elastic Block Store (Amazon EBS)</li>
-  <li>&#10003; Amazon Simple Storage Service (Amazon S3)</li>
+  <li>&#10004; Amazon Simple Storage Service (Amazon S3)</li>
 </ul>
 
 A resposta correta é Amazon Simple Storage Service (Amazon S3).
@@ -1731,7 +1731,7 @@ Qual afirmação melhor descreve o Amazon DynamoDB?
 
 <ul>
   <li>Um serviço que permite executar bancos de dados relacionais na nuvem AWS</li>
-  <li>&#10003; Um serviço de banco de dados de chave-valor sem servidor</li>
+  <li>&#10004; Um serviço de banco de dados de chave-valor sem servidor</li>
   <li>Um serviço que você pode usar para migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados</li>
   <li>Banco de dados relacional de nível empresarial</li>
 </ul>
@@ -1751,7 +1751,7 @@ Um banco de dados relacional de nível empresarial é a descrição do Amazon Au
 Qual serviço é usado para consultar e analisar dados em um data warehouse?
 
 <ul>
-  <li>&#10003; Amazon Redshift</li>
+  <li>&#10004; Amazon Redshift</li>
   <li>Amazon Neptune</li>
   <li>Amazon DocumentDB</li>
   <li>Amazon ElastiCache</li>
@@ -1820,9 +1820,9 @@ Quais tarefas são responsabilidades dos clientes? (Selecione DUAS opções.)
 
 <ul>
   <li>Manutenção da infraestrutura de rede</li>
-  <li>&#10003; Aplicação de patches em software em instâncias do Amazon EC2</li>
+  <li>&#10004; Aplicação de patches em software em instâncias do Amazon EC2</li>
   <li>Implementação de controles de segurança física no data center</li>
-  <li>&#10003; Definição de permissões para objetos do Amazon S3</li>
+  <li>&#10004; Definição de permissões para objetos do Amazon S3</li>
   <li>Manutenção de servidores que executam instâncias do Amazon EC2</li>
 </ul>
 
@@ -1982,9 +1982,9 @@ Você está configurando políticas de controle de serviço (SCPs) no AWS Organi
 <ul>
   <li>Usuários do IAM</li>
   <li>Grupos do IAM</li>
-  <li>&check; Uma conta de membro individual</li>
+  <li>&#10004;; Uma conta de membro individual</li>
   <li>Funções do IAM</li>
-  <li>&check; Uma unidade organizacional (UO)</li>
+  <li>&#10004;; Uma unidade organizacional (UO)</li>
 </ul>
 
 Com o AWS Organizations, você pode aplicar políticas de controle de serviço (SCPs) para a raiz da organização, uma conta de membro individual ou uma UO. Uma SCP afeta todos os usuários, grupos e perfis do IAM em uma conta, incluindo o usuário-raiz da conta AWS.
@@ -2036,11 +2036,11 @@ Além disso, o centro de conformidade para o cliente inclui um plano de aprendiz
 Quais tarefas você pode concluir no AWS Artifact? (Selecione DUAS opções.)
 
 <ul>
-  <li>&check; Acessar relatórios de conformidade da AWS sob demanda.</li>
+  <li>&#10004; Acessar relatórios de conformidade da AWS sob demanda.</li>
   <li>Consolidar e gerenciar múltiplas contas AWS em um local central.</li>
   <li>Criar usuários para permitir que pessoas e aplicativos interajam com serviços e recursos AWS.</li>
   <li>Definir permissões para contas configurando as políticas de controle de serviço (SCPs).</li>
-  <li>&check; Analisar, aceitar e gerenciar seus contratos com a AWS.</li>
+  <li>&#10004; Analisar, aceitar e gerenciar seus contratos com a AWS.</li>
 </ul>
 
 As outras respostas estão incorretas porque:
@@ -2162,7 +2162,7 @@ Qual afirmativa descreve melhor uma política do IAM?
 
 <ul>
     <li>Um processo de autenticação que adiciona uma camada de proteção para sua conta AWS</li>
-    <li>&check; Um documento que concede ou nega permissões para serviços e recursos AWS</li>
+    <li>&#10004; Um documento que concede ou nega permissões para serviços e recursos AWS</li>
     <li>Uma identidade que você pode assumir para obter acesso temporário a permissões</li>
     <li>A identidade que é estabelecida quando você cria pela primeira vez uma conta AWS</li>
 </ul>
@@ -2186,7 +2186,7 @@ Um funcionário precisa de acesso temporário para criar vários buckets do Amaz
 <ul>
     <li>Usuário-raiz da conta AWS</li>
     <li>Grupo do IAM</li>
-    <li>&check; Função do IAM</li>
+    <li>&#10004; Função do IAM</li>
     <li>Política de controle de serviço (SCP)</li>
 </ul>
 
@@ -2209,7 +2209,7 @@ Qual afirmativa melhor descreve o princípio de menor privilégio?
 <ul>
     <li>Adicionar um usuário do IAM em pelo menos um grupo do IAM</li>
     <li>Verificar as permissões de um pacote em relação a uma lista de controle de acesso</li>
-    <li>&check; Conceder apenas as permissões necessárias para executar tarefas específicas</li>
+    <li>&#10004; Conceder apenas as permissões necessárias para executar tarefas específicas</li>
     <li>Executar um ataque de negação de serviço originado de pelo menos um dispositivo</li>
 </ul>
 
@@ -2223,7 +2223,7 @@ Qual serviço ajuda a proteger suas aplicações contra ataques distribuídos de
     <li>Amazon GuardDuty</li>
     <li>Amazon Inspector</li>
     <li>AWS Artifact</li>
-    <li>&check; AWS Shield</li>
+    <li>&#10004; AWS Shield</li>
 </ul>
 
 À medida que o tráfego de rede ingressa em aplicações, o AWS Shield usa diversas técnicas de análise para detectar ataques DDoS potenciais em tempo real e mitigá-los automaticamente.
@@ -2276,11 +2276,143 @@ Por exemplo, suponha que os desenvolvedores da sua empresa usem instâncias do A
 
 Nesse cenário, você pode criar um alarme do CloudWatch que interrompe automaticamente uma instância do Amazon EC2 quando a porcentagem de utilização da CPU permanecer abaixo de um determinado limite por um período específico. Ao configurar o alarme, você pode especificar se deseja receber uma notificação sempre que esse alarme for acionado.
 
+<img width="700" alt="0ueohXDQwcNsM1XB_rLfuExSsSpuXOVqf" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/00397299-9e57-44f9-b18a-4844970eeb0c">
+
+O recurso de <a href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html">painel</a> do CloudWatch permite que você acesse todas as métricas dos seus recursos em um único local. Por exemplo, você pode usar um painel do CloudWatch para monitorar a utilização da CPU de uma instância do Amazon EC2, o número total de solicitações feitas para um bucket do Amazon S3 e muito mais. Você pode até personalizar painéis separados para diferentes fins comerciais, aplicativos ou recursos.
+
+### AWS CloudTrail
+
+O <a href="https://aws.amazon.com/pt/cloudtrail/">AWS CloudTrail</a> registra as chamadas de API realizadas na sua conta. As informações gravadas são identidade do chamador da API, hora da chamada da API, endereço IP de origem do chamador da API e muito mais. Você pode pensar no CloudTrail como uma “trilha” (ou um log de ações) que alguém criou.
+
+Lembre-se de que você pode usar chamadas de API para provisionar, gerenciar e configurar seus recursos da AWS. Com o CloudTrail, você pode visualizar um histórico completo de atividades do usuário e chamadas de API de seus aplicativos e recursos. 
+
+Normalmente, os eventos são atualizados no CloudTrail dentro de 15 minutos após uma chamada de API. Você pode filtrar eventos especificando a hora e a data em que uma chamada de API ocorreu, o usuário que solicitou a ação, o tipo de recurso envolvido na chamada de API e muito mais.
+
+#### Exemplo: evento do AWS CloudTrail
+
+Suponha que o proprietário da cafeteria esteja navegando pela seção AWS Identity and Access Management (IAM) do Console de gerenciamento da AWS. Ele descobre que um novo usuário do IAM chamado Mary foi criado, mas não quem, quando ou qual método foi usado para criar o usuário.
+
+Para responder a essas perguntas, o proprietário navega até o AWS CloudTrail.
+
+![sdgsfjfd](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/76ff76cd-326d-48b8-a668-e0e67f72e498)
+
+Na seção Histórico de eventos do CloudTrail, o proprietário aplica um filtro para exibir somente os eventos da ação da API “CreateUser” no IAM. O proprietário localiza o evento para a chamada de API que criou um usuário do IAM para Mary. Esse registro de evento mostra detalhes completos sobre o que ocorreu: 
+
+em 1º de janeiro de 2020, às 9:00, o usuário do IAM John criou um novo usuário do IAM (Mary) no console de gerenciamento da AWS.
+
+#### CloudTrail Insights
+
+No CloudTrail, você também pode ativar o C<a href="https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/logging-insights-events-with-cloudtrail.html">eventos do Insights - AWS CloudTrail</a>
+. Esse recurso opcional permite que o CloudTrail detecte automaticamente atividades de API incomuns em sua conta AWS. 
+
+Por exemplo, o CloudTrail Insights pode detectar que mais instâncias do Amazon EC2 do que o normal foram iniciadas recentemente em sua conta. Em seguida, você pode revisar os detalhes completos do evento para determinar quais ações precisa executar a seguir.
+
+#### Teste de conhecimento
+
+Quais tarefas você pode executar usando o AWS CloudTrail? (Selecione DUAS opções.)
+
+<ul>
+    <li>Monitorar sua infraestrutura e seus recursos AWS em tempo real</li>
+    <li>&#10004; Rastrear atividades do usuário e solicitações de API em toda a infraestrutura da AWS</li>
+    <li>Exibir métricas e gráficos para monitorar o desempenho dos recursos</li>
+    <li>Filtrar logs para auxiliar na análise operacional e na solução de problemas</li>
+    <li>&#10004; Configurar ações automáticas e alertas em resposta a métricas</li>
+</ul>
+
+As outras respostas são tarefas que você pode executar no Amazon CloudWatch.
+
+## AWS Trusted Advisor
+
+O <a href="https://aws.amazon.com/pt/premiumsupport/technology/trusted-advisor/">Amazon Trusted Advisor</a>  é um serviço da web que inspeciona seu ambiente AWS e faz recomendações em tempo real de acordo com as práticas recomendadas da AWS.
+
+O Trusted Advisor compara as descobertas com as práticas recomendadas da AWS em cinco categorias: otimização de custos, desempenho, segurança, tolerância a falhas e limites de serviço. Para as verificações em cada categoria, o Trusted Advisor oferece uma lista de ações recomendadas e recursos adicionais para saber mais sobre as práticas recomendadas da AWS. 
+
+As orientações feitas pelo AWS Trusted Advisor podem beneficiar sua empresa em todos os estágios da implantação. Por exemplo, você pode usar o AWS Trusted Advisor para ajudar enquanto cria fluxos de trabalho e desenvolve novas aplicações. Ou você pode também usá-lo enquanto faz melhorias contínuas em aplicações e recursos.
+
+![dabgwrN](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/06c5d409-1f50-4b37-a5d3-80124ae8f27d)
+
+Ao acessar o painel do Trusted Advisor no console de gerenciamento da AWS, você pode analisar as verificações concluídas para otimização de custos, desempenho, segurança, tolerância a falhas e limites de serviço.
+
+Para cada categoria:
+
+  <ul>
+    <li>A marca de verificação verde indica o número de itens para os quais nenhum problema foi detectado.</li>
+    <li>O triângulo laranja representa o número de investigações recomendadas.</li>
+    <li>O círculo vermelho representa o número de ações recomendadas.</li>
+  </ul>
+
+  #### Recursos adicionais
+  
+<a href=“https://aws.amazon.com/pt/products/management-and-governance/”>Gerenciamento e governança na AWS</a> 
+<a href=“https://aws.amazon.com/pt/cloudops/monitoring-and-observability/”>Monitoramento e observabilidade</a> 
+<a href=“https://aws.amazon.com/pt/compliance/”>Configuração, conformidade e auditoria</a> 
+<a href=“https://aws.amazon.com/pt/blogs/mt/”>Blog de gerenciamento e governança da AWS</a> 
+<a href=“https://d1.awsstatic.com/whitepapers/aws-governance-at-scale.pdf”>Whitepaper: AWS Governance at Scale (Governança da AWS em escala)</a> 
 
 
 
+#### Teste de conhecimento
 
+Quais ações você pode executar usando o Amazon CloudWatch? (Selecione DUAS opções.)
 
+<ul>
+    <li><span>&#10004;</span> Monitorar a utilização e o desempenho de seus recursos</li>
+    <li>Receber orientações em tempo real para melhorar seu ambiente AWS</li>
+    <li>Comparar sua infraestrutura com as práticas recomendadas da AWS em cinco categorias</li>
+    <li><span>&#10004;</span> Acessar métricas em um único painel</li>
+    <li>Detectar automaticamente atividades da conta incomuns</li>
+  </ul>
 
+  As duas respostas corretas são:
+
+Monitorar a utilização e o desempenho de recursos
+
+Acessar métricas em um único painel
+
+As outras respostas estão incorretas porque:
+
+Receber recomendações em tempo real para melhorar o ambiente AWS pode ser feito pelo AWS Trusted Advisor.
+
+Comparar a infraestrutura com as práticas recomendadas da AWS em cinco categorias pode ser feito pelo AWS Trusted Advisor.
+
+Detectar automaticamente atividades da conta incomuns pode ser feito pelo AWS CloudTrail.
+
+Qual serviço permite que você reveja a segurança de seus buckets do Amazon S3 verificando permissões de acesso aberto?
+
+  <ul>
+    <li>Amazon CloudWatch</li>
+    <li>AWS CloudTrail</li>
+    <li>&#10004; AWS Trusted Advisor</li>
+    <li>Amazon GuardDuty</li>
+  </ul>
+
+  A resposta correta é AWS Trusted Advisor.
+
+O AWS Trusted Advisor é um serviço da web que inspeciona o ambiente da AWS e faz recomendações em tempo real de acordo com as práticas recomendadas da AWS. A inspeção inclui verificações de segurança, como buckets do Amazon S3 com permissões de acesso aberto.
+
+As outras respostas estão incorretas porque:
+
+O Amazon CloudWatch é um serviço da web que permite monitorar e gerenciar várias métricas para os recursos que executam aplicações.
+
+O AWS CloudTrail é um serviço da web que permite analisar detalhes das atividades do usuário e das chamadas de API que ocorreram em um ambiente AWS.
+
+O Amazon GuardDuty é um serviço que realiza detecção inteligente de ameaças em um ambiente e recursos da AWS. Ele identifica ameaças monitorando continuamente a atividade da rede e o comportamento da conta no ambiente AWS.
+
+Quais categorias estão inclusas no painel do AWS Trusted Advisor? (Selecione DUAS opções.)
+
+ <ul>
+    <li>Amazon CloudWatch</li>
+    <li>&#10004; AWS CloudTrail</li>
+    <li>AWS Trusted Advisor</li>
+    <li>&#10004; Amazon GuardDuty </li>
+  </ul>
+
+As duas respostas corretas são:
+
+Desempenho
+
+Tolerância a falhas
+
+O AWS Trusted Advisor inspeciona continuamente o ambiente AWS e faz recomendações de práticas recomendadas em cinco categorias: otimização de custos, desempenho, segurança, tolerância a falhas e limites de serviço.
 
 
