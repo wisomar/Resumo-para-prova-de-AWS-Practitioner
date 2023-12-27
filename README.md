@@ -2656,15 +2656,238 @@ Neste exemplo, a Conta 3 receberia uma parte maior do desconto total por volume 
 
 ## AWS Budgets
 
-No AWS Budgets, você pode criar orçamentos para planejar o uso do serviço, os custos de serviço e as reservas de instâncias.
+No <a href="https://aws.amazon.com/pt/aws-cost-management/aws-budgets/">AWS Budgets</a>, você pode criar orçamentos para planejar o uso do serviço, os custos de serviço e as reservas de instâncias.
 
 As informações do AWS Budgets são atualizadas três vezes por dia. Isso ajuda você a definir com precisão a proximidade entre seu uso e os valores orçados ou limites de nível gratuito da AWS.
 
 No AWS Budgets, você também pode definir alertas personalizados para quando seu uso exceder (ou estiver prestes a exceder) o valor orçado.
 
+### Exemplo: AWS Budgets
 
+Suponha que você tenha definido um orçamento para o Amazon EC2. Você deseja garantir que o uso do Amazon EC2 pela sua empresa não exceda USD 200 por mês. 
+
+No AWS Budgets, você pode definir um orçamento personalizado para notificação quando o uso atingir metade desse valor (USD 100). Essa configuração permite que você receba um alerta e decida como deseja prosseguir com o uso contínuo do Amazon EC2.
+
+Para saber mais sobre o AWS Budgets, clique em cada marcador.
     
+![sdo](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/4f1d3729-a673-4ea8-9837-b73bd507a0c5)
 
+## AWS Cost Explorer
 
+O <a href="https://aws.amazon.com/pt/aws-cost-management/aws-cost-explorer/">AWS Cost Explorer</a> é uma ferramenta que permite visualizar, interpretar e gerenciar seus custos e uso da AWS ao longo do tempo.
 
+O AWS Cost Explorer inclui um relatório-padrão dos custos e do uso dos cinco principais serviços da AWS de acúmulo de custos. Você pode aplicar filtros e grupos personalizados para analisar seus dados. Por exemplo, você pode exibir o uso de recursos no nível por hora.
+
+#### Exemplo: AWS Cost Explorer
+
+<img width="529" alt="f_LP23hs96z_mx6z_pS6DLACY5OOiDZZb" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/674b67f0-656e-4315-b1a7-6a55ac23e15c">
+
+Esse exemplo de painel do AWS Cost Explorer exibe custos mensais para instâncias do Amazon EC2 em um período de seis meses. A barra de cada mês separa os custos de diferentes tipos de instâncias do Amazon EC2 (como t2.micro ou m3.large). 
+
+Ao analisar os custos da AWS ao longo do tempo, você pode tomar decisões informadas sobre custos futuros e como planejar seus orçamentos.
+
+## AWS Support
+
+A AWS oferece quatro <a href="https://aws.amazon.com/pt/premiumsupport/plans/">planos de suporte</a> diferentes para ajudar você a solucionar problemas, reduzir custos e usar os serviços da AWS de maneira eficiente. 
+
+Você pode escolher entre os seguintes planos do Support para atender às necessidades de sua empresa: 
     
+ <ul>
+        <li>Basic</li>
+        <li>Desenvolvedor</li>
+        <li>Empresarial</li>
+        <li>Empresarial Rápido</li>
+        <li>Empresarial de Grande Porte</li>
+    </ul>
+
+## Basic Support
+
+O Basic Support é gratuito para todos os clientes da AWS. Inclui acesso a whitepapers, documentação e comunidades de suporte. Com o Basic Support, você também pode entrar em contato com a AWS para tratar de questões de cobrança e aumento do limite de serviço
+
+Com ele, você tem acesso a uma seleção limitada de verificações do AWS Trusted Advisor. Além disso, você pode usar o AWS Personal Health Dashboard, uma ferramenta com alertas e orientações de correção quando a AWS enfrenta eventos que podem afetar você. 
+
+Se a sua empresa precisa de suporte além do nível Basic, é possível adquirir o Support Desenvolvedor, Empresarial, Empresarial Rápido e Empresarial de Grande Porte.
+
+## Support Desenvolvedor, Empresarial, Empresarial Rápido e Empresarial de Grande Porte
+
+Os planos do Support Desenvolvedor, Empresarial, Empresarial Rápido e Empresarial de Grande Porte têm todos os benefícios do Support Basic, além de poder abrir um número irrestrito de casos de suporte técnico. Esses planos do Support têm pagamento mensal e não exigem contratos de longo prazo.
+
+As informações deste curso destacam apenas uma alguns detalhes para cada plano do Support. Uma visão geral completa do que faz parte de cada plano de Support, incluindo a definição de preço de cada plano, está disponível no <a href="https://aws.amazon.com/pt/premiumsupport/plans/">Planos do AWS Support</a>
+
+Em geral, para definição de preço, o plano Desenvolvedor tem o menor custo, os planos Empresarial e Empresarial Rápido são intermediários e o plano Empresarial de Grande Porte tem o custo mais alto.
+
+Para saber mais sobre os planos do AWS Support
+
+#### Support do Desenvolvedor
+
+Os clientes com um plano Desenvolvedor do Support têm acesso a recursos como:
+
+<ul>
+        <li>Orientação de práticas recomendadas</li>
+        <li>Ferramentas de diagnóstico do lado do cliente</li>
+        <li>Suporte à arquitetura de blocos fundamentais, que consiste em orientações sobre como usar as ofertas, recursos e serviços da AWS combinados</li>
+    </ul>
+
+Por exemplo, suponha que sua empresa esteja explorando os serviços da AWS. Você já ouviu falar sobre alguns serviços diferentes da AWS. No entanto, você não tem certeza de como usá-los combinados para criar aplicativos que possam atender às necessidades de sua empresa. Nesse cenário, o suporte à arquitetura de componentes fundamentais incluído no plano de suporte Developer pode ajudar você a identificar oportunidades para combinar serviços e recursos específicos.
+
+#### Support Empresarial
+
+Os clientes com um plano Empresarial do Support têm acesso a recursos adicionais, incluindo: 
+
+<ul>
+        <li>Orientação de caso de uso para identificar ofertas, recursos e serviços da AWS que podem atender melhor às suas necessidades específicas</li>
+        <li>Todas as verificações do AWS Trusted Advisor</li>
+        <li>Suporte limitado para software de terceiros, como sistemas operacionais comuns e componentes de pilha de aplicações</li>
+    </ul>
+
+Suponha que sua empresa tenha o plano Empresarial do Support e queira instalar um sistema operacional de terceiros comum em suas instâncias do Amazon EC2. Você pode entrar em contato com o AWS Support para obter assistência com a instalação, configuração e solução de problemas do sistema operacional. Para tópicos avançados, como otimizar o desempenho, usar scripts personalizados ou resolver problemas de segurança, pode ser necessário entrar em contato diretamente com o provedor de software de terceiros.  
+
+#### Support Empresarial Rápido
+
+Em novembro de 2021, a AWS abriu inscrições no plano Suporte AWS Empresarial Rápido. Além de todos os recursos incluídos nos planos Basic, Desenvolvedor e Empresarial do Support, os clientes com um plano Empresarial Rápido do Support têm acesso a:
+
+ <ul>
+        <li>Um grupo de Technical Account Managers para orientar proativamente e coordenar o acesso a programas e especialistas da AWS</li>
+        <li>A Oficina de otimização de custos (uma por ano)</li>
+        <li>Uma equipe de suporte do Concierge para cobrança e assistência à conta</li>
+        <li>Ferramentas para monitorar custos e desempenho por meio do Trusted Advisor e do painel/API Health</li>
+    </ul>
+
+ O plano Empresarial Rápido do Support também concede acesso a um conjunto específico de serviços de suporte proativo, que são fornecidos por um grupo de Technical Account Managers
+
+  <ul>
+        <li>Revisão consultiva e orientação de arquitetura (uma por ano)</li>
+        <li>Suporte de gerenciamento de eventos de infraestrutura (uma por ano)</li>
+        <li>Fluxos de trabalho de automação de suporte</li>
+        <li>30 minutos ou menos tempo de resposta para problemas críticos de negócios</li>
+    </ul>
+
+#### Support Empresarial de Grande Porte
+
+Além de todos os recursos incluídos nos planos de suporte Basic, Desenvolvedor, Empresarial e Empresarial Rápido, os clientes com Support Empresarial de Grande Porte têm acesso a:
+
+  <ul>
+        <li>Um Technical Account Manager designado para realizar orientação proativa e coordenar o acesso a programas e especialistas da AWS</li>
+        <li>Uma equipe de suporte Concierge para cobrança e assistência à conta</li>
+        <li>Análises de operações e ferramentas para monitorar o health</li>
+        <li>Dias de treinamento e jogos para impulsionar a inovação</li>
+        <li>Ferramentas para monitorar custos e desempenho por meio do Trusted Advisor e do painel/API Health</li>
+    </ul>
+
+O plano Empresarial de Grande Porte também concede acesso total a serviços proativos, fornecidos por um Technical Account Manager designado:
+
+<ul>
+        <li>Revisão consultiva e orientação de arquitetura</li>
+        <li>Suporte de gerenciamento de eventos de infraestrutura</li>
+        <li>Oficina e ferramentas de otimização de custos</li>
+        <li>Suporte a fluxos de trabalho de automação</li>
+        <li>Tempo de resposta de 15 minutos ou menos para problemas críticos de negócios</li>
+</ul>
+
+#### Technical Account Manager (TAM)
+
+Os planos Empresarial Rápido e Empresarial de Grande Porte do Support inclui acesso a um Technical Account Manager (TAM).
+
+O TAM será seu principal ponto de contato com a AWS. Se sua empresa assina o Support Empresarial de Grande Porte ou Empresarial Rápido, o TAM educa, capacita e desenvolve sua jornada para a nuvem em toda a gama de serviços da AWS. Os TAMs prestam orientação especializada em engenharia, ajudam você a projetar soluções que integram com eficiência os serviços da AWS, auxiliam com arquiteturas econômicas e resilientes e concedem acesso direto aos programas da AWS e a uma ampla comunidade de especialistas.
+
+Por exemplo, suponha que você tenha interesse em desenvolver uma aplicação que use vários serviços da AWS juntos. O TAM pode orientar a usar melhor os serviços em conjunto. Ele consegue isso ao mesmo tempo em que se alinha com as necessidades específicas que sua empresa espera atender com o novo aplicativo.
+
+#### Teste de conhecimento 
+
+Qual plano do Support inclui todas as verificações do AWS Trusted Advisor pelo menor custo?
+
+ <ul>
+        <li>Basic</li>
+        <li>Developer</li>
+        <li>&#10004;Business</li>
+        <li>Empresarial de Grande Porte</li>
+    </ul>
+
+ Somente os planos Empresarial, Empresarial Rápido e Empresarial de Grande Porte do Support têm todas as verificações do AWS Trusted Advisor. Desses três planos do Support, o plano Empresarial tem um custo mais baixo.
+
+<a href="https://aws.amazon.com/pt/premiumsupport/plans/">Planos do AWS Support</a>
+
+## AWS Marketplace
+
+O <a href="https://aws.amazon.com/marketplace/">AWS Marketplace</a> é um catálogo digital com milhares de ofertas de software de provedores independentes de software. Você pode usar o AWS Marketplace para encontrar, testar e comprar software que pode ser executado na AWS. 
+
+Para cada oferta no AWS Marketplace, você pode acessar informações detalhadas sobre opções de definição de preço, suporte disponível e avaliações de outros clientes AWS.
+
+Você também pode explorar soluções de software por setor e caso de uso. Por exemplo, suponha que sua empresa atue no setor de saúde. No AWS Marketplace, você pode analisar casos de uso que o software ajuda a resolver, como implementar soluções para proteger prontuários de pacientes, ou usar modelos de machine learning para analisar o histórico médico de um paciente e prever possíveis riscos para a saúde.
+
+ ### Categorias do AWS Marketplace
+
+ ![H4Gxj6bGSLSnk7Ws_Gv4r6hYBhBT7A3z2](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/dd58c00d-4cb7-40b5-b8c4-deba5fcdc63b)
+
+O AWS Marketplace oferece produtos em várias categorias, como Software de infraestrutura, DevOps, Produtos de dados, Serviços profissionais, Aplicações de negócios, Machine Learning, Indústrias e Internet das Coisas (IoT).
+
+Dentro de cada categoria, você pode restringir sua pesquisa navegando pelas listas de produtos em subcategorias. Por exemplo, as subcategorias na categoria DevOps incluem áreas como Desenvolvimento de aplicações, Monitoramento e Teste.
+
+<ul>
+  <li><a href="https://aws.amazon.com/pt/pricing/">Definição de preços da AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/free/">Nível gratuito da AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/aws-cost-management/">Gerenciamento de custos da AWS</a></li>
+  <li><a href="https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/abstract-and-introduction.html">Whitepaper: How AWS Pricing Works (Como funciona a definição de preço da AWS)</a></li>
+  <li><a href="https://d1.awsstatic.com/whitepapers/introduction-to-aws-cloud-economics-final.pdf">Whitepaper: Introduction to AWS Economics (Introdução à economia da AWS)</a></li>
+  <li><a href="https://aws.amazon.com/pt/premiumsupport/">AWS Support</a></li>
+  <li><a href="https://aws.amazon.com/pt/premiumsupport/knowledge-center/">AWS Knowledge Center</a></li>
+</ul>
+
+### Teste de conhecimento
+
+  <ul>
+        <li>Analisar o custo em que seu uso previsto da AWS incorrerá até o final do mês.</li>
+        <li>Criar uma estimativa de custo para seus casos de uso na AWS.</li>
+        <li>&#10004;Combinar o uso entre contas para obter descontos de preços por volume.</li>
+        <li>Visualizar e gerenciar os custos e o uso da AWS ao longo do tempo.</li>
+    </ul>
+
+ As outras respostas estão incorretas porque:
+
+Reveja quanto seu uso previsto da AWS incorrerá até o final do mês. Você pode executar essa ação no AWS Budgets.
+
+Crie uma estimativa para o custo de seus casos de uso na AWS. Você pode executar essa ação na Calculadora de Preços da AWS.
+
+Visualize e gerencie seus custos e uso da AWS ao longo do tempo: você pode executar essa ação no AWS Cost Explorer.
+
+Qual ferramenta de definição de preço é usada para visualizar, entender e gerenciar o custo e o uso da AWS ao longo do tempo?
+
+   <ul>
+       <li>Calculadora de Preços da AWS</li>  
+        <li> AWS Budgets </li>
+        <li>&#10004; AWS Cost Explorer </li>
+        <li> Nível gratuito da AWS </li>
+    </ul>
+
+O AWS Cost Explorer inclui um relatório-padrão dos custos e do uso dos cinco serviços da AWS mais econômicos. Você pode aplicar filtros e grupos personalizados para analisar seus dados. Por exemplo, você pode exibir o uso de recursos no nível por hora.
+
+As outras respostas estão incorretas porque:
+
+A Calculadora de Preços da AWS permite que você crie uma estimativa para o custo de seus casos de uso na AWS.
+
+O AWS Budgets permite que você crie orçamentos para planejar o uso e os custos do serviço e as reservas de instâncias. No AWS Budgets, você também poderá definir alertas personalizados quando seu uso exceder (ou estiver prestes a exceder) o valor orçado.
+
+O nível gratuito da AWS é um programa que consiste em três ofertas para que os clientes usem os serviços da AWS sem incorrer em custos: sempre gratuito, 12 meses grátis e versão de teste.    
+
+Qual ferramenta de preços permite receber alertas quando o uso do serviço excede um limite que você definiu?
+
+ <ul>
+    <li>Painel de cobrança no console de gerenciamento da AWS</li>
+    <li>&#10004; AWS Budgets</li>
+    <li>Nível gratuito da AWS</li>
+    <li>AWS Cost Explorer</li>
+  </ul>
+
+No AWS Budgets, você pode definir alertas personalizados que notificam quando o uso do serviço exceder (ou estiver prestes a exceder) o valor que você planejou.
+
+Seu orçamento pode ser baseado em custos ou uso. Por exemplo, você pode definir um alerta que o notificará quando você tiver incorrido USD 100,00 de custos no Amazon EC2 ou 500.000 solicitações no AWS Lambda.
+
+As outras respostas estão incorretas porque:
+
+No painel de cobrança do console de gerenciamento da AWS, você pode visualizar detalhes em sua fatura da AWS, como custos de serviço por Região, gastos do mês até o momento e muito mais. No entanto, você não pode definir alertas no painel de cobrança.
+
+O nível gratuito da AWS é um programa que consiste em três ofertas para que os clientes usem os serviços da AWS sem incorrer em custos: sempre gratuito, 12 meses grátis e versão de teste.
+
+O AWS Cost Explorer é uma ferramenta que permite visualizar, interpretar e gerenciar o custo e o uso da AWS ao longo do tempo.
+
+
