@@ -2890,4 +2890,34 @@ O nível gratuito da AWS é um programa que consiste em três ofertas para que o
 
 O AWS Cost Explorer é uma ferramenta que permite visualizar, interpretar e gerenciar o custo e o uso da AWS ao longo do tempo.
 
+Sua empresa deseja ter suporte de um technical account manager (TAM) da AWS. Qual plano de suporte você deve escolher?
+
+ <ul>
+    <li>Desenvolvedor</li>
+    <li>&#10004; Empresarial de Grande Porte</li>
+    <li>Basic</li>
+    <li>Empresarial</li>
+  </ul>
+
+Um Technical Account Manager (TAM) está disponível apenas para clientes da AWS com um plano Empresarial Rápido e Empresarial de Grande Porte do Support. Um TAM oferece orientação, revisões de arquitetura e comunicação contínua com sua empresa enquanto você planeja, implanta e otimiza suas aplicações.
+
+Qual serviço ou recurso é usado para encontrar software de terceiros que pode ser executado na AWS?
+
+  <ul>
+    <li>&#10004; AWS Marketplace</li>
+    <li>Nível gratuito da AWS</li>
+    <li>AWS Support</li>
+    <li>Painel de cobrança no console de gerenciamento da AWS</li>
+  </ul>
+
+  O AWS Marketplace é um catálogo digital com milhares de ofertas de software de provedores independentes de software. Você pode usar o AWS Marketplace para encontrar, testar e comprar software que pode ser executado na AWS.
+
+As outras respostas estão incorretas porque:
+
+O nível gratuito da AWS consiste em ofertas para que os clientes usem os serviços da AWS sem incorrer em custos. Essas ofertas estão relacionadas aos serviços da AWS, não a software de terceiros que podem ser usados na AWS.
+
+O AWS Support é um recurso que pode responder a perguntas sobre as práticas recomendadas, ajudar na solução de problemas, ajudar a identificar maneiras de otimizar o uso dos serviços da AWS e assim por diante.
+
+Você pode usar o painel de cobrança no console de gerenciamento da AWS para visualizar detalhes como custos de serviço por Região, os principais serviços sendo usados por sua conta e custos de cobrança previstos. No painel de cobrança, você também pode acessar outras ferramentas de cobrança da AWS, como o AWS Cost Explorer, o AWS Budgets e os relatórios do AWS Budgets.
+  
 
