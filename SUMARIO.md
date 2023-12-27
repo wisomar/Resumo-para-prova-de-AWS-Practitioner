@@ -127,7 +127,10 @@
      - [Amazon CloudWatch](README.md#Amazon-CloudWatch)
      - [AWS CloudTrail](README.md#AWS-CloudTrail)
      - [AWS Trusted Advisor](README.md#AWS-Trusted-Advisor)
-       
+- [Definições de preços e Suporte](README.md#Definições-de-preços-e-Suporte)
+     - [Nível gratuito da AWS](README.md#Nível-gratuito-da-AWS)
+     - [Conceito de definição de preço da AWS](README.md#Conceito-de-definição-de-preço-da-AWS)
+     - [Painel de cobrança](README.md#Painel-de-cobrança)    
            
               
           
