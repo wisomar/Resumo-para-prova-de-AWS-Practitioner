@@ -2415,4 +2415,256 @@ Tolerância a falhas
 
 O AWS Trusted Advisor inspeciona continuamente o ambiente AWS e faz recomendações de práticas recomendadas em cinco categorias: otimização de custos, desempenho, segurança, tolerância a falhas e limites de serviço.
 
+# Definições de preços e Suporte
 
+## Nível gratuito da AWS
+
+Com o <a href="https://aws.amazon.com/pt/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">nível gratuito da AWS</a>
+, você começa a usar determinados serviços sem ter que se preocupar com o custo durante o período especificado. 
+
+Três tipos de ofertas estão disponíveis: 
+
+ <ul>
+        <li>Serviços Sempre Gratuitos</li>
+        <li>12 Meses Gratuitos</li>
+        <li>Versões de Teste</li>
+    </ul>
+
+Verifique quais tipos de recursos estão incluídos em cada oferta de nível gratuito. 
+
+<li>Sempre gratuito</li>
+
+Essas ofertas não expiram e estão disponíveis para todos os clientes AWS.
+
+Por exemplo, o AWS Lambda permite um milhão de solicitações gratuitas e até 3,2 milhões de segundos de tempo de computação por mês. O Amazon DynamoDB libera 25 GB de armazenamento gratuito por mês.
+
+<li>12 meses gratuitos</li>
+
+Essas ofertas são gratuitas por 12 meses após sua data de inscrição inicial na AWS.
+
+Quantidades específicas de armazenamento do Amazon S3 Standard, limites para horas mensais de tempo de computação do Amazon EC2 e quantidades de transferência de dados do Amazon CloudFront para fora são alguns exemplos.  
+<li>Versão de teste</li>
+
+As versões de teste gratuitas de curto prazo começam na data em que você ativa determinado serviço. A duração de cada teste pode variar de acordo com o número de dias ou a quantidade de uso do serviço.
+
+Por exemplo, o Amazon Inspector oferece uma versão gratuita de 90 dias. O Amazon Lightsail (um serviço que permite que você execute servidores virtuais privados) oferece 750 horas de uso gratuitas em um período de 30 dias.
+
+#### Teste de conhecimento 
+
+O nível gratuito da AWS inclui ofertas que ficam disponíveis para novos clientes AWS por um determinado período após a data de cadastro da AWS. Qual é a duração deste período?
+
+<ul>
+    <li>3 meses</li>
+    <li>6 meses</li>
+    <li>9 meses</li>
+    <li>&#10004; 12 meses</li>
+</ul>
+
+A resposta correta é 12 meses.
+
+O nível gratuito da AWS consiste em três ofertas que permitem que os clientes usem os serviços da AWS sem cobranças: sempre gratuito, 12 meses grátis e versão de teste.
+
+Por 12 meses depois de se cadastrar pela primeira vez em uma conta AWS, você pode aproveitar as ofertas da categoria 12 meses gratuitos. Exemplos de ofertas nesta categoria incluem quantidades específicas de armazenamento do Amazon S3 Standard, limites para horas mensais de tempo de computação do Amazon EC2 e quantidades de transferência de dados do Amazon CloudFront para fora.
+
+## Conceitos de definição de preço da AWS
+
+### Como funciona a definição de preço da AWS
+
+A AWS oferece diversos serviços de computação em nuvem com modelos de pagamento conforme o uso. 
+
+Para saber mais sobre como a definição de preço da AWS funciona, expanda cada uma das três categorias a seguir.
+
+#### Pague somente pelo que usar.
+
+Para cada serviço, você paga exatamente a quantidade de recursos que realmente usa, sem exigir contratos de longo prazo ou licenciamento complexo.
+
+#### Pague menos ao fazer reserva.
+
+Alguns serviços oferecem opções de reserva com desconto significativo em comparação com as definições de preços da instância sob demanda.
+
+Por exemplo, suponha que sua empresa use instâncias do Amazon EC2 para uma carga de trabalho que precisa ser executada continuamente. Você pode optar por executar essa carga de trabalho no Amazon EC2 Instance Savings Plans, pois o plano permite uma economia de até 72% em relação à capacidade equivalente da instância sob demanda.
+
+#### Pague menos com descontos baseados em volume, quando usar mais.
+
+Alguns serviços oferecem definição de preço em camadas, portanto, o custo por unidade é incrementalmente menor com o aumento do uso.
+
+Por exemplo, quanto mais espaço de armazenamento do Amazon S3 você usar, menos pagará por GB.
+
+### Calculadora de Preços da AWS
+
+A <a href="https://calculator.aws/#/">Calculadora de Preços da AWS</a> permite explorar os serviços da AWS e gerar uma estimativa de custo de seus casos de uso na AWS. Você pode organizar as suas estimativas da AWS por grupos que definir. Um grupo pode refletir como sua empresa está organizada, por exemplo, realizar estimativas por centro de custo.
+
+Depois de criar uma estimativa, você pode salvá-la e gerar um link para compartilhá-la com outras pessoas.
+
+![8mMbFUZXWcZ0Xsgw_X5vopv9JVIgw0bG3](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/ccd38f14-c1ec-4cf1-bf0a-d8276d2e9af6)
+
+Suponha que sua empresa esteja interessada em usar o Amazon EC2. No entanto, você ainda não tem certeza de qual Região AWS ou tipo de instância seria o mais econômico para seu caso de uso. Na Calculadora de Preços da AWS, você pode inserir detalhes como o tipo de sistema operacional necessário, requisitos de memória e requisitos de entrada/saída (E/S). Usando a Calculadora de Preços da AWS, você pode ver uma comparação estimada de diferentes tipos de instância do EC2 nas Regiões AWS.
+
+### Exemplos de definição de preços da AWS
+
+Esta seção apresenta alguns exemplos de definição de preço dos serviços AWS. 
+
+#### AWS Lambda
+
+Para saber mais sobre a definição de <a href="https://aws.amazon.com/pt/lambda/pricing/">Preços do AWS Lambda</a>.
+
+#### Definição de preço do aws lambda
+
+Para o AWS Lambda, a cobrança é feita com base no número de solicitações das funções e no tempo necessário para serem executadas.
+
+O AWS Lambda permite um milhão de solicitações gratuitas e até 3,2 milhões de segundos de tempo de computação por mês.
+
+Você pode economizar nos custos do AWS Lambda cadastrando-se em um Compute Savings Plan. Um Compute Savings Plan oferece custos de computação mais baixos em troca do compromisso com uma quantidade consistente de uso durante um período de um ou três anos. Este é um exemplo de “reserve e pague menos”. 
+
+#### Exemplo de definição de preço
+
+Se você usou o AWS Lambda em várias Regiões AWS, é possível visualizar as cobranças discriminadas por Região na sua fatura. 
+
+Pegue um exemplo de fatura em que todo o uso do AWS Lambda ocorre na Região Virgínia do Norte. A fatura lista encargos separados para o número de solicitações de funções e sua duração. Havia 680 solicitações para uma função, e a função foi executada por cerca de 255 segundos.
+
+Tanto o número de solicitações quanto a duração total das solicitações neste exemplo estão abaixo dos limites no nível gratuito da AWS, portanto, o proprietário da conta não precisaria pagar por qualquer uso do AWS Lambda neste mês.
+
+<img width="840" alt="I8qP88Qr6GDywD7T_vBX82XA7yd3QXpgS" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/b335e18f-19fd-4b55-9a60-5f8bdf98d55d">
+
+#### Amazon EC2
+
+Para saber mais sobre a definição de <a href="https://aws.amazon.com/pt/ec2/pricing/">Preços do Amazon EC2</a>
+
+#### Definição de preço do EC2
+
+Com o Amazon EC2, você paga apenas pelo tempo de computação que usar enquanto suas instâncias estão em execução.
+
+Para algumas cargas de trabalho, você pode reduzir significativamente os custos do Amazon EC2 usando instâncias spot. Por exemplo, suponha que você esteja executando um trabalho de processamento em lote que pode ser interrompido. O uso de uma instância spot economizaria até 90% dos custos e, ao mesmo tempo, atenderia aos requisitos de disponibilidade de sua carga de trabalho.
+
+Você pode economizar ainda mais no Amazon EC2 considerando o Savings Plans e as instâncias reservadas.
+
+#### Exemplo de definição de preço
+
+Pegue uma instância do Amazon EC2 implantada na Região Virgínia do Norte, por exemplo. As cobranças de serviço incluem detalhes para os seguintes itens:
+
+ <ul>
+        <li>Uma instância do Amazon EC2 que está em execução por aproximadamente 107 horas</li>
+        <li>Cerca de 11 GB de espaço de armazenamento do Amazon EBS provisionado no mês</li>
+        <li>Um Application Load Balancer usado por 268 horas</li>
+    </ul>
+
+Neste exemplo, nem todos os valores de uso estão abaixo dos limites no nível gratuito da AWS, portanto, o proprietário da conta não teria que pagar por nenhum uso do Amazon EC2 este mês.
+
+<img width="840" alt="6G6S8fLeZUjahA2d_P8TO97KQwkScisje" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/c5896faa-688a-4166-9983-cbecc47e8341">
+
+#### Amazon S3
+
+Para saber mais sobre a definição de <a href="https://aws.amazon.com/pt/s3/pricing/">Preços do Amazon S3</a>
+
+#### Definição de preço do S3
+
+<ul>
+        <li><strong>Armazenamento:</strong> você paga apenas pelo armazenamento usado. A taxa de armazenamento de objetos nos buckets do Amazon S3 é cobrada com base nos tamanhos, storage classes e quanto tempo você armazenou cada objeto durante o mês.</li>
+        <li><strong>Solicitações e recuperações de dados:</strong> você paga por solicitações feitas aos seus objetos e buckets do Amazon S3. Por exemplo, suponha que você esteja armazenando arquivos de fotos em buckets do Amazon S3 e hospedando-os em um site. Toda vez que um visitante solicita o site que contém esses arquivos de fotos, isso conta para solicitações que você precisa pagar.</li>
+        <li><strong>Transferência de dados:</strong> não há custo para transferir dados entre diferentes buckets do Amazon S3 ou do Amazon S3 para outros serviços dentro da mesma Região AWS. No entanto, você paga pelos dados que transfere para dentro e para fora do Amazon S3, com algumas exceções. Não há custo para os dados transferidos para o Amazon S3 da internet ou para o Amazon CloudFront. Também não há custo para os dados transferidos para uma instância do Amazon EC2 na mesma Região AWS que o bucket do Amazon S3.</li>
+        <li><strong>Gerenciamento e replicação:</strong> você paga pelos recursos de gerenciamento de armazenamento que ativou nos buckets do Amazon S3 da sua conta. Esses recursos incluem inventário, análise e marcação de objetos do Amazon S3.</li>
+    </ul>
+
+#### Exemplo de definição de preço
+
+Vamos dar uma olhada na conta da AWS que usou o Amazon S3 em duas Regiões: Virgínia do Norte e Ohio. Em cada Região, as cobranças de cada item baseiam-se nos seguintes fatores:
+
+  <ul>
+        <li>Número de solicitações para adicionar ou copiar objetos em um bucket (PUT, COPY, POST ou LIST).</li>
+        <li>Número de solicitações para recuperar objetos de um bucket (GET).</li>
+        <li>Quantidade de espaço de armazenamento usada.</li>
+    </ul>
+    
+ Região Virgínia do Norte tem dois níveis do Amazon S3: Nível 1 e Nível 2. 
+ 
+<ul>
+        <li>No Nível 1, havia 185 solicitações para adicionar ou copiar objetos em um bucket. (Não há solicitações para recuperar objetos de um bucket.) 0,159 GB de espaço de armazenamento foi usado.</li>
+        <li>No Nível 2, havia 923 solicitações para recuperar objetos de um bucket. (Não havia solicitações para adicionar ou copiar objetos para um bucket.)</li>
+    </ul>
+A Região de Ohio tem um nível do Amazon S3: Nível 2. Havia quatro solicitações para recuperar objetos de um bucket e 0,000001 GB de espaço de armazenamento foi usado. Não havia solicitações para adicionar ou copiar objetos para um bucket.
+
+Todo o uso do Amazon S3 neste exemplo está abaixo dos limites de nível gratuito da AWS, portanto, o proprietário da conta não teria que pagar por qualquer uso do Amazon S3 neste mês.
+    
+<img width="840" alt="KaUCTikrYqmoEhU3_GC9mP13u89WV16--" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/78b146f9-03f0-44d5-9e84-a11680148573">
+
+## Painel de cobrança
+
+Use o painel <a href="https://docs.aws.amazon.com/pt_br/awsaccountbilling/latest/aboutv2/billing-what-is.html">Faturamento e Gerenciamento de Custos da AWS</a> para pagar sua fatura da AWS, monitorar seu uso e analisar e controlar seus custos.
+
+ <ul>
+        <li>Compare o saldo atual do mês acumulado com o mês anterior e obtenha uma previsão do próximo mês com base no uso atual.</li>
+        <li>Visualize os gastos do mês acumulado por serviço.</li>
+        <li>Visualize o uso do nível gratuito por serviço.</li>
+        <li>Acesse o Cost Explorer e crie orçamentos.</li>
+        <li>Adquira e gerencie o Savings Plans.</li>
+        <li>Publique o <a href="https://docs.aws.amazon.com/pt_br/cur/latest/userguide/what-is-cur.html">AWS relatório de uso e custo</a></li>
+    </ul>
+
+## Cobrança consolidada
+
+Em um módulo anterior, você aprendeu sobre o AWS Organizations, um serviço que permite gerenciar múltiplas contas AWS em um local central. O AWS Organizations também oferece a opção de <a href="https://docs.aws.amazon.com/pt_br/awsaccountbilling/latest/aboutv2/consolidated-billing.html">cobrança consolidada</a>
+
+O recurso de cobrança consolidada do AWS Organizations permite que você receba uma única fatura para todas as contas AWS na sua organização. Ao consolidar, você pode rastrear facilmente os custos combinados de todas as contas vinculadas em sua organização. O número máximo de contas-padrão permitido para uma organização é quatro, mas você pode entrar em contato com o AWS Support para aumentar sua cota, se necessário.
+
+Na sua fatura mensal, você pode ver os encargos discriminados incorridos por cada conta. Isso permite que você tenha maior transparência nas contas da sua organização, mantendo a conveniência de receber uma única fatura mensal.
+
+Outro benefício da cobrança consolidada é a capacidade de compartilhar preços de desconto por volume, Savings Plans e instâncias reservadas nas contas da sua organização. Por exemplo, uma conta pode não ter uso mensal suficiente para se qualificar para preços com desconto. No entanto, quando várias contas são combinadas, o uso agregado pode resultar em um benefício que se aplica a todas as contas na organização.
+
+Para ver um exemplo de cobrança consolidada:
+
+<img width="840" alt="XQIHxinsinArU8bF_lIhutQzs_0HYprXC" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/759e7f8a-9143-4155-bd98-33274448ece8">
+
+Suponha que você seja o líder de negócios que supervisiona a cobrança da sua empresa na AWS. 
+
+Sua empresa tem três contas AWS usadas para departamentos separados. Neste exemplo, a conta 1 deve USD 19,64, a conta 2 deve USD 19,96 e a conta 3 deve USD 20,06. Em vez de pagar a fatura mensal de cada local separadamente, você decide criar uma organização e adicionar as três contas. 
+
+Você gerencia a organização pela conta principal.
+
+<img width="840" alt="OweSR53l2eQuPRUX_XkhkbARL6x-vwwoh" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/18fdfed4-2409-4212-b4ca-74b5e88cba3d">
+
+Continuando o exemplo, todo mês a AWS cobra da sua conta pagadora principal por todas as contas vinculadas em uma fatura consolidada. Com a conta principal, você também pode obter um relatório de custos detalhado para cada conta vinculada. 
+
+A fatura consolidada mensal também inclui os custos de uso da conta incorridos pela conta principal. Nesse caso, a conta principal incorreu em USD 14,14. Esse custo não é um encargo premium por ter uma conta principal. 
+
+A fatura consolidada mostra os custos associados a qualquer ação da conta principal (como armazenar arquivos no Amazon S3 ou executar instâncias do Amazon EC2). O total cobrado na conta pagadora, incluindo a conta principal e as contas de um a três, é de USD 73,80. 
+
+<img width="656" alt="cI6v-Cojs7HqLJtd_Up_BrZZrDs-fStwa" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/38a8eb6b-2bd3-4c96-a20e-c65ad318be75">
+
+Com a cobrança consolidada, também é possível compartilhar descontos por volume entre contas. 
+
+Alguns serviços da AWS, como o Amazon S3, oferecem preços com descontos por volume, resultando em preços mais baixos se você usar cada vez mais o serviço. No Amazon S3, depois que os clientes transferiram 10 TB de dados em um mês, eles pagam um preço de transferência por GB menor para os próximos 40 TB de dados transferidos. 
+
+Neste exemplo, há três contas AWS separadas que transferiram diferentes quantidades de dados no Amazon S3 durante o mês atual: 
+
+ <ul>
+        <li>A conta 1 transferiu 2 TB de dados.</li>
+        <li>A conta 2 transferiu 5 TB de dados.</li>
+        <li>A conta 3 transferiu 7 TB de dados.</li>
+    </ul>
+
+Como nenhuma conta única ultrapassou o limite de 10 TB, nenhuma delas é elegível para o preço de transferência mais baixo por GB para os próximos 40 TB de dados transferidos.
+
+<img width="840" alt="Ih5mYKf8KkDxBkCj_HF23i-vUYM2QKEll" src="https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/35d718cf-735f-45e5-8d85-99ed17b3476f">
+
+Agora, suponha que essas três contas separadas sejam reunidas como contas vinculadas em uma única organização da AWS, de acordo com a cobrança consolidada.
+
+Quando o uso do Amazon S3 das três contas vinculadas é combinado (2+5+7), isso resulta em uma quantidade combinada de transferência de dados de 14 TB. Isso excede o limite de 10 TB. 
+
+Com a cobrança consolidada, a AWS combina o uso de todas as contas para determinar quais camadas de definição de preço por volume serão aplicadas, oferecendo um preço geral inferior sempre que possível. Em seguida, a AWS aloca uma parte do desconto por volume geral para cada conta vinculada com base no uso da conta. 
+
+Neste exemplo, a Conta 3 receberia uma parte maior do desconto total por volume porque, com 7 TB, ela transferiu mais dados do que a Conta 1 (com 2 TB) e a Conta 2 (com 5 TB).
+
+## AWS Budgets
+
+No AWS Budgets, você pode criar orçamentos para planejar o uso do serviço, os custos de serviço e as reservas de instâncias.
+
+As informações do AWS Budgets são atualizadas três vezes por dia. Isso ajuda você a definir com precisão a proximidade entre seu uso e os valores orçados ou limites de nível gratuito da AWS.
+
+No AWS Budgets, você também pode definir alertas personalizados para quando seu uso exceder (ou estiver prestes a exceder) o valor orçado.
+
+
+    
+
+
+
+    
