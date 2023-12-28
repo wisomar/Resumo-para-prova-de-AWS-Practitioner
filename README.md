@@ -3038,5 +3038,122 @@ A perspectiva de operações concentra-se na operação e recuperação de carga
 
 A perspectiva de pessoas ajuda os funcionários de Recursos Humanos (RH) a prepararem as equipes para a adoção da nuvem, atualizando processos organizacionais e habilidades da equipe para incluir competências baseadas na nuvem.
 
+## Estratégias de migração
 
-  
+### Seis estratégias de migração
+
+Ao migrar aplicações para a nuvem, seis das estratégias de migração(opens in a new tab) mais comuns que você pode implementar são:
+
+<ul>
+  <li>redefinição de hospedagem</li>
+  <li>redefinição de plataforma</li>
+  <li>refatoração/rearquitetura</li>
+  <li>recompra</li>
+  <li>retenção</li>
+  <li>retirada</li>
+</ul>
+
+Para saber mais sobre estratégias de migração
+
+### Redefinir hospedagem
+
+Redefinir hospedagem (também conhecido como “lift-and-shift”) envolve a movimentação de aplicações sem alterações. 
+
+No cenário de uma grande migração legada, em que a empresa busca implementar a migração e dimensionar rapidamente para atender a um caso de negócio, a hospedagem da maioria das aplicações é redefinida. 
+
+### Redefinir plataforma
+
+Redefinir plataforma (também conhecido como “lift, tinker and shift”) envolve fazer algumas otimizações na nuvem para obter um benefício tangível. A otimização é alcançada sem alterar a arquitetura central do aplicativo.
+
+### Refatorar/redefinir arquitetura
+
+Refatoração (também conhecida como rearquitetura) envolve reimaginar como uma aplicação é arquitetada e desenvolvida usando recursos nativos da nuvem. A refatoração costuma ser orientada pela forte necessidade que a empresa tem de adicionar recursos, scaling ou desempenho que, de outra forma, seriam difíceis de obter no ambiente atual da aplicação.
+
+### Recomprar
+
+Recomprar envolve a mudança de uma licença tradicional para um modelo de software como serviço. 
+
+Por exemplo, uma empresa pode optar por implementar a estratégia de recomprar migrando de um sistema de gerenciamento de relacionamento com o cliente (CRM) para o Salesforce.com.
+
+### Reter
+
+Reter consiste em manter as aplicações essenciais para a empresa no ambiente de origem. Isso pode incluir aplicativos que exigem refatoração importante antes de serem migrados ou trabalhos que podem ser adiados.
+
+### Retirar
+
+Retirar é o processo de remoção de aplicações que não são mais necessários.
+
+#### Teste de conhecimento
+
+<ul>
+  <li>Refatorar</li>
+  <li>Retirar</li>
+  <li>Redefinir plataforma</li>
+  <li>Recomprar</li>
+</ul>
+
+Recomprar envolve a substituição de uma aplicação por uma versão baseada na nuvem, como software encontrado no AWS Marketplace.
+
+As outras respostas estão incorretas porque:
+
+a refatoração envolve alterar a forma como uma aplicação é arquitetada e desenvolvida, normalmente usando recursos nativos da nuvem.
+
+A inativação envolve a remoção de uma aplicação que não é mais usado ou que pode ser desativado.
+
+A realocação de plataforma envolve a otimização seletiva de aspectos de uma aplicação para obtenção de benefícios na nuvem sem alterar a arquitetura central da aplicação. Também é conhecida como “lift, tinker, and shift”.
+
+<a href="https://aws.amazon.com/pt/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/">6 estratégias para migrar aplicativos para a nuvem</a>
+
+## AWS Snow Family
+
+### Membros da AWS Snow Family
+
+A <a href="https://aws.amazon.com/pt/snow/"> AWS Snow family</a> é uma coleção de dispositivos físicos para transporte físico de até exabytes de dados para dentro e para fora da AWS. 
+
+A AWS Snow Family consiste nos serviços AWS Snowcone, AWS Snowball e AWS Snowmobile. 
+
+![Z3auH-02lwKHW96e_IIcwz3-CkuSyAs0F](https://github.com/wisomar/Resumo-para-prova-de-AWS-Practitioner/assets/136864602/2bdd2f54-6519-4d0f-8a32-d85d34f94d56)
+
+Para saber mais sobre cada categoria:
+
+#### AWS Snowcone
+
+O <a href="https://aws.amazon.com/pt/snow/">AWS Snowcone</a> é um dispositivo pequeno, robusto e seguro para transferência de dados e computação de borda. 
+
+Ele tem 2 CPUs, 4 GB de memória e até 14 TB de armazenamento utilizável.
+
+#### Snowball
+
+<ul>
+  <li><a href="https://aws.amazon.com/pt/snowball/">Snowball Edge Storage</a> Optimized são ideais para migrações de dados de grande escala e fluxos de trabalho de transferência recorrentes, em além da computação local com necessidades maiores de capacidade.</li>
+  <ul>
+    <li>Armazenamento: 80 TB de capacidade de disco rígido (HDD) para volumes de blocos e armazenamento de objeto compatível com o Amazon S3, além de unidade de estado sólido (SSD) do SATA de 1 TB para volumes de blocos.</li>
+    <li>Computação: 40 vCPUs e 80 GiB de memória para dar suporte a instâncias sbe1 do Amazon EC2 (equivalente a C5).</li>
+  </ul>
+  <li>O Snowball Edge Compute Optimized fornece recursos de computação poderosos para casos de uso, como machine learning, análise de vídeo em movimento completo, análise e pilhas de computação locais.</li>
+  <ul>
+    <li>Armazenamento: capacidade de HDD utilizável de 80 TB para armazenamento de objeto compatível com o Amazon S3 ou volumes de blocos compatíveis com o Amazon EBS e também 28 TB de capacidade de SSD NVMe utilizável para volumes de blocos compatíveis com o Amazon EBS.</li>
+    <li>Computação: 104 vCPUs, 416 GiB de memória e uma GPU NVIDIA Tesla V100 opcional. Os dispositivos executam as instâncias sbe-c e sbe-g do Amazon EC2, que são equivalentes às instâncias C5, M5a, G3 e P3.</li>
+  </ul>
+</ul>
+
+#### AWS SNOWMOBILE
+
+O <a href="https://aws.amazon.com/pt/snowmobile/">AWS Snowmobile</a> é um serviço de transferência dados na escala de exabytes usado para mover grandes quantidades de dados para a nuvem AWS. 
+
+Você pode transferir até 100 petabytes de dados por Snowmobile, um contêiner de transporte reforçado com 13,71 metros de comprimento puxado por um caminhão semirreboque.
+
+#### Teste de conhecimento
+
+Qual é a capacidade de armazenamento do Snowball Edge Storage Optimized?
+
+<ul>
+  <li>40 TB</li>
+  <li>60 TB</li>
+  <li>&#10004; 80 TB</li>
+  <li>100 TB</li>
+</ul>
+
+O Snowball Edge Storage Optimized é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS. Fornece 80 TB de armazenamento de HDD utilizável.
+
+
