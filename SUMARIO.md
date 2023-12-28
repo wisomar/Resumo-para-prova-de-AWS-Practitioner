@@ -130,8 +130,14 @@
 - [Definições de preços e Suporte](README.md#Definições-de-preços-e-Suporte)
      - [Nível gratuito da AWS](README.md#Nível-gratuito-da-AWS)
      - [Conceito de definição de preço da AWS](README.md#Conceito-de-definição-de-preço-da-AWS)
-     - [Painel de cobrança](README.md#Painel-de-cobrança)    
-           
+     - [Painel de cobrança](README.md#Painel-de-cobrança)
+     - [Cobrança consolidada](README.md#Cobrança-consolidada)
+     - [AWS Budgets](REDME.md#AWS-budgets)
+     - [AWS Cost Explorer](AWS-Cost-Explorer)
+     - [Planos do AWS Support](README.md#Planos-do-AWS-Support)
+     - [AWS Marktplace](AWS-Marktplace)
+- [Migração e Inovação](README.md#Migração-e-Inovação)
+     - [AWS Cloud Adoption Framework (AWS CAF)]        
               
           
   
