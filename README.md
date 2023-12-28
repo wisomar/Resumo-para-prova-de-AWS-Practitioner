@@ -3156,4 +3156,162 @@ Qual é a capacidade de armazenamento do Snowball Edge Storage Optimized?
 
 O Snowball Edge Storage Optimized é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS. Fornece 80 TB de armazenamento de HDD utilizável.
 
+### Inove com os serviços da AWS
+
+Ao examinar como usar os serviços da AWS, é importante focar nos resultados desejados. Você fica devidamente preparado para impulsionar a inovação na nuvem se conseguir articular claramente as seguintes condições: 
+
+<ul>
+  <li>O estado atual</li>
+  <li>O estado desejado</li>
+  <li>Os problemas que você está tentando resolver</li>
+</ul>
+
+Considerar alguns dos caminhos que poderá explorar no futuro, enquanto continuar em sua jornada para a nuvem. 
+
+Para saber mais sobre como inovar com a AWS
+
+#### Aplicações sem servidor
+
+Com a AWS, sem servidor significa que você não precisa administrar, provisionar ou administrar servidores de aplicações. Você não precisa se preocupar com tolerância a falhas ou disponibilidade. A AWS lida com esses recursos para você.
+
+O AWS Lambda é um exemplo de um serviço que você pode usar para executar aplicações sem servidor. Se projetar sua arquitetura para acionar funções do Lambda para executar seu código, você poderá ignorar a necessidade de gerenciar uma frota de servidores.
+
+Criar sua arquitetura com aplicações sem servidor permite que os desenvolvedores se concentrem no produto principal em vez de gerenciar e operar servidores.
+
+#### Machine learning
+
+O desenvolvimento tradicional de machine learning (ML) é complexo, caro, demorado e propenso a erros. A AWS oferece o Amazon SageMaker, que remove o trabalho difícil do processo e ajuda você a criar, treinar e implantar modelos de ML rapidamente.
+
+Você pode usar ML para analisar dados, resolver problemas complexos e prever resultados antes que eles aconteçam.
+
+#### Inteligência artificial
+
+A AWS oferece uma variedade de serviços com tecnologia de inteligência artificial (IA). 
+
+Por exemplo, você pode executar as seguintes tarefas:
+
+<ul>
+  <li>Receba recomendações enquanto escreve e identifica problemas de segurança no seu código com o Amazon CodeWhisperer.</li>
+  <li>Converter fala em texto com o Amazon Transcribe.</li>
+  <li>Descobrir padrões em texto com o Amazon Comprehend.</li>
+  <li>Identificar atividades on-line potencialmente fraudulentas com o Amazon Fraud Detector.</li>
+  <li>Criar chatbots de voz e texto com o Amazon Lex.</li>
+</ul>
+
+#### Teste de conhecimento
+
+Qual serviço ajuda você a criar, treinar e implantar rapidamente modelos de machine learning?
+
+<ul>
+  <li>Amazon Textract</li>
+  <li>Correctly unselected</li>
+  <li>AWS DeepRacer</li>
+  <li>&#10004; Amazon SageMaker</li>
+  <li>Amazon Lex</li>
+</ul>
+
+Com o Amazon SageMaker, é rápido e fácil começar a trabalhar em projetos de machine learning. Você não precisa seguir o processo tradicional de reunir manualmente ferramentas e fluxos de trabalho separados.
+
+
+
+As outras respostas estão incorretas porque:
+
+O Amazon Textract é um serviço de machine learning que extrai automaticamente texto e dados de documentos digitalizados.
+
+O Amazon Lex é um serviço para criação de interfaces de conversação usando voz e texto.
+
+O AWS DeepRacer é um carro de corrida autônomo de escala 1/18 que você pode usar para testar modelos de aprendizado por reforço.
+
+Saiba mais:
+
+<a href="https://aws.amazon.com/pt/sagemaker/" title="Amazon SageMaker"> Amazon SageMaker</a>
+
+<ul>
+  <li><a href="https://aws.amazon.com/codewhisperer/">Amazon CodeWhisperer</a></li>
+  <li><a href="https://aws.amazon.com/codewhisperer/introduction/">Amazon CodeWhisperer: introdução</a></li>
+  <li><a href="https://aws.amazon.com/pt/premiumsupport/knowledge-center/migration-transfer-aws/">Migração e transferência na AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/aws-brasil/um-processo-para-migracoes-em-massa-para-a-nuvem/">Um processo para migrações em massa para a nuvem</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/aws-brasil/seis-estrategias-para-a-migracao-de-aplicacoes-para-a-nuvem/">Seis estratégias para a migração de aplicações para a nuvem</a></li>
+  <li><a href="https://aws.amazon.com/pt/professional-services/aws-cloud-adoption-framework/">AWS Cloud Adoption Framework</a></li>
+  <li><a href="https://aws.amazon.com/pt/getting-started/fundamentals/">Fundamentos da AWS: conceitos principais</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/aws-brasil/blog-de-estrategia-empresarial-da-nuvem-aws/">Blog de estratégia empresarial da nuvem AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/blogs/aws-brasil/blog-de-modernizacao-com-a-aws/">Blog de modernização com a AWS</a></li>
+  <li><a href="https://aws.amazon.com/pt/solutions/case-studies/data-center-migration/">Histórias de clientes da AWS: migração de data center</a></li>
+</ul>
+
+#### Teste de conhecimento
+
+Qual perspectiva do AWS Cloud Adoption Framework ajuda você a estruturar a seleção e a implementação de permissões?
+
+<ul>
+  <li>
+    <input type="checkbox" disabled> Perspectiva de governança
+  </li>
+  <li>
+    &#10004; Perspectiva de segurança
+  </li>
+  <li style="color: green">
+    <input type="checkbox" disabled checked> Perspectiva de operações
+  </li>
+  <li>
+    <input type="checkbox" disabled> Perspectiva de negócio
+  </li>
+</ul>
+
+A perspectiva de segurança do AWS Cloud Adoption Framework também ajuda você a identificar áreas de não conformidade e planejar iniciativas de segurança contínuas.
+
+As outras respostas estão incorretas porque:
+
+A perspectiva de governança ajuda você a identificar e implementar as práticas recomendadas para governança de TI e apoiar processos de negócios com tecnologia.
+
+A perspectiva de operações concentra-se na operação e recuperação de cargas de trabalho de TI para atender aos requisitos dos stakeholders da empresa.
+
+A perspectiva de negócio ajuda você a mudar de um modelo que separa as estratégias de negócios e de TI para um modelo de negócios que integra a estratégia de TI.
+
+<a href="https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf">Whitepaper: An Overview of the AWS Cloud Adoption Framework (Uma visão geral do AWS Cloud Adoption Framework)</a>
+
+Quais estratégias fazem parte das seis estratégias de migração de aplicativo? (Selecione DUAS opções.)
+
+<ul>
+  <li>Revisitar</li>
+  <li>Reter</li>
+  <li>Lembrar</li>
+  <li>Redesenvolver</li>
+</ul>
+
+As estratégias de migração de aplicação são redefinição de hospedagem, redefinição de plataforma, refatoração/rearquitetura, recompra, retenção e inativação.
+
+Qual é a capacidade de armazenamento do AWS Snowmobile?
+
+<ul>
+  <li>40 PB</li>
+  <li>60 PB</li>
+  <li>80 PB</li>
+  <li>&#10004;100 PB</li>
+</ul>
+
+O AWS Snowmobile é um serviço para transferência de até 100 PB de dados para a AWS. Cada Snowmobile é um contêiner de transporte de 13,71 metros que é puxado por um caminhão semirreboque.
+
+Qual declaração descreve melhor o Amazon Lex?
+
+<ul>
+  <li>&#10004; Um serviço para criação interfaces de conversação usando voz e texto</li>
+  <li>Um serviço de machine learning que extrai automaticamente texto e dados de documentos digitalizados</li>
+  <li>Um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB</li>
+  <li>Um serviço que identifica atividades on-line potencialmente fraudulentas</li>
+</ul>
+
+No Amazon Lex, você pode criar, testar e implantar rapidamente chatbots de conversação para usar em suas aplicações.
+
+As outras respostas estão incorretas porque:
+
+Um serviço de machine learning que extrai automaticamente texto e dados do documento digitalizado descreve o Amazon Textract.
+
+Um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB descreve o Amazon DocumentDB.
+
+Um serviço que identifica atividades on-line potencialmente fraudulentas descreve o Amazon Fraud Detector.
+
+
+
+
 
