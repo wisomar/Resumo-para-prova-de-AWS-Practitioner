@@ -2920,4 +2920,123 @@ O AWS Support é um recurso que pode responder a perguntas sobre as práticas re
 
 Você pode usar o painel de cobrança no console de gerenciamento da AWS para visualizar detalhes como custos de serviço por Região, os principais serviços sendo usados por sua conta e custos de cobrança previstos. No painel de cobrança, você também pode acessar outras ferramentas de cobrança da AWS, como o AWS Cost Explorer, o AWS Budgets e os relatórios do AWS Budgets.
   
+# Migração e Inovação
 
+## AWS Cloud Adoption Framework (AWS CAF)
+
+### Seis perspectivas fundamentais do Cloud Adoption Framework
+
+No nível mais alto, o <a href="https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf">AWS Cloud Adoption Framework</a> organiza orientações em seis áreas de foco chamadas perspectivas. Cada perspectiva aborda responsabilidades distintas. O processo de planejamento ajuda as pessoas certas em toda a organização a se prepararem para as mudanças futuras.
+
+Em geral, as perspectivas de negócio, pessoas e governança se concentram nos recursos comerciais, enquanto as perspectivas de plataforma, segurança e operações se concentram em capacidades técnicas.
+
+Para saber mais sobre o AWS CAF, expanda cada uma das seis categorias a seguir.
+
+#### Perspectiva de negócio
+
+A perspectiva de negócio garante que a TI esteja alinhada às necessidades de negócio e que os investimentos em TI estejam vinculados aos principais resultados dos negócios.
+
+Use a perspectiva de negócio para criar um caso de negócio sólido para adoção da nuvem e priorizar as iniciativas de adoção da nuvem. Garanta que suas estratégias e metas de negócios estejam alinhadas com suas estratégias e metas de TI.
+
+Os perfis comuns na perspectiva de negócio são: 
+
+  <ul>
+    <li>Gerentes de negócios</li>
+    <li>Gerentes financeiros</li>
+    <li>Proprietários de orçamento</li>
+    <li>Stakeholders de estratégia</li>
+  </ul>
+
+#### Perspectiva de pessoas
+
+A perspectiva de pessoas promove o desenvolvimento de uma estratégia de gerenciamento de alterações em toda a organização para a adoção bem-sucedida da nuvem.
+
+Use a perspectiva de pessoas para avaliar estruturas e perfis organizacionais, novos requisitos de habilidades e processos e identificar lacunas. Isso ajuda a priorizar treinamento, pessoal e mudanças organizacionais.
+
+Os perfis comuns da perspectiva de pessoas são: 
+
+ <ul>
+    <li>Recursos humanos</li>
+    <li>Equipe</li>
+    <li>Gerentes de pessoas</li>
+  </ul>
+
+#### Perspectiva de governança
+
+A perspectiva de governança se concentra nas habilidades e processos para alinhar a estratégia de TI à estratégia de negócios. Isso garante que você maximize o valor comercial e minimize os riscos.
+
+Use a perspectiva de governança para entender como atualizar as habilidades e os processos da equipe necessários para garantir a governança de negócios na nuvem. Gerencie e mensure os investimentos em nuvem para avaliar os resultados de negócios.
+
+Os perfis comuns na perspectiva de governança são:  
+
+  <ul>
+    <li>Chief Information Officer (CIO)</li>
+    <li>Gerentes do programa</li>
+    <li>Enterprise architect</li>
+    <li>Analistas de negócios</li>
+    <li>Gerentes de portfólio</li>
+  </ul>
+
+#### Perspectiva de plataforma
+
+A perspectiva de plataforma inclui princípios e padrões para implementação de novas soluções na nuvem e migração de cargas de trabalho on-premises para a nuvem.
+
+Use uma variedade de modelos arquitetônicos para entender e comunicar a estrutura dos sistemas de TI e suas relações. Descreva a arquitetura do ambiente de destino em detalhes.
+
+Os perfis comuns da perspectiva de plataforma são: 
+
+ <ul>
+    <li>Chief Technology Officer (CTO)</li>
+    <li>Gerentes de TI</li>
+    <li>Arquitetos de soluções</li>
+  </ul>
+
+#### Perspectiva de segurança
+
+A perspectiva de segurança garante que a organização atenda aos objetivos de segurança de visibilidade, auditoria, controle e agilidade. 
+
+Use o AWS CAF para estruturar a seleção e a implementação de controles de segurança que atendam às necessidades da organização.
+
+Os perfis comuns da perspectiva de segurança são: 
+
+ <ul>
+    <li>Chief information security officer (CISO)</li>
+    <li>Gerentes de segurança de TI</li>
+    <li>Analistas de segurança de TI</li>
+  </ul>
+
+#### Perspectiva de operações
+
+A perspectiva de operações ajuda você a ativar, executar, usar, operar e recuperar cargas de trabalho de TI para o nível definido com os stakeholders da empresa.
+
+Defina como os negócios diários, trimestrais e anuais são conduzidos. Alinhe e dê suporte às operações do negócio. O AWS CAF ajuda os stakeholders a definir os procedimentos operacionais atuais e identificar mudanças de processo e treinamento necessários para implementar a nuvem com sucesso.
+
+Os perfis comuns da perspectiva de operações são  
+
+<ul>
+    <li>Gerentes de operações de TI</li>
+    <li>Gerentes de suporte de TI</li>
+  </ul>
+
+
+ #### Qual perspectiva do AWS Cloud Adoption Framework ajuda você a elaborar, implementar e otimizar sua infraestrutura da AWS com base em suas metas e perspectivas de negócio?
+
+  <ul>
+    <li>Perspectiva de negócio</li>
+    <li>&#10004; Perspectiva de plataforma</li>
+    <li>Perspectiva de operações</li>
+    <li>Perspectiva de pessoas</li>
+  </ul>
+
+A perspectiva de plataforma do AWS Cloud Adoption Framework também inclui princípios para implementar novas soluções e migrar cargas de trabalho on-premises para a nuvem.
+
+As outras respostas estão incorretas porque:
+
+A perspectiva de negócio ajuda você a mudar de um modelo que separa as estratégias de negócios e TI para um modelo de negócios que integra a estratégia de TI.
+
+A perspectiva de operações concentra-se na operação e recuperação de cargas de trabalho de TI para atender às exigências dos stakeholders da empresa.
+
+A perspectiva de pessoas ajuda os funcionários de Recursos Humanos (RH) a prepararem as equipes para a adoção da nuvem, atualizando processos organizacionais e habilidades da equipe para incluir competências baseadas na nuvem.
+
+
+  
