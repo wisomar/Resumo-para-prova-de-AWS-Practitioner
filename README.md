@@ -3312,6 +3312,317 @@ Um serviço de banco de dados de documentos compatível com cargas de trabalho d
 Um serviço que identifica atividades on-line potencialmente fraudulentas descreve o Amazon Fraud Detector.
 
 
+# AWS Well-Architected Framework
+
+O <a href="https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/welcome.html">AWS Well-Architected Framework</a>
+ajuda você a entender como projetar e operar sistemas confiáveis, seguros, eficientes e econômicos na nuvem AWS. Com ele, é possível avaliar de maneira consistente suas arquiteturas em relação às práticas recomendadas e aos princípios de projeto e a identificar áreas para melhorias.
+
+O Well-Architected Framework se baseia em cinco pilares: 
+
+<ul>
+  <li>Excelência operacional</li>
+  <li>Segurança</li>
+  <li>Confiabilidade</li>
+  <li>Eficiência de desempenho</li>
+  <li>Otimização de custos</li>
+  <li>Sustentabilidade</li>
+</ul>
+
+Para saber mais:
+
+### Excelência operacional
+
+Excelência operacional é a capacidade de executar e monitorar sistemas para entregar valor comercial e melhorar continuamente os processos e procedimentos de apoio.  
+
+Os princípios de design para a excelência operacional na nuvem incluem executar operações como código, anotar documentação, antecipar falhas e fazer com frequência alterações pequenas e reversíveis.
+
+### Segurança
+
+O pilar de segurança inclui a capacidade de proteger informações, sistemas e ativos e, ao mesmo tempo, entregar valor comercial por meio de avaliações de risco e estratégias de mitigação. 
+
+Ao considerar a segurança de sua arquitetura, aplique estas práticas recomendadas:
+
+<ul>
+  <li>Automatize as práticas recomendadas de segurança quando possível.</li>
+  <li>Aplique segurança em todas as camadas.</li>
+  <li>Proteja os dados em trânsito e em repouso.</li>
+</ul>
+
+### Confiabilidade
+
+Confiabilidade é a capacidade de um sistema fazer o seguinte:
+
+<ul>
+  <li>Recuperar-se de interrupções na infraestrutura ou no serviço</li>
+  <li>Adquirir dinamicamente recursos de computação para atender à demanda</li>
+  <li>Reduzir interrupções, como configurações incorretas ou problemas de rede transitórios</li>
+</ul>
+
+A confiabilidade inclui testes de procedimentos de recuperação, scaling horizontal para aumentar a disponibilidade agregada do sistema e recuperação automática de falhas.
+
+### Eficiência de desempenho
+
+A eficiência de desempenho é a capacidade de usar recursos computacionais com eficiência para cumprir requisitos do sistema e manter essa eficiência à medida que a demanda muda e as tecnologias evoluem. 
+
+A avaliação da eficiência de desempenho de sua arquitetura inclui experimentar com mais frequência, usar arquiteturas serverless e projetar sistemas para ter alcance global em minutos.
+
+### Otimização de custos
+
+Otimização de custos é a capacidade de executar sistemas para entregar valor comercial com o menor preço.
+
+A otimização de custos inclui a adoção de um modelo de consumo, análise e atribuição de despesas e uso de serviços gerenciados para reduzir o custo de propriedade.
+
+### Sustentabilidade
+
+Em dezembro de 2021, a AWS introduziu um pilar de sustentabilidade como parte do AWS Well-Architected Framework.
+
+Sustentabilidade é a capacidade de melhorar continuamente os impactos da sustentabilidade, reduzindo o consumo de energia e aumentando a eficiência em todos os componentes de uma carga de trabalho, maximizando os benefícios dos recursos provisionados e minimizando o total de recursos necessários.
+
+Para facilitar um bom design para a sustentabilidade:
+
+<ul>
+  <li>Entenda seu impacto</li>
+  <li>Estabeleça metas de sustentabilidade</li>
+  <li>Maximize a utilização</li>
+  <li>Antecipe e adote novas ofertas de hardware e software mais eficientes</li>
+  <li>Use serviços gerenciados</li>
+  <li>Reduza o impacto downstream de suas cargas de trabalho na nuvem</li>
+</ul>
+
+### Teste de conhecimento
+
+Qual pilar do AWS Well-Architected Framework se concentra na capacidade de uma carga de trabalho executar de maneira consistente e correta as funções pretendidas?
+
+<ul>
+  <li>Excelência operacional</li>
+  <li>Eficiência de desempenho</li>
+  <li>Segurança</li>
+  <li>Confiabilidade</li>
+</ul>
+
+As outras respostas estão incorretas porque:
+
+o pilar de excelência operacional inclui a capacidade de executar cargas de trabalho de maneira eficaz, obter informações sobre suas operações e melhorar continuamente os processos de suporte para entregar valor comercial.
+
+O pilar de eficiência de desempenho se concentra no uso eficiente dos recursos de computação para atender aos requisitos do sistema e para manter essa eficiência à medida que a demanda muda e as tecnologias evoluem.
+
+O pilar de segurança inclui a proteção de dados, sistemas e ativos e tecnologias de nuvem para melhorar a segurança de suas cargas de trabalho.
+
+<a href="https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/welcome.html">AWS Well-Architected Framework</a>
+
+### Vantagens da computação em nuvem
+
+Operar na nuvem AWS oferece muitos benefícios em relação à computação em ambientes on-premises ou híbridos. 
+
+Nesta seção, você aprenderá sobre seis vantagens da computação em nuvem:
+
+<ul>
+  <li>Trocar despesa antecipada por despesas variáveis.</li>
+  <li>Benefícios de enormes economias de escala.</li>
+  <li>Parar de tentar adivinhar a capacidade.</li>
+  <li>Aumentar a velocidade e a agilidade.</li>
+  <li>Parar de gastar dinheiro com execução e manutenção de data centers.</li>
+  <li>Ter alcance global em minutos.</li>
+</ul>
+
+Para saber mais sobre as vantagens da computação em nuvem:
+
+### Troque despesas iniciais por despesas variáveis.
+
+Despesas iniciais são data centers, servidores físicos e outros recursos nos quais você precisaria investir antes de usá-los.
+
+Em vez de investir substancialmente em data centers e servidores antes de saber como serão usados, você pode pagar somente ao consumir recursos de computação.
+
+### Beneficie-se de grandes economias de escala.
+
+O uso da computação em nuvem permite obter um custo variável menor ao que você conseguiria por conta própria. 
+
+Como o uso por centenas de milhares de clientes se acumula na nuvem, provedores como a AWS podem alcançar economias de escala maiores. As economias de escala se transformam em preços para pagamento conforme o uso mais baixos.
+
+### Pare de tentar adivinhar a capacidade.
+
+Com a computação em nuvem, você não precisa prever a capacidade de infraestrutura necessária antes de implantar uma aplicação. 
+
+Por exemplo, você pode iniciar instâncias do Amazon Elastic Compute Cloud (Amazon EC2) quando necessário e pagar apenas pelo tempo de computação usado. Em vez de pagar por recursos que não são utilizados ou lidar com capacidade limitada, você pode acessar somente a capacidade de que precisa e aumentar ou reduzir a quantidade em resposta à demanda. 
+
+### Aumente a velocidade e a agilidade.
+
+A flexibilidade da computação em nuvem facilita o desenvolvimento e a implantação de aplicações.
+
+Essa flexibilidade também oferece às suas equipes de desenvolvimento mais tempo para experimentar e inovar.
+
+### Parar de gastar dinheiro com execução e manutenção de data centers.
+
+A computação em nuvem em data centers geralmente exige que você gaste mais dinheiro e tempo gerenciando infraestrutura e servidores. 
+
+Um benefício da computação em nuvem é poder se concentrar menos nessas tarefas e mais nas aplicações e clientes.
+
+### Tenha alcance global em minutos.
+
+O espaço global da nuvem AWS para implantação rápida de aplicações para clientes em todo o mundo, ao mesmo tempo em que oferece baixa latência.
 
 
+### Teste de conhecimento
+
+Que processo é uma vantagem da grande economia em escala?
+
+<ul>
+  <li>Implantação de uma aplicação em várias Regiões ao redor do mundo</li>
+  <li>&#10004; Fazer o pagamento conforme o uso de preços mais baixos em consequência do uso agregado de serviços dos clientes da AWS</li>
+  <li>Pagar pelo tempo de computação à medida que você o usa, em vez de investir antecipadamente em data centers</li>
+  <li>Aumentar ou diminuir a capacidade da infraestrutura para atender à demanda</li>
+</ul>
+
+A resposta correta é: Fazer o pagamento conforme o uso de preços de pagamento conforme o uso mais baixos em consequência do uso agregado de serviços dos clientes da AWS.
+
+Como o uso de centenas de milhares de clientes é agregado na nuvem, os provedores, como a AWS, podem alcançar maior economia de escala. As economias de escala traduzem-se em preços para pagamento conforme o uso mais baixos. 
+
+As outras respostas estão incorretas porque:
+
+Implantação de uma aplicação em várias Regiões ao redor do mundo: esse processo é um exemplo da obtenção de alcance global em minutos.
+
+Pagar pelo tempo de computação à medida que você o usa em vez de investir antecipadamente em data centers: esse processo é um exemplo de troca de despesa inicial para despesa variável.
+
+Aumentar ou diminuir a capacidade da infraestrutura para atender à demanda: esse processo é um exemplo de parar de adivinhar capacidade.
+
+<a href="https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html">Link para o artigo "Seis vantagens da computação em nuvem"</a>
+
+#### Recursos adicionais
+
+<a href=“https://aws.amazon.com/pt/architecture/well-architected/” target=“_blank”>AWS Well-Architected</a>
+<a href=“https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/welcome.html” target=“_blank”>AWS Well-Architected Framework</a>
+<a href=“https://aws.amazon.com/pt/architecture/” target=“_blank”>Centro de Arquitetura da AWS</a>
+<a href=“https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html” target=“_blank”>Seis vantagens da computação em nuvem</a>
+<a href=“https://aws.amazon.com/blogs/architecture/” target=“_blank”>Blog de arquitetura da AWS</a>
+
+### Teste de conhecimento 
+
+Qual pilar do AWS Well-Architected Framework inclui a capacidade de executar cargas de trabalho de maneira eficaz e obter informações sobre as operações?
+
+<ul>
+  <li>Otimização de custos</li>
+  <li>&#10004; Excelência operacional</li>
+  <li>Eficiência de desempenho</li>
+  <li>Confiabilidade</li>
+</ul>
+
+As outras respostas estão incorretas porque:
+
+O pilar de otimização de custos se concentra na capacidade de executar sistemas para proporcionar valor comercial com o preço mais baixo.
+
+O pilar de eficiência de desempenho se concentra no uso eficiente dos recursos de computação para atender aos requisitos do sistema e manter essa eficiência à medida que a demanda muda e as tecnologias evoluem.
+
+O pilar de confiabilidade se concentra na capacidade de uma carga de trabalho executar de maneira consistente e correta as funções pretendidas.
+
+Quais são os benefícios da computação em nuvem? (Selecione DUAS opções.)
+
+<ul>
+  <li>&#10004; Aumente a velocidade e a agilidade.</li>
+  <li>Beneficiar-se de economias de escala.</li>
+  <li>Trocar despesa variável por despesa antecipada.</li>
+  <li>Manter a capacidade da infraestrutura.</li>
+  <li>&#10004; Parar de gastar dinheiro com execução e manutenção de data centers.</li>
+</ul>
+
+As seis vantagens da computação em nuvem são:
+
+Trocar despesas iniciais por despesas variáveis.
+
+Benefícios com as grandes economias de escala
+
+Parar de adivinhar capacidade.
+
+Aumentar a velocidade e a agilidade.
+
+Parar de gastar dinheiro executando e mantendo data centers.
+
+Ter alcance global em minutos.
+
+# Noções Basicas do AWS Certified Cloud Practitioner.
+
+## Domínios do exame
+
+O exame AWS Certified Cloud Practitioner inclui quatro domínios:
+
+<ul>
+  <li>Conceitos de nuvem</li>
+   <li>Segurança e conformidade</li>
+   <li>Tecnologia</li>
+   <li>Cobrança e preços</li>
+</ul>
+
+As áreas abordadas descrevem cada domínio no <a href="https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf">guia de exame AWS Certified Cloud Practitioner</a>. Para obter uma descrição de cada domínio, consulte o site do <a href="https://aws.amazon.com/pt/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a>. Leia as informações do Guia do Exame como parte de sua preparação para o exame.
+
+Cada domínio do exame tem um peso. O peso representa a porcentagem de perguntas do exame que corresponde a esse domínio específico. Os pesos são aproximações, então as perguntas do seu exame podem não corresponder exatamente a essas porcentagens. O exame não indica o domínio associado a uma pergunta. Na verdade, algumas perguntas podem se enquadrar em vários domínios.
+
+<ul>
+  <li>
+    Domínio
+    <ul>
+      <li>Porcentagem do exame</li>
+    </ul>
+  </li>
+  <li>
+    Domínio 1: Conceitos de nuvem
+    <ul>
+      <li>26%</li>
+    </ul>
+  </li>
+  <li>
+    Domínio 2: Segurança e conformidade
+    <ul>
+      <li>25%</li>
+    </ul>
+  </li>
+  <li>
+    Domínio 3: Tecnologia
+    <ul>
+      <li>33%</li>
+    </ul>
+  </li>
+  <li>
+    Domínio 4: Faturamento e definição de preço
+    <ul>
+      <li>16%</li>
+    </ul>
+  </li>
+  <li>
+    Total
+    <ul>
+      <li>100%</li>
+    </ul>
+  </li>
+</ul>
+
+### Experiência recomendada
+
+Os candidatos ao exame AWS Certified Cloud Practitioner devem ter uma compreensão básica dos serviços de TI e de como usá-los na plataforma da nuvem AWS. 
+
+Recomendamos que você tenha pelo menos seis meses de experiência com a nuvem AWS em qualquer função, inclusive gerentes de projeto, gerentes de TI, gerentes de vendas, tomadores de decisão e profissionais de marketing. São funções além das de finanças, compras e departamentos jurídicos.
+
+### Whitepapers e recursos
+
+Como parte de sua preparação para o exame AWS Certified Cloud Practitioner, recomendamos ler os seguintes whitepapers:
+
+<a href=“https://aws.amazon.com/pt/architecture/well-architected/” target=“_blank”>Overview of Amazon Web Services (Visão geral da Amazon Web Services)</a>
+<a href=“https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/how-aws-pricing-works.pdf” target=“_blank”>How AWS Pricing Works (Como é a definição de preço da AWS)</a>
+<a href=“https://aws.amazon.com/premiumsupport/plans/” target=“_blank”>Compare AWS Support Plans (Comparar planos do AWS Support)</a>
+
+### Estratégias do exame
+
+### Leia toda a pergunta.
+
+Primeiro, leia cada pergunta na íntegra. Palavras-chave ou frases na pergunta que, se não forem lidas, podem resultar na seleção de uma resposta incorreta.
+
+### Preveja a resposta antes de ver as outras respostas.
+
+Em seguida, tente prever a resposta correta antes de analisar qualquer resposta. 
+
+Esta estratégia ajuda você a presumir diretamente de seus conhecimentos e habilidades sem se distrair com respostas incorretas. Se a sua previsão é uma das respostas, isso pode ser útil para saber se você está no caminho certo. No entanto, analise todas as outras respostas para essa pergunta.
+
+### Elimine as respostas incorretas.
+
+Antes de selecionar sua resposta a uma pergunta, elimine todas as opções que você acredita estar incorretas. 
+
+Essa estratégia ajuda você a se concentrar na opção correta (ou opções, para perguntas de resposta múltipla) e cumprir todos os requisitos da pergunta.
 
