@@ -137,7 +137,8 @@
      - [Planos do AWS Support](README.md#Planos-do-AWS-Support)
      - [AWS Marktplace](AWS-Marktplace)
 - [Migração e Inovação](README.md#Migração-e-Inovação)
-     - [AWS Cloud Adoption Framework (AWS CAF)]        
+     - [AWS Cloud Adoption Framework (AWS CAF)](README.md#AWS-Cloud-Adoption-Framework-(AWS-CAF))
+     - [Estratégias de migração](README.md#Estratégias-de-migração)     
               
           
   
