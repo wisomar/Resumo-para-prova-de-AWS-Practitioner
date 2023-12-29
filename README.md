@@ -159,7 +159,9 @@ energia, rede e conectividade redundantes, alojados em instalações separadas. 
 que são mais altamente disponíveis, tolerantes a falhas e escaláveis do que seria possível em um único data center</p>
 
 # Segurança e conformidade
-## Segurança
+
+## <a href="https://aws.amazon.com/pt/security/security-learning/?pg=cloudessentials&cards-top.sort-by=item.additionalFields.sortDate&cards-top.sort-order=desc&awsf.Types=*all">Segurança</a>
+
 <p>A <a href="https://aws.amazon.com/pt/security/" target="_blank">segurança na nuvem</a> AWS é a maior prioridade. À medida que as organizações adotam a escalabilidade e a flexibilidade da nuvem, a AWS as ajuda a transformar segurança, identidade e conformidade em importantes facilitadores de negócios. A AWS incorpora a segurança no núcleo de nossa infraestrutura de nuvem e oferece serviços básicos para ajudar as organizações a atender aos
 seus requisitos exclusivos de segurança na nuvem.</p>
 <p>Como um cliente da AWS, você se beneficiará de um datacenter e uma arquitetura de rede criados para atender os requisitos da maioria das organizações com exigências de segurança. A segurança na nuvem é muito parecida com a segurança em seus data centers locais, mas sem os custos de manutenção de instalações e hardware. Na nuvem, você não precisa gerenciar servidores físicos ou dispositivos de armazenamento. Em vez disso, você usa ferramentas de segurança baseadas em software para monitorar e proteger o fluxo de informações que entram e saem dos seus recursos de nuvem.</p>
