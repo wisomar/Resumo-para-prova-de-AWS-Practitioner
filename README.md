@@ -363,7 +363,7 @@ Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser u
 
 ## Dimensionamento
 
-<p>O dimensionamento significa começar apenas com os recursos necessários e projetar a arquitetura para responder automaticamente às alterações de demanda, fazendo aumentos ou reduções de quantidade. Como resultado, você paga apenas pelos recursos que usa. Você não precisa se preocupar com a falta de capacidade de computação para atender às necessidades dos clientes.</p>
+<p>O <a href="https://aws.amazon.com/pt/aws-cost-management/aws-cost-optimization/right-sizing/" target="_blank">dimensionamento</a> significa começar apenas com os recursos necessários e projetar a arquitetura para responder automaticamente às alterações de demanda, fazendo aumentos ou reduções de quantidade. Como resultado, você paga apenas pelos recursos que usa. Você não precisa se preocupar com a falta de capacidade de computação para atender às necessidades dos clientes.</p>
 
 ## Amazon EC2 Auto Scaling
 <p>Se você já tentou acessar um site que não carregava e atingiu o tempo limite algumas vezes, ele pode ter recebido mais solicitações do que conseguia atender. Essa situação é semelhante a esperar em uma longa fila em uma cafeteria quando há apenas um barista disponível para registrar os pedidos dos clientes. <br>
@@ -412,7 +412,7 @@ Um balanceador de carga atua como um ponto único de contato para todo o tráfeg
 
 # Sistema de mensagens e enfileiramento
 
-## Aplicações monolíticas e microsserviços
+## <a href="https://aws.amazon.com/pt/compare/the-difference-between-monolithic-and-microservices-architecture/">Aplicações monolíticas e microsserviços</a>
 
 <p>As aplicações são formadas por vários componentes. Os componentes se comunicam entre si para transmitir dados, atender solicitações e manter o aplicativo em execução <br>
 Suponha que você tenha uma aplicação com componentes com acoplamento forte. Esses componentes podem ser bancos de dados, servidores, interface do usuário, lógica de negócios e assim por diante. Esse tipo de arquitetura pode ser considerado uma aplicação monolítica. <br>
