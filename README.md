@@ -372,8 +372,10 @@ O <a href="https://aws.amazon.com/pt/ec2/autoscaling/" target="_blank">Amazon EC
 
 <ul>
     <li>O scaling dinâmico responde às alterações na demanda.<br>
-    O Scaling Dinâmico é útil quando o aplicativo tem necessidades de dimensionamento urgentes e, às vezes, imprevisíveis</li>
-    <li>O scaling preditivo programa automaticamente o número correto de instâncias do Amazon EC2 com base na demanda prevista.<br>
+    O Scaling dinâmico é útil quando o aplicativo tem necessidades de dimensionamento urgentes e, às vezes, imprevisíveis</li>
+</ul>
+<ul>
+   <li>O scaling preditivo programa automaticamente o número correto de instâncias do Amazon EC2 com base na demanda prevista.<br>
     Por exemplo, se um aplicativo bancário tem um pico de uso no quinto dia útil, metade do mês e no final do mês, o Scaling Preditivo pode ser usado para programar instâncias adicionais do EC2 para esses períodos</li>
 </ul>
 
