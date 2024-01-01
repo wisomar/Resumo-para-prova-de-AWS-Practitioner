@@ -339,7 +339,7 @@ Posteriormente neste curso, você conhecerá o AWS Cost Explorer, que pode ser u
 
 ### Hosts Dedicados
 
-<p>Os hosts dedicados são servidores físicos com capacidade de instância do Amazon EC2 totalmente dedicada ao uso do cliente</p>
+<p>Os <a href="https://aws.amazon.com/pt/ec2/dedicated-hosts/" target="_blank">hosts dedicados</a> são servidores físicos com capacidade de instância do Amazon EC2 totalmente dedicada ao uso do cliente</p>
 <p>Você pode usar suas licenças de software por soquete, por núcleo ou por VM para manter a conformidade da licença. Você pode adquirir hosts dedicados sob demanda e reservas de hosts dedicados. De todas as opções do Amazon EC2 que foram abordadas, os hosts dedicados são os mais caros.</p>
 
 ### Teste de conhecimento
