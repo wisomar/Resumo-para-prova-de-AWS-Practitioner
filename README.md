@@ -250,7 +250,7 @@ Você tem acesso a centenas de ferramentas e recursos para ajudá-lo a atingir s
 
 <ul>
     <li>Otimizada para memória</li>
-    <li>&#10004;;Otimizada para armazenamento</li>
+    <li>&#10004;Otimizada para armazenamento</li>
     <li>Uso geral</li>
     <li>Otimizada para computação</li>
 </ul>
