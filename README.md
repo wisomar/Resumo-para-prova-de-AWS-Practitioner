@@ -371,12 +371,14 @@ O <a href="https://aws.amazon.com/pt/ec2/autoscaling/" target="_blank">Amazon EC
 <p>No Amazon EC2 Auto Scaling, há duas abordagens disponíveis: scaling dinâmico e scaling preditivo.</p>
 
 <ul>
-    <li>O scaling dinâmico responde às alterações na demanda.</li>
-    <li>O scaling preditivo programa automaticamente o número correto de instâncias do Amazon EC2 com base na demanda prevista.</li>
+    <li>O scaling dinâmico responde às alterações na demanda.<br>
+    O Scaling Dinâmico é útil quando o aplicativo tem necessidades de dimensionamento urgentes e, às vezes, imprevisíveis</li>
+    <li>O scaling preditivo programa automaticamente o número correto de instâncias do Amazon EC2 com base na demanda prevista.<br>
+    Por exemplo, se um aplicativo bancário tem um pico de uso no quinto dia útil, metade do mês e no final do mês, o Scaling Preditivo pode ser usado para programar instâncias adicionais do EC2 para esses períodos</li>
 </ul>
 
 > [!NOTA]
-> Para dimensionar mais rapidamente, você pode combinar o scaling dinâmico e preditivo.
+> Ambas as estratégias podem ser usadas juntas para escalar mais rapidamente. Isso permite que você mantenha o desempenho e pague apenas pelos recursos realmente necessários.
 
 ### Exemplo: Amazon EC2 Auto Scaling
 <p>Já que na nuvem a capacidade computacional é um recurso programático, você pode adotar uma abordagem mais flexível para o problema de scaling. Ao adicionar o Amazon EC2 Auto Scaling a uma aplicação, você poderá adicionar novas instâncias à aplicação quando for necessário e terminá-las quando não for mais necessário. <br>
