@@ -432,7 +432,7 @@ No Amazon SNS, os assinantes podem ser servidores da web, endereços de e-mail, 
 
 
 ### Amazon Simple Queue Service (Amazon SQS)
-<p>O Amazon Simple Queue Service (Amazon SQS) é um serviço de enfileiramento de mensagens. <br>
+<p>O <a href="https://aws.amazon.com/pt/sqs/" target="_blank">Amazon Simple Queue Service (Amazon SQS)</a> é um serviço de enfileiramento de mensagens. <br>
 Use o Amazon SQS para enviar, armazenar e receber mensagens entre componentes de software, sem perder mensagens nem precisar que outros serviços estejam disponíveis. No Amazon SQS, uma aplicação envia mensagens para uma fila. Um usuário ou serviço recupera uma mensagem da fila, processa-a e a apaga da fila.</p>
 
 >![Resumo]
