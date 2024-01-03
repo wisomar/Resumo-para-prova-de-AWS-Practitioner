@@ -733,7 +733,23 @@ Suponha que seus desenvolvedores queiram criar uma aplicação que use o Amazon 
 
 <p>Um serviço de rede que você pode usar para definir limites para seus recursos AWS é o <a href="https://aws.amazon.com/pt/vpc/" target="_blank"> Amazon Virtual Private Cloud (Amazon VPC)</a>.</p>
 
-<p>O Amazon VPC permite que você provisione uma seção isolada da nuvem AWS. Nessa seção isolada, você pode executar os recursos em uma rede virtual que definir. Em uma Virtual Private Cloud (VPC), você pode organizar seus recursos em sub-redes. Uma <strong>sub-rede</strong> é uma seção de uma VPC que pode conter recursos como instâncias do Amazon EC2.</p>
+O Amazon Virtual Private Cloud (VPC) é um serviço que permite iniciar recursos da AWS em uma rede virtual isolada logicamente definida por você. Você tem controle total sobre seu ambiente de redes virtuais, incluindo a seleção do seu próprio intervalo de endereços IP, a criação de sub-redes e a configuração de tabelas de rotas e gateways de rede. Você pode usar IPv4 e IPv6 para a maioria dos recursos em sua VPC, garantindo acesso fácil e seguro a recursos e aplicações.
+
+Como um dos serviços básicos da AWS, o Amazon VPC facilita a personalização da configuração de rede da VPC. Você pode criar uma sub-rede voltada ao público para seus servidores Web que têm acesso à Internet. Também é possível colocar seus sistemas backend, como bancos de dados ou servidores de aplicações, em uma sub-rede privada, sem acesso à Internet. Com a Amazon VPC, você pode usar várias camadas de segurança, incluindo grupos de segurança e listas de controle de acesso à rede para ajudar a controlar o acesso às instâncias do Amazon Elastic Compute Cloud (Amazon EC2) em cada sub-rede.
+
+### Benefícios da Amazon VPC
+
+Aumentar a segurança:
+
+Proteja e monitore conexões de rede, rastreie o tráfego e restrinja o acesso a instâncias dentro de sua rede virtual.
+
+Economize tempo:
+
+Gaste menos tempo configurando, gerenciando e validando sua rede virtual.
+
+Gerencie e controle seu ambiente:
+
+Personalize seu ambiente de rede virtual escolhendo seu próprio intervalo de endereços IP, criando sub-redes e configurando tabelas de rotas.
 
 ## Gateway de internet
 
