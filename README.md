@@ -765,6 +765,8 @@ Personalize seu ambiente de rede virtual escolhendo seu próprio intervalo de en
 
 <p>Um gateway da internet é uma conexão entre uma VPC e a internet. Você pode pensar em um gateway da internet como sendo semelhante a uma porta que os clientes usam para entrar na cafeteria. Sem um gateway da internet, ninguém pode acessar os recursos em sua VPC.</p>
 
+Pense no gateway como semelhante a um modem. Assim como um modem conecta seu computador à Internet, o gateway da Internet conecta sua VPC à Internet. Ao contrário de seu modem residencial, que às vezes fica inativo ou offline, um gateway da Internet é altamente disponível e escalável. Depois de criar um gateway da Internet, você o anexa à sua VPC.
+
 <h3>E se você tiver uma VPC apenas com recursos privados?</h3>
 
 ## Gateway privado virtual
