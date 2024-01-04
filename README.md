@@ -969,6 +969,8 @@ O Amazon Route 53 conecta solicitações de usuários à infraestrutura em execu
 
 Outro recurso do Route 53 é a capacidade de gerenciar os registros DNS para nomes de domínio. Você pode registrar novos nomes de domínio diretamente no Route 53. Você também pode transferir registros DNS para nomes de domínio existentes gerenciados por outras empresas de registro de domínio. Isso permite que você gerencie todos os seus nomes de domínio em um único local.
 
+O Amazon Route 53 é um serviço da web de DNS. Ele oferece aos desenvolvedores e empresas uma maneira confiável de direcionar os usuários finais para aplicações da internet hospedados na AWS.
+
 No módulo anterior, você conheceu o Amazon CloudFront, um serviço de entrega de conteúdo. O exemplo a seguir descreve como o Route 53 e o Amazon CloudFront trabalham juntos para entregar conteúdo aos clientes.
 
 ### como o Amazon Route 53 e o Amazon CloudFront entregam conteúdo
@@ -1096,14 +1098,6 @@ Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio
   <li>&#10004; Amazon Route 53</li>
 </ul>
 A resposta correta é Amazon Route 53.
-
-# Amazon Route 53
-
-O Amazon Route 53 é um serviço da web de DNS. Ele oferece aos desenvolvedores e empresas uma maneira confiável de direcionar os usuários finais para aplicações da internet hospedados na AWS.
-
-
-
-Outro recurso do Route 53 é a capacidade de gerenciar os registros DNS para nomes de domínio. Você pode transferir registros DNS para nomes de domínio existentes gerenciados por outras empresas de registro de domínio. Você também pode registrar novos nomes de domínio diretamente no Route 53.
 
 
 # Armazenamento e Banco de Dados
