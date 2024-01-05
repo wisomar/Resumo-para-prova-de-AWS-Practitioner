@@ -1337,6 +1337,7 @@ O Amazon Elastic File System é um serviço regional. Ele armazena dados em vár
 
 O armazenamento duplicado permite que você acesse dados simultaneamente de todas as Zonas de Disponibilidade na Região em que um sistema de arquivos está localizado. Além disso, os servidores on-premises podem acessar o Amazon Elastic File System usando o AWS Direct Connect.
 
+# Banco de Dados
 
 ### Amazon Relational Database Service (Amazon RDS)
 
